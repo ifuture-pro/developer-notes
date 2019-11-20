@@ -10,7 +10,7 @@ Developer Notes
 - [github page](https://help.github.com/en/github/working-with-github-pages/getting-started-with-github-pages) 发布静态站点
 
 提高阅读体验   
-https://developer.ifuture.pro/
+https://developer.ifuture.pro/  
 https://ifuture-pro.github.io/developer-notes/
 
 <!-- start listify -->

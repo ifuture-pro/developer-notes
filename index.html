@@ -18,13 +18,15 @@
 
 </head>
 <body>
+<!--inject-app-->
 <div id="app">Developer notes</div>
+<!--inject-config-->
 <script>
   window.$docsify = {
     name: 'developer notes',
     repo: 'https://github.com/ifuture-pro/developer-notes',
     coverpage: true,
-    onlyCover: true,
+    //onlyCover: true,
     maxLevel:4,
     subMaxLevel:4,
     loadNavbar: true,
@@ -38,5 +40,10 @@
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
 <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+<script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+</script>
 </body>
 </html>

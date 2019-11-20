@@ -1,0 +1,33 @@
+{
+  "name": "developer-notes",
+  "version": "1.0.0",
+  "description": "Developer Notes 开发者笔记",
+  "main": "index.js",
+  "scripts": {
+    "start": "docsify start .",
+    "deploy": "now -p"
+  },
+  "docsify": {
+    "template": "./index.html",
+    "config": {
+      "basePath": "https://developer.ifuture.pro",
+      "loadSidebar": true,
+      "loadNavbar": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifuture-pro/developer-notes.git"
+  },
+  "keywords": [],
+  "author": "ifuture-pro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ifuture-pro/developer-notes/issues"
+  },
+  "homepage": "https://github.com/ifuture-pro/developer-notes#readme",
+  "devDependencies": {
+    "docsify-cli": "^4.3.0",
+    "now": "^16.5.2"
+  }
+}
