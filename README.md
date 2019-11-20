@@ -1,5 +1,17 @@
 Developer Notes
 --------------------
+开发者笔记  
+
+-----------
+
+**tools:**  
+- [listify](https://github.com/ifuture-pro/listify)  生成全站目录
+- [docsify](https://docsify.js.org/) 生成静态站点
+- [github page](https://help.github.com/en/github/working-with-github-pages/getting-started-with-github-pages) 发布静态站点
+
+提高阅读体验   
+https://developer.ifuture.pro/
+https://ifuture-pro.github.io/developer-notes/
 
 <!-- start listify -->
 
