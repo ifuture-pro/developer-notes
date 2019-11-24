@@ -11,7 +11,7 @@ Developer Notes
 
 提高阅读体验   
 https://developer.ifuture.pro/  
-https://ifuture-pro.github.io/developer-notes/
+
 
 <!-- start listify -->
 
