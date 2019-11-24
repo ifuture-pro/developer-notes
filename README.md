@@ -19,11 +19,6 @@ Table of Contents
 -----------
   > *generated with [listify](https://github.com/ifuture-pro/listify)*
 
-[_coverpage](_coverpage.md#_coverpage)
--------
- - [Developer notes](_coverpage.md#developer-notes)
-   - [开发者笔记](_coverpage.md#%E5%BC%80%E5%8F%91%E8%80%85%E7%AC%94%E8%AE%B0)
-
 [区块链概念汇总](blockchain/区块链概念汇总.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E6%A6%82%E5%BF%B5%E6%B1%87%E6%80%BB)
 -------
    - [区块链概念汇总](blockchain/区块链概念汇总.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E6%A6%82%E5%BF%B5%E6%B1%87%E6%80%BB)
@@ -101,6 +96,7 @@ Table of Contents
    - [Kubernetes](notepad/日常杂项.md#kubernetes)
      - [Ingress](notepad/日常杂项.md#ingress)
 <!-- end listify -->
+
 
 
 
