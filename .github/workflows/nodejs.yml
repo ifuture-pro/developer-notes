@@ -20,10 +20,10 @@ jobs:
     - name: listify
       run: |
         npm install @ifuture/listify
-        npx @ifuture/listify ./
+        npx @ifuture/listify ./ --exclude='^_\S*'
     - name: Commit files
       run: |
-        git config --local user.email "business@ifuture.pro"
+        git config --local user.email "${{ secrets.MY_EMAIL }}"
         git config --local user.name "ifuture-pro"
         git commit -m "listify auto" -a
     - name: Push changes
