@@ -1,8 +1,13 @@
 name: Node CI
 
 on: 
-  schedule: 
-    - cron: '0 0 * * *'
+#  schedule:
+#    - cron: '0 0 * * *'
+#  push:
+#    branches:
+#      - master
+  release:
+    types: [created,edited]
 
 jobs:
   build:
