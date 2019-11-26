@@ -19,6 +19,76 @@ Table of Contents
 -----------
   > *generated with [listify](https://github.com/ifuture-pro/listify)*
 
+# Database
+
+## [MYSQL基础优化](Database/MYSQL基础优化.md#mysql%E5%9F%BA%E7%A1%80%E4%BC%98%E5%8C%96)
+
+   - [SQL基础优化](Database/MYSQL基础优化.md#sql%E5%9F%BA%E7%A1%80%E4%BC%98%E5%8C%96)
+
+# DevOps
+
+## MQ
+
+### [RabbitMQ](DevOps/MQ/RabbitMQ.md#rabbitmq)
+
+   - [Rabbit MQ](DevOps/MQ/RabbitMQ.md#rabbit-mq)
+   - [基本安装](DevOps/MQ/RabbitMQ.md#%E5%9F%BA%E6%9C%AC%E5%AE%89%E8%A3%85)
+   - [消息确认 ACK 机制](DevOps/MQ/RabbitMQ.md#%E6%B6%88%E6%81%AF%E7%A1%AE%E8%AE%A4-ack-%E6%9C%BA%E5%88%B6)
+   - [消息持久化](DevOps/MQ/RabbitMQ.md#%E6%B6%88%E6%81%AF%E6%8C%81%E4%B9%85%E5%8C%96)
+
+## [微服务](DevOps/微服务.md#%E5%BE%AE%E6%9C%8D%E5%8A%A1)
+
+   - [微服务](DevOps/微服务.md#%E5%BE%AE%E6%9C%8D%E5%8A%A1)
+   - [Spring cloud 与 Kubernetes 组件](DevOps/微服务.md#spring-cloud-%E4%B8%8E-kubernetes-%E7%BB%84%E4%BB%B6)
+       - [优秀案例](DevOps/微服务.md#%E4%BC%98%E7%A7%80%E6%A1%88%E4%BE%8B)
+   - [负载均衡](DevOps/微服务.md#%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1)
+   - [关键问题字](DevOps/微服务.md#%E5%85%B3%E9%94%AE%E9%97%AE%E9%A2%98%E5%AD%97)
+
+# Notepad
+
+## [日常杂项](Notepad/日常杂项.md#%E6%97%A5%E5%B8%B8%E6%9D%82%E9%A1%B9)
+
+   - [Linux](Notepad/日常杂项.md#linux)
+     - [系统](Notepad/日常杂项.md#%E7%B3%BB%E7%BB%9F)
+       - [查看系统](Notepad/日常杂项.md#%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F)
+       - [设置时区](Notepad/日常杂项.md#%E8%AE%BE%E7%BD%AE%E6%97%B6%E5%8C%BA)
+     - [编辑](Notepad/日常杂项.md#%E7%BC%96%E8%BE%91)
+       - [VIM中文乱码](Notepad/日常杂项.md#vim%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81)
+       - [sed](Notepad/日常杂项.md#sed)
+   - [Git](Notepad/日常杂项.md#git)
+     - [基础](Notepad/日常杂项.md#%E5%9F%BA%E7%A1%80)
+       - [查看所有分支(包括远程)](Notepad/日常杂项.md#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E5%88%86%E6%94%AF%E5%8C%85%E6%8B%AC%E8%BF%9C%E7%A8%8B)
+       - [删除分支](Notepad/日常杂项.md#%E5%88%A0%E9%99%A4%E5%88%86%E6%94%AF)
+       - [新建分支](Notepad/日常杂项.md#%E6%96%B0%E5%BB%BA%E5%88%86%E6%94%AF)
+       - [tags](Notepad/日常杂项.md#tags)
+     - [保存密码](Notepad/日常杂项.md#%E4%BF%9D%E5%AD%98%E5%AF%86%E7%A0%81)
+   - [Mysql](Notepad/日常杂项.md#mysql)
+     - [创建数据库](Notepad/日常杂项.md#%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93)
+     - [创建用户并授权](Notepad/日常杂项.md#%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E5%B9%B6%E6%8E%88%E6%9D%83)
+     - [导入导出数据](Notepad/日常杂项.md#%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA%E6%95%B0%E6%8D%AE)
+   - [Docker](Notepad/日常杂项.md#docker)
+   - [Kubernetes](Notepad/日常杂项.md#kubernetes)
+     - [Ingress](Notepad/日常杂项.md#ingress)
+
+# Questions
+
+## [JAVA基础](Questions/JAVA基础.md#java%E5%9F%BA%E7%A1%80)
+
+
+
+## [如何限流](Questions/如何限流.md#%E5%A6%82%E4%BD%95%E9%99%90%E6%B5%81)
+
+   - [如何限流](Questions/如何限流.md#%E5%A6%82%E4%BD%95%E9%99%90%E6%B5%81)
+   - [主流框架的实现](Questions/如何限流.md#%E4%B8%BB%E6%B5%81%E6%A1%86%E6%9E%B6%E7%9A%84%E5%AE%9E%E7%8E%B0)
+     - [Nginx](Questions/如何限流.md#nginx)
+     - [spring-cloud-gateway](Questions/如何限流.md#spring-cloud-gateway)
+     - [Alibaba Sentinel](Questions/如何限流.md#alibaba-sentinel)
+       - [配置方式](Questions/如何限流.md#%E9%85%8D%E7%BD%AE%E6%96%B9%E5%BC%8F)
+   - [自己实现](Questions/如何限流.md#%E8%87%AA%E5%B7%B1%E5%AE%9E%E7%8E%B0)
+     - [计数器](Questions/如何限流.md#%E8%AE%A1%E6%95%B0%E5%99%A8)
+     - [队列](Questions/如何限流.md#%E9%98%9F%E5%88%97)
+     - [**令牌桶**](Questions/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
+
 # blockchain
 
 ## [区块链概念汇总](blockchain/区块链概念汇总.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E6%A6%82%E5%BF%B5%E6%B1%87%E6%80%BB)
@@ -65,20 +135,6 @@ Table of Contents
      - [粉尘攻击](blockchain/区块链概念汇总.md#%E7%B2%89%E5%B0%98%E6%94%BB%E5%87%BB)
      - [命令执行与控制 C2](blockchain/区块链概念汇总.md#%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E4%B8%8E%E6%8E%A7%E5%88%B6-c2)
 
-# database
-
-## [MYSQL基础优化](database/MYSQL基础优化.md#mysql%E5%9F%BA%E7%A1%80%E4%BC%98%E5%8C%96)
-
-   - [SQL基础优化](database/MYSQL基础优化.md#sql%E5%9F%BA%E7%A1%80%E4%BC%98%E5%8C%96)
-
-# devops
-
-## [微服务](devops/微服务.md#%E5%BE%AE%E6%9C%8D%E5%8A%A1)
-
-   - [微服务](devops/微服务.md#%E5%BE%AE%E6%9C%8D%E5%8A%A1)
-   - [Spring cloud 与 Kubernetes 组件](devops/微服务.md#spring-cloud-%E4%B8%8E-kubernetes-%E7%BB%84%E4%BB%B6)
-       - [优秀案例](devops/微服务.md#%E4%BC%98%E7%A7%80%E6%A1%88%E4%BE%8B)
-
 # draft
 
 ## [联盟链](draft/联盟链.md#%E8%81%94%E7%9B%9F%E9%93%BE)
@@ -86,51 +142,8 @@ Table of Contents
    - [联盟链](draft/联盟链.md#%E8%81%94%E7%9B%9F%E9%93%BE)
    - [FISCO BCOS](draft/联盟链.md#fisco-bcos)
      - [WeBASE](draft/联盟链.md#webase)
-
-# notepad
-
-## [日常杂项](notepad/日常杂项.md#%E6%97%A5%E5%B8%B8%E6%9D%82%E9%A1%B9)
-
-   - [Linux](notepad/日常杂项.md#linux)
-     - [系统](notepad/日常杂项.md#%E7%B3%BB%E7%BB%9F)
-       - [查看系统](notepad/日常杂项.md#%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F)
-       - [设置时区](notepad/日常杂项.md#%E8%AE%BE%E7%BD%AE%E6%97%B6%E5%8C%BA)
-     - [编辑](notepad/日常杂项.md#%E7%BC%96%E8%BE%91)
-       - [VIM中文乱码](notepad/日常杂项.md#vim%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81)
-       - [sed](notepad/日常杂项.md#sed)
-   - [Git](notepad/日常杂项.md#git)
-     - [基础](notepad/日常杂项.md#%E5%9F%BA%E7%A1%80)
-       - [查看所有分支(包括远程)](notepad/日常杂项.md#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E5%88%86%E6%94%AF%E5%8C%85%E6%8B%AC%E8%BF%9C%E7%A8%8B)
-       - [删除分支](notepad/日常杂项.md#%E5%88%A0%E9%99%A4%E5%88%86%E6%94%AF)
-       - [新建分支](notepad/日常杂项.md#%E6%96%B0%E5%BB%BA%E5%88%86%E6%94%AF)
-       - [tags](notepad/日常杂项.md#tags)
-     - [保存密码](notepad/日常杂项.md#%E4%BF%9D%E5%AD%98%E5%AF%86%E7%A0%81)
-   - [Mysql](notepad/日常杂项.md#mysql)
-     - [创建数据库](notepad/日常杂项.md#%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93)
-     - [创建用户并授权](notepad/日常杂项.md#%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E5%B9%B6%E6%8E%88%E6%9D%83)
-     - [导入导出数据](notepad/日常杂项.md#%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA%E6%95%B0%E6%8D%AE)
-   - [Docker](notepad/日常杂项.md#docker)
-   - [Kubernetes](notepad/日常杂项.md#kubernetes)
-     - [Ingress](notepad/日常杂项.md#ingress)
-
-# questions
-
-## [JAVA基础](questions/JAVA基础.md#java%E5%9F%BA%E7%A1%80)
-
-
-
-## [如何限流](questions/如何限流.md#%E5%A6%82%E4%BD%95%E9%99%90%E6%B5%81)
-
-   - [如何限流](questions/如何限流.md#%E5%A6%82%E4%BD%95%E9%99%90%E6%B5%81)
-   - [主流框架的实现](questions/如何限流.md#%E4%B8%BB%E6%B5%81%E6%A1%86%E6%9E%B6%E7%9A%84%E5%AE%9E%E7%8E%B0)
-     - [spring-cloud-gateway](questions/如何限流.md#spring-cloud-gateway)
-     - [Alibaba Sentinel](questions/如何限流.md#alibaba-sentinel)
-       - [配置方式](questions/如何限流.md#%E9%85%8D%E7%BD%AE%E6%96%B9%E5%BC%8F)
-   - [自己实现](questions/如何限流.md#%E8%87%AA%E5%B7%B1%E5%AE%9E%E7%8E%B0)
-     - [计数器](questions/如何限流.md#%E8%AE%A1%E6%95%B0%E5%99%A8)
-     - [队列](questions/如何限流.md#%E9%98%9F%E5%88%97)
-     - [**令牌桶**](questions/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
