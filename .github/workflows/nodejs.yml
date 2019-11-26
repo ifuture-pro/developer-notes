@@ -27,7 +27,7 @@ jobs:
     - name: listify
       run: |
         npm install @ifuture/listify
-        npx @ifuture/listify ./ --exclude='^_\S*'
+        npx @ifuture/listify ./ --exclude='^_\S*' --package
     - name: Commit files
       run: |
         git config --local user.email "${{ secrets.MY_EMAIL }}"

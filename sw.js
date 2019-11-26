@@ -4,6 +4,7 @@
  * Copyright 2016 @huxpro
  * Licensed under Apache 2.0
  * Register service worker.
+ * chrome://serviceworker-internals/
  * ========================================================== */
 
 const RUNTIME = 'docsify'
