@@ -62,6 +62,7 @@ public class RebbitConfig implements RabbitTemplate.ReturnCallback, RabbitTempla
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
+    @PostConstruct
     public void init(){
         rabbitTemplate.setReturnCallback(this);//消息从交换器发送到对应队列失败时触发
         rabbitTemplate.setConfirmCallback(this);//消息发送到交换器Exchange后触发回调
@@ -95,11 +96,12 @@ spring:
         acknowledge-mode: manual
 ```
 
+Producer Client
 ```java
     @RabbitListener(queues = CustomCallbackVO.MQ_ROUTER_KEY)
     @Async
     public void engineCallback(Channel channel
-            , @Header(name = "amqp_deliveryTag") long deliveryTag
+            , @Header(name = AmqpHeaders.DELIVERY_TAG) long deliveryTag
             , CustomCallbackVO vo){
         /**
         * 可能会出现死循环：比如：一直无法正常处理抛出异常。
@@ -125,10 +127,25 @@ channel.queueDeclare(QUEUE_NAME, true);
 channel.basicPublish("", queue_name, MessageProperties.PERSISTENT_TEXT_PLAIN, message.getBytes());
 ```
 
-在 spring-boot-starter-amqp 默认使用 rabbit
+在 `org.springframework.boot:spring-boot-starter-amqp` 默认使用 rabbit
 ```java
 new TopicExchange(name, durable, autoDelete);
 new Queue(name, durable, exclusive, autoDelete);
+
+// Consumer client
+@RabbitListener(
+            bindings = @QueueBinding(
+                    value = @Queue(value = "zzz-queue", durable = "true"),
+                    exchange = @Exchange(value = "zzz-exchange", durable = "true", type = "topic"),
+                    key = "routingkey-zzz"
+            )
+    )
+@RabbitHandler
+public void consumer(@Payload String msg, Channel channel, @Headers Map<String, Object> headers) {
+    System.out.println(msg);
+    Long tag = (Long) headers.get(AmqpHeaders.DELIVERY_TAG);
+}
+
 ```
 
 ## 高可用
@@ -220,9 +237,6 @@ rabbitmqctl set_policy <name> [-p <vhost>] <pattern> <definition> [--apply-to <a
         exchanges 表示镜像 exchange
         queues    表示镜像 queue
         all       表示镜像 exchange和queue
-        
-        
-
 
 
 ```
@@ -230,7 +244,22 @@ rabbitmqctl set_policy <name> [-p <vhost>] <pattern> <definition> [--apply-to <a
 * Disk node：将元数据存储在磁盘中，单节点系统只允许磁盘类型的节点，防止重启 RabbitMQ 的时候，丢失系统的配置信息。  
 推荐 2 RAM 1 DISC 集群搭建方式
 
-## HAProxy
+### Spring boot
+
+如果用 spring 的其实也可以直接配置
+```yaml
+spring:
+  rabbitmq:
+    addresses: amqp://username:password@server1:5672,amqp://username:password@server2:5672
+    username: your_username #用户名密码一样的话也可以在这配置
+    password: your_password
+
+```
+很多地方文档写的不是很清楚或不全，其实对于这些优秀的开源项目来说，源码就是最好的文档  
+详细配置可以看`org.springframework.boot.autoconfigure.amqp.RabbitProperties.java`
+
+
+### HAProxy
 
 /etc/haproxy/haproxy.cfg
 ```
@@ -277,6 +306,6 @@ listen rabbitmq_cluster
     server  server1  server1:5672  check  inter  5000  rise  2  fall  3
     server  server2  server2:5672  check  inter  5000  rise  2  fall  3
 ```
-* http://localhost:8100/stats：HAProxy 负载均衡信息地址，账号密码：admin/admin。
-* http://localhost:8101：RabbitMQ Server Web 管理界面
-* http://localhost:8102：RabbitMQ Server 服务地址
+* http://localhost:8100/stats HAProxy 负载均衡信息地址，账号密码：admin/admin。
+* http://localhost:8101 RabbitMQ Server Web 管理界面
+* http://localhost:8102 RabbitMQ Server 服务地址

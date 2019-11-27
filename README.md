@@ -44,7 +44,8 @@ Table of Contents
    - [消息确认 ACK 机制](DevOps/MQ/RabbitMQ.md#%E6%B6%88%E6%81%AF%E7%A1%AE%E8%AE%A4-ack-%E6%9C%BA%E5%88%B6)
    - [消息持久化](DevOps/MQ/RabbitMQ.md#%E6%B6%88%E6%81%AF%E6%8C%81%E4%B9%85%E5%8C%96)
    - [高可用](DevOps/MQ/RabbitMQ.md#%E9%AB%98%E5%8F%AF%E7%94%A8)
-   - [HAProxy](DevOps/MQ/RabbitMQ.md#haproxy)
+     - [Spring boot](DevOps/MQ/RabbitMQ.md#spring-boot)
+     - [HAProxy](DevOps/MQ/RabbitMQ.md#haproxy)
 
 ## [微服务](DevOps/微服务.md#%E5%BE%AE%E6%9C%8D%E5%8A%A1)
 
@@ -145,6 +146,7 @@ Table of Contents
      - [粉尘攻击](blockchain/区块链概念汇总.md#%E7%B2%89%E5%B0%98%E6%94%BB%E5%87%BB)
      - [命令执行与控制 C2](blockchain/区块链概念汇总.md#%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E4%B8%8E%E6%8E%A7%E5%88%B6-c2)
 <!-- end listify -->
+
 
 
 
