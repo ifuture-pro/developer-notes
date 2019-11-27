@@ -4,6 +4,13 @@ Developer Notes
 
 -----------
 
+[![](https://github.com/ifuture-pro/developer-notes/workflows/Node%20CI/badge.svg)](https://github.com/ifuture-pro/developer-notes/actions)
+[![](https://img.shields.io/badge/listify-list%20of%20contents-green)](https://github.com/ifuture-pro/listify)
+[![](https://img.shields.io/badge/web-ifuture-green?style=plastic&logo=appveyor)](https://developer.ifuture.pro/)
+[![](https://badgen.net/badge/icon/Website?icon=chrome&amp;label)](https://ifuture.pro/)
+
+
+
 **tools:**  
 - [listify](https://github.com/ifuture-pro/listify)  生成全站目录
 - [docsify](https://docsify.js.org/) 生成静态站点
@@ -32,9 +39,12 @@ Table of Contents
 ### [RabbitMQ](DevOps/MQ/RabbitMQ.md#rabbitmq)
 
    - [Rabbit MQ](DevOps/MQ/RabbitMQ.md#rabbit-mq)
+   - [关键字](DevOps/MQ/RabbitMQ.md#%E5%85%B3%E9%94%AE%E5%AD%97)
    - [基本安装](DevOps/MQ/RabbitMQ.md#%E5%9F%BA%E6%9C%AC%E5%AE%89%E8%A3%85)
    - [消息确认 ACK 机制](DevOps/MQ/RabbitMQ.md#%E6%B6%88%E6%81%AF%E7%A1%AE%E8%AE%A4-ack-%E6%9C%BA%E5%88%B6)
    - [消息持久化](DevOps/MQ/RabbitMQ.md#%E6%B6%88%E6%81%AF%E6%8C%81%E4%B9%85%E5%8C%96)
+   - [高可用](DevOps/MQ/RabbitMQ.md#%E9%AB%98%E5%8F%AF%E7%94%A8)
+   - [HAProxy](DevOps/MQ/RabbitMQ.md#haproxy)
 
 ## [微服务](DevOps/微服务.md#%E5%BE%AE%E6%9C%8D%E5%8A%A1)
 
@@ -134,15 +144,8 @@ Table of Contents
      - [假错误通知攻击](blockchain/区块链概念汇总.md#%E5%81%87%E9%94%99%E8%AF%AF%E9%80%9A%E7%9F%A5%E6%94%BB%E5%87%BB)
      - [粉尘攻击](blockchain/区块链概念汇总.md#%E7%B2%89%E5%B0%98%E6%94%BB%E5%87%BB)
      - [命令执行与控制 C2](blockchain/区块链概念汇总.md#%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E4%B8%8E%E6%8E%A7%E5%88%B6-c2)
-
-# draft
-
-## [联盟链](draft/联盟链.md#%E8%81%94%E7%9B%9F%E9%93%BE)
-
-   - [联盟链](draft/联盟链.md#%E8%81%94%E7%9B%9F%E9%93%BE)
-   - [FISCO BCOS](draft/联盟链.md#fisco-bcos)
-     - [WeBASE](draft/联盟链.md#webase)
 <!-- end listify -->
+
 
 
 
