@@ -57,6 +57,10 @@ Table of Contents
 
 # Notepad
 
+## [opensource-awesome](Notepad/opensource-awesome.md#opensource-awesome)
+
+   - [令人兴奋的开源项目](Notepad/opensource-awesome.md#%E4%BB%A4%E4%BA%BA%E5%85%B4%E5%A5%8B%E7%9A%84%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE)
+
 ## [日常杂项](Notepad/日常杂项.md#%E6%97%A5%E5%B8%B8%E6%9D%82%E9%A1%B9)
 
    - [Linux](Notepad/日常杂项.md#linux)
@@ -102,6 +106,13 @@ Table of Contents
 
 # blockchain
 
+## [区块链与随机数](blockchain/区块链与随机数.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E4%B8%8E%E9%9A%8F%E6%9C%BA%E6%95%B0)
+
+   - [区块链与随机数](blockchain/区块链与随机数.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E4%B8%8E%E9%9A%8F%E6%9C%BA%E6%95%B0)
+   - [计算机的随机数](blockchain/区块链与随机数.md#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E9%9A%8F%E6%9C%BA%E6%95%B0)
+   - [区块哈希](blockchain/区块链与随机数.md#%E5%8C%BA%E5%9D%97%E5%93%88%E5%B8%8C)
+   - [RANDAO + VDF](blockchain/区块链与随机数.md#randao--vdf)
+
 ## [区块链概念汇总](blockchain/区块链概念汇总.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E6%A6%82%E5%BF%B5%E6%B1%87%E6%80%BB)
 
    - [区块链概念汇总](blockchain/区块链概念汇总.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E6%A6%82%E5%BF%B5%E6%B1%87%E6%80%BB)
@@ -146,6 +157,7 @@ Table of Contents
      - [粉尘攻击](blockchain/区块链概念汇总.md#%E7%B2%89%E5%B0%98%E6%94%BB%E5%87%BB)
      - [命令执行与控制 C2](blockchain/区块链概念汇总.md#%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E4%B8%8E%E6%8E%A7%E5%88%B6-c2)
 <!-- end listify -->
+
 
 
 
