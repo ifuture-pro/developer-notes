@@ -57,6 +57,13 @@ Table of Contents
 
 # Linux
 
+## [HTTP](Linux/HTTP.md#http)
+
+     - [位码即tcp标志位,有6种标示:](Linux/HTTP.md#%E4%BD%8D%E7%A0%81%E5%8D%B3tcp%E6%A0%87%E5%BF%97%E4%BD%8D%E6%9C%896%E7%A7%8D%E6%A0%87%E7%A4%BA)
+     - [状态](Linux/HTTP.md#%E7%8A%B6%E6%80%81)
+     - [建立连接](Linux/HTTP.md#%E5%BB%BA%E7%AB%8B%E8%BF%9E%E6%8E%A5)
+     - [关闭连接](Linux/HTTP.md#%E5%85%B3%E9%97%AD%E8%BF%9E%E6%8E%A5)
+
 ## [Openconnect](Linux/Openconnect.md#openconnect)
 
    - [Openconnect](Linux/Openconnect.md#openconnect)
@@ -99,7 +106,13 @@ Table of Contents
 
 ## [JAVA基础](Questions/JAVA基础.md#java%E5%9F%BA%E7%A1%80)
 
-   - [零拷贝](Questions/JAVA基础.md#%E9%9B%B6%E6%8B%B7%E8%B4%9D)
+   - [Java内存模型](Questions/JAVA基础.md#java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B)
+     - [happens-before原则（先行发生原则）](Questions/JAVA基础.md#happens-before%E5%8E%9F%E5%88%99%E5%85%88%E8%A1%8C%E5%8F%91%E7%94%9F%E5%8E%9F%E5%88%99)
+       - [synchronized](Questions/JAVA基础.md#synchronized)
+       - [Lock](Questions/JAVA基础.md#lock)
+       - [AtomicInteger](Questions/JAVA基础.md#atomicinteger)
+   - [IO](Questions/JAVA基础.md#io)
+     - [零拷贝](Questions/JAVA基础.md#%E9%9B%B6%E6%8B%B7%E8%B4%9D)
 
 ## [如何限流](Questions/如何限流.md#%E5%A6%82%E4%BD%95%E9%99%90%E6%B5%81)
 
@@ -169,6 +182,8 @@ Table of Contents
      - [粉尘攻击](blockchain/区块链概念汇总.md#%E7%B2%89%E5%B0%98%E6%94%BB%E5%87%BB)
      - [命令执行与控制 C2](blockchain/区块链概念汇总.md#%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E4%B8%8E%E6%8E%A7%E5%88%B6-c2)
 <!-- end listify -->
+
+
 
 
 

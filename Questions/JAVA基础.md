@@ -1,3 +1,115 @@
+## Java内存模型
+* 原子性
+* 可见性
+* 有序性
+
+### happens-before原则（先行发生原则）
+
+* 程序次序规则：一个线程内，按照代码顺序，书写在前面的操作先行发生于书写在后面的操作
+* 锁定规则：一个unLock操作先行发生于后面对同一个锁额lock操作
+* volatile变量规则：对一个变量的写操作先行发生于后面对这个变量的读操作
+* 传递规则：如果操作A先行发生于操作B，而操作B又先行发生于操作C，则可以得出操作A先行发生于操作C
+* 线程启动规则：Thread对象的start\(\)方法先行发生于此线程的每个一个动作
+* 线程中断规则：对线程interrupt\(\)方法的调用先行发生于被中断线程的代码检测到中断事件的发生
+* 线程终结规则：线程中所有的操作都先行发生于线程的终止检测，我们可以通过Thread.join\(\)方法结束、Thread.isAlive\(\)的返回值手段检测到线程已经终止执行
+* 对象终结规则：一个对象的初始化完成先行发生于他的finalize\(\)方法的开始
+
+#### synchronized
+> \['sɪŋkrənaɪzd\]
+
+```
+public class Test {
+    public  int inc = 0;
+ 
+    public synchronized void increase() {
+        inc++;
+    }
+ 
+    public static void main(String[] args) {
+        final Test test = new Test();
+        for(int i=0;i<10;i++){
+            new Thread(){
+                public void run() {
+                    for(int j=0;j<1000;j++)
+                        test.increase();
+                };
+            }.start();
+        }
+ 
+        while(Thread.activeCount()>1)  //保证前面的线程都执行完
+            Thread.yield();
+        System.out.println(test.inc);
+    }
+}
+```
+
+#### Lock
+
+```
+public class Test {
+    public  int inc = 0;
+    Lock lock = new ReentrantLock();
+ 
+    public  void increase() {
+        lock.lock();
+        try {
+            inc++;
+        } finally{
+            lock.unlock();
+        }
+    }
+ 
+    public static void main(String[] args) {
+        final Test test = new Test();
+        for(int i=0;i<10;i++){
+            new Thread(){
+                public void run() {
+                    for(int j=0;j<1000;j++)
+                        test.increase();
+                };
+            }.start();
+        }
+ 
+        while(Thread.activeCount()>1)  //保证前面的线程都执行完
+            Thread.yield();
+        System.out.println(test.inc);
+    }
+}
+```
+
+#### AtomicInteger
+
+> atomic \[ə'tɑmɪk\] adj. 原子的，原子能的；微粒子的
+
+```
+public class Test {
+    public  AtomicInteger inc = new AtomicInteger();
+ 
+    public  void increase() {
+        inc.getAndIncrement();
+    }
+ 
+    public static void main(String[] args) {
+        final Test test = new Test();
+        for(int i=0;i<10;i++){
+            new Thread(){
+                public void run() {
+                    for(int j=0;j<1000;j++)
+                        test.increase();
+                };
+            }.start();
+        }
+ 
+        while(Thread.activeCount()>1)  //保证前面的线程都执行完
+            Thread.yield();
+        System.out.println(test.inc);
+    }
+}
+```
+
+
+
+
 ## IO
 ### 零拷贝
 零拷贝指计算机操作的过程中，CPU不需要为数据在内存之间的拷贝消耗资源。而它通常是指计算机在网络上发送文件时，不需要将文件内容拷贝到用户空间（User Space）而直接在内核空间（Kernel Space）中传输到网络的方式。  
