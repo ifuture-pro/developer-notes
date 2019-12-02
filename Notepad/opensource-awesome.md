@@ -23,3 +23,6 @@
 [opendevops](https://github.com/opendevops-cn/opendevops)
 ![GitHub stars](https://img.shields.io/github/stars/opendevops-cn/opendevops?style=flat-square)
 运维平台
+
+
+[gitter](https://gitter.im/) https://sidecar.gitter.im/
