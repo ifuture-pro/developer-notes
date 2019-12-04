@@ -17,7 +17,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     - name: listify-actions
-      uses: ifuture-pro/listify-actions@latest
+      uses: ifuture-pro/listify-actions@v0.1.0
       with:
         listify: ./ --exclude='^_\S*' --package --exclude_dir=draft
         github_token: ${{ secrets.GH_TOKEN }}
