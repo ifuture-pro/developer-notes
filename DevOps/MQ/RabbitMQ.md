@@ -87,7 +87,7 @@ AcknowledgeMode.AUTO：自动确认
 AcknowledgeMode.MANUAL：手动确认  
 
 ```yaml
-spring: 
+spring:
   rabbitmq:
     listener:
       direct:
@@ -183,8 +183,8 @@ z@zzz:~$ hostnamectl status
    Static hostname: zzz
          Icon name: computer-laptop
            Chassis: laptop
-        Machine ID: 
-           Boot ID: 
+        Machine ID:
+           Boot ID:
   Operating System: Ubuntu 18.04.3 LTS
             Kernel: Linux 4.15.0-71-generic
       Architecture: x86-64
@@ -204,7 +204,7 @@ chmod rabbitmq:rabbitmq .erlang.cookie
 ```
 rabbitmqctl stop
 #后台启动服务
-rabbitmq-server -detached 
+rabbitmq-server -detached
 
 rabbitmqctl -n rabbit@server2 stop_app
 
@@ -226,12 +226,12 @@ rabbitmqctl set_policy <name> [-p <vhost>] <pattern> <definition> [--apply-to <a
     name: 策略名称
     vhost: 指定vhost, 默认值 /
     pattern: 需要镜像的正则
-    definition: 
+    definition:
         ha-mode: 指明镜像队列的模式，有效值为：
             all     表示在集群所有的节点上进行镜像，无需设置ha-params
-            exactly 表示在指定个数的节点上进行镜像，节点的个数由ha-params指定 
-            nodes   表示在指定的节点上进行镜像，节点名称通过ha-params指定 
-        ha-params: ha-mode 模式需要用到的参数 
+            exactly 表示在指定个数的节点上进行镜像，节点的个数由ha-params指定
+            nodes   表示在指定的节点上进行镜像，节点名称通过ha-params指定
+        ha-params: ha-mode 模式需要用到的参数
         ha-sync-mode: 镜像队列中消息的同步方式，有效值为automatic，manually
     apply-to: 可选值3个，默认all
         exchanges 表示镜像 exchange
@@ -251,7 +251,8 @@ rabbitmqctl set_policy <name> [-p <vhost>] <pattern> <definition> [--apply-to <a
 spring:
   rabbitmq:
     addresses: amqp://username:password@server1:5672,amqp://username:password@server2:5672
-    username: your_username #用户名密码一样的话也可以在这配置
+    port: 5672
+    username: your_username #用户名密码一样的话也可以在这配置(理论上是一样的，因为集群完后用户也会同步，所以在大多数情况下，addresses 只需要写ip地址用逗号分隔即可)
     password: your_password
 
 ```

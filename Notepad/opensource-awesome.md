@@ -42,6 +42,11 @@ Github Actions
 ![GitHub stars](https://img.shields.io/github/stars/geeeeeeeeek/WeChatLuckyMoney?style=flat-square)
 微信红包机器人
 
+[FireFox send](https://github.com/mozilla/send)
+![GitHub stars](https://img.shields.io/github/stars/mozilla/send?style=flat-square)
+发送文件
+
+
 ##  区块链
 [FISCO](https://github.com/FISCO-BCOS/FISCO-BCOS)
 ![GitHub stars](https://img.shields.io/github/stars/FISCO-BCOS/FISCO-BCOS?style=flat-square)  

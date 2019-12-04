@@ -1,39 +1,23 @@
 name: Node CI
 
-on: 
+on:
 #  schedule:
 #    - cron: '0 0 * * *'
-#  push:
-#    branches:
-#      - master
-  release:
-    types: [created,edited]
+ push:
+   branches:
+     - master
+  # release:
+  #   types: [created,edited]
 
 jobs:
-  build:
-
+  listify-auto:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [10.x, 12.x]
-
+    name: listify auto
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: listify action step
+      uses: ifuture-pro/listify-actions
       with:
-        node-version: ${{ matrix.node-version }}
-    - name: listify
-      run: |
-        npm install @ifuture/listify
-        npx @ifuture/listify ./ --exclude='^_\S*' --package --exclude_dir=draft
-    - name: Commit files
-      run: |
-        git config --local user.email "${{ secrets.MY_EMAIL }}"
-        git config --local user.name "ifuture-pro"
-        git commit -m "listify auto" -a
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
+        listify: ./ --exclude='^_\S*' --package --exclude_dir=draft
         github_token: ${{ secrets.GH_TOKEN }}
