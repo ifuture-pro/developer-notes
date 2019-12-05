@@ -59,6 +59,7 @@ Table of Contents
 
 ## [HTTP](Linux/HTTP.md#http)
 
+   - [握手](Linux/HTTP.md#%E6%8F%A1%E6%89%8B)
      - [位码即tcp标志位,有6种标示:](Linux/HTTP.md#%E4%BD%8D%E7%A0%81%E5%8D%B3tcp%E6%A0%87%E5%BF%97%E4%BD%8D%E6%9C%896%E7%A7%8D%E6%A0%87%E7%A4%BA)
      - [状态](Linux/HTTP.md#%E7%8A%B6%E6%80%81)
      - [建立连接](Linux/HTTP.md#%E5%BB%BA%E7%AB%8B%E8%BF%9E%E6%8E%A5)
@@ -121,9 +122,7 @@ Table of Contents
 
    - [Java内存模型](Questions/JAVA基础.md#java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B)
      - [happens-before原则（先行发生原则）](Questions/JAVA基础.md#happens-before%E5%8E%9F%E5%88%99%E5%85%88%E8%A1%8C%E5%8F%91%E7%94%9F%E5%8E%9F%E5%88%99)
-       - [synchronized](Questions/JAVA基础.md#synchronized)
-       - [Lock](Questions/JAVA基础.md#lock)
-       - [AtomicInteger](Questions/JAVA基础.md#atomicinteger)
+   - [序列化](Questions/JAVA基础.md#%E5%BA%8F%E5%88%97%E5%8C%96)
    - [IO](Questions/JAVA基础.md#io)
      - [零拷贝](Questions/JAVA基础.md#%E9%9B%B6%E6%8B%B7%E8%B4%9D)
 
@@ -207,7 +206,19 @@ Table of Contents
      - [假错误通知攻击](blockchain/区块链概念汇总.md#%E5%81%87%E9%94%99%E8%AF%AF%E9%80%9A%E7%9F%A5%E6%94%BB%E5%87%BB)
      - [粉尘攻击](blockchain/区块链概念汇总.md#%E7%B2%89%E5%B0%98%E6%94%BB%E5%87%BB)
      - [命令执行与控制 C2](blockchain/区块链概念汇总.md#%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E4%B8%8E%E6%8E%A7%E5%88%B6-c2)
+
+# design-patterns
+
+## [单例](design-patterns/单例.md#%E5%8D%95%E4%BE%8B)
+
+   - [单例模式 singleton](design-patterns/单例.md#%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F-singleton)
+   - [场景](design-patterns/单例.md#%E5%9C%BA%E6%99%AF)
+   - [JDK源码中的案例](design-patterns/单例.md#jdk%E6%BA%90%E7%A0%81%E4%B8%AD%E7%9A%84%E6%A1%88%E4%BE%8B)
+   - [Best Way](design-patterns/单例.md#best-way)
+   - [Other Way](design-patterns/单例.md#other-way)
+     - [懒饿汉及双重检查锁](design-patterns/单例.md#%E6%87%92%E9%A5%BF%E6%B1%89%E5%8F%8A%E5%8F%8C%E9%87%8D%E6%A3%80%E6%9F%A5%E9%94%81)
 <!-- end listify -->
+
 
 
 
