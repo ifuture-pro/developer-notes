@@ -56,6 +56,10 @@ Github Actions
 ![GitHub stars](https://img.shields.io/github/stars/blockchain-jd-com/jdchain?style=flat-square)  
 
 
+## 最佳
+[nodejs最佳实践](https://github.com/goldbergyoni/nodebestpractices)
+![GitHub stars](https://img.shields.io/github/stars/goldbergyoni/nodebestpractices?style=flat-square)  
+
 
 
 
