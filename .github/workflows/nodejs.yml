@@ -19,5 +19,5 @@ jobs:
     - name: listify-actions
       uses: ifuture-pro/listify-actions@v0.1.1
       with:
-        listify: ./ --exclude='^_\S*' --package --exclude_dir=draft
+        listify: ./ --exclude='^_\S*' --package --exclude_dir=draft --maxlevel=6
         github_token: ${{ secrets.GH_TOKEN }}
