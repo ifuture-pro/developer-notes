@@ -189,6 +189,14 @@ Table of Contents
    - [共识](blockchain/区块链概念汇总.md#%E5%85%B1%E8%AF%86)
      - [共识算法](blockchain/区块链概念汇总.md#%E5%85%B1%E8%AF%86%E7%AE%97%E6%B3%95)
        - [PBFT](blockchain/区块链概念汇总.md#pbft)
+         - [leader 选举](blockchain/区块链概念汇总.md#leader-%E9%80%89%E4%B8%BE)
+         - [角色](blockchain/区块链概念汇总.md#%E8%A7%92%E8%89%B2)
+         - [共识流程](blockchain/区块链概念汇总.md#%E5%85%B1%E8%AF%86%E6%B5%81%E7%A8%8B)
+           - [打包区块 生成Prepare](blockchain/区块链概念汇总.md#%E6%89%93%E5%8C%85%E5%8C%BA%E5%9D%97-%E7%94%9F%E6%88%90prepare)
+           - [Pre-prepare](blockchain/区块链概念汇总.md#pre-prepare)
+           - [Prepare](blockchain/区块链概念汇总.md#prepare)
+           - [Commit](blockchain/区块链概念汇总.md#commit)
+           - [ViewChange](blockchain/区块链概念汇总.md#viewchange)
    - [隐私保护](blockchain/区块链概念汇总.md#%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4)
      - [隐私保护算法](blockchain/区块链概念汇总.md#%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4%E7%AE%97%E6%B3%95)
    - [攻击](blockchain/区块链概念汇总.md#%E6%94%BB%E5%87%BB)
@@ -228,6 +236,7 @@ Table of Contents
    - [Other Way](design-patterns/单例.md#other-way)
      - [懒饿汉及双重检查锁](design-patterns/单例.md#%E6%87%92%E9%A5%BF%E6%B1%89%E5%8F%8A%E5%8F%8C%E9%87%8D%E6%A3%80%E6%9F%A5%E9%94%81)
 <!-- end listify -->
+
 
 
 
