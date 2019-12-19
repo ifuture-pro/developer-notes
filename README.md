@@ -97,6 +97,8 @@ Table of Contents
    - [运维](Notepad/opensource-awesome.md#%E8%BF%90%E7%BB%B4)
    - [区块链](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE)
    - [最佳](Notepad/opensource-awesome.md#%E6%9C%80%E4%BD%B3)
+   - [算法学习 algorithm](Notepad/opensource-awesome.md#%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0-algorithm)
+     - [寻路算法](Notepad/opensource-awesome.md#%E5%AF%BB%E8%B7%AF%E7%AE%97%E6%B3%95)
    - [Tools](Notepad/opensource-awesome.md#tools)
 
 ## [日常杂项](Notepad/日常杂项.md#%E6%97%A5%E5%B8%B8%E6%9D%82%E9%A1%B9)
@@ -225,6 +227,13 @@ Table of Contents
      - [粉尘攻击](blockchain/区块链概念汇总.md#%E7%B2%89%E5%B0%98%E6%94%BB%E5%87%BB)
      - [命令执行与控制 C2](blockchain/区块链概念汇总.md#%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E4%B8%8E%E6%8E%A7%E5%88%B6-c2)
 
+## [联盟链](blockchain/联盟链.md#%E8%81%94%E7%9B%9F%E9%93%BE)
+
+   - [联盟链 consortium blockchain](blockchain/联盟链.md#%E8%81%94%E7%9B%9F%E9%93%BE-consortium-blockchain)
+   - [FISCO BCOS](blockchain/联盟链.md#fisco-bcos)
+     - [WeBASE](blockchain/联盟链.md#webase)
+     - [WeIdentity](blockchain/联盟链.md#weidentity)
+
 # design-patterns
 
 ## [单例](design-patterns/单例.md#%E5%8D%95%E4%BE%8B)
@@ -236,6 +245,7 @@ Table of Contents
    - [Other Way](design-patterns/单例.md#other-way)
      - [懒饿汉及双重检查锁](design-patterns/单例.md#%E6%87%92%E9%A5%BF%E6%B1%89%E5%8F%8A%E5%8F%8C%E9%87%8D%E6%A3%80%E6%9F%A5%E9%94%81)
 <!-- end listify -->
+
 
 
 
