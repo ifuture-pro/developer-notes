@@ -97,4 +97,4 @@ public class SimpleBloomFilter {
 
 ### 生产实现
 * [Guava](https://mvnrepository.com/artifact/com.google.guava/guava) com.google.common.hash.BloomFilter
-* [BloomFilter.java](https://github.com/MagnusS/Java-BloomFilter/blob/master/src/com/skjegstad/utils/BloomFilter.java)
+* [BloomFilter.java](../assets/code/BloomFilter.java)  [usedby](https://github.com/MagnusS/Java-BloomFilter/blob/master/src/com/skjegstad/utils/BloomFilter.java)
