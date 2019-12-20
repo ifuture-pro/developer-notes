@@ -164,6 +164,17 @@ Table of Contents
  - [Developer notes](_coverpage.md#developer-notes)
    - [开发者笔记](_coverpage.md#%E5%BC%80%E5%8F%91%E8%80%85%E7%AC%94%E8%AE%B0)
 
+# algorithm
+
+## [BloomFilter](algorithm/BloomFilter.md#bloomfilter)
+
+   - [布隆过滤器 Bloom Filter](algorithm/BloomFilter.md#%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8-bloom-filter)
+   - [应用场景](algorithm/BloomFilter.md#%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF)
+   - [原理](algorithm/BloomFilter.md#%E5%8E%9F%E7%90%86)
+   - [实现](algorithm/BloomFilter.md#%E5%AE%9E%E7%8E%B0)
+     - [基础实现](algorithm/BloomFilter.md#%E5%9F%BA%E7%A1%80%E5%AE%9E%E7%8E%B0)
+     - [生产实现](algorithm/BloomFilter.md#%E7%94%9F%E4%BA%A7%E5%AE%9E%E7%8E%B0)
+
 # blockchain
 
 ## [区块链与随机数](blockchain/区块链与随机数.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E4%B8%8E%E9%9A%8F%E6%9C%BA%E6%95%B0)
@@ -247,6 +258,7 @@ Table of Contents
    - [Other Way](design-patterns/单例.md#other-way)
      - [懒饿汉及双重检查锁](design-patterns/单例.md#%E6%87%92%E9%A5%BF%E6%B1%89%E5%8F%8A%E5%8F%8C%E9%87%8D%E6%A3%80%E6%9F%A5%E9%94%81)
 <!-- end listify -->
+
 
 
 
