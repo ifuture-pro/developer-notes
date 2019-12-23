@@ -71,3 +71,4 @@ Github Actions
 Tools
 ---------
 [Google Remote Desktop](https://remotedesktop.google.com/)
+[MSDN I Tell You](https://msdn.itellyou.cn/) 纯净版 Windows 操作系统
