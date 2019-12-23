@@ -257,7 +257,17 @@ Table of Contents
    - [Best Way](design-patterns/单例.md#best-way)
    - [Other Way](design-patterns/单例.md#other-way)
      - [懒饿汉及双重检查锁](design-patterns/单例.md#%E6%87%92%E9%A5%BF%E6%B1%89%E5%8F%8A%E5%8F%8C%E9%87%8D%E6%A3%80%E6%9F%A5%E9%94%81)
+
+# hacker
+
+## [github-bug](hacker/github-bug.md#github-bug)
+
+   - [GitHub Security Bug Bounty](hacker/github-bug.md#github-security-bug-bounty)
+   - [绕开 GitHub OAuth](hacker/github-bug.md#%E7%BB%95%E5%BC%80-github-oauth)
+     - [滥用 HTTP HEAD 请求](hacker/github-bug.md#%E6%BB%A5%E7%94%A8-http-head-%E8%AF%B7%E6%B1%82)
+     - [参考](hacker/github-bug.md#%E5%8F%82%E8%80%83)
 <!-- end listify -->
+
 
 
 
