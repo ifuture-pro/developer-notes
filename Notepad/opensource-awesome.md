@@ -61,12 +61,6 @@ Github Actions
 ![GitHub stars](https://img.shields.io/github/stars/goldbergyoni/nodebestpractices?style=flat-square)  
 
 
-## 算法学习 algorithm
-收藏一下算法的使用案例
-### 寻路算法
-* A\*（A-Star) [A\* Pathfinding for Beginners](https://www.gamedev.net/articles/programming/artificial-intelligence/a-pathfinding-for-beginners-r2003/)
-[fast-astar](https://github.com/sbfkcel/fast-astar) ![GitHub stars](https://img.shields.io/github/stars/sbfkcel/fast-astar?style=flat-square)
-
 
 Tools
 ---------
