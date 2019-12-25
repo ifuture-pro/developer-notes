@@ -97,8 +97,6 @@ Table of Contents
    - [运维](Notepad/opensource-awesome.md#%E8%BF%90%E7%BB%B4)
    - [区块链](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE)
    - [最佳](Notepad/opensource-awesome.md#%E6%9C%80%E4%BD%B3)
-   - [算法学习 algorithm](Notepad/opensource-awesome.md#%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0-algorithm)
-     - [寻路算法](Notepad/opensource-awesome.md#%E5%AF%BB%E8%B7%AF%E7%AE%97%E6%B3%95)
    - [Tools](Notepad/opensource-awesome.md#tools)
 
 ## [日常杂项](Notepad/日常杂项.md#%E6%97%A5%E5%B8%B8%E6%9D%82%E9%A1%B9)
@@ -174,6 +172,12 @@ Table of Contents
    - [实现](algorithm/BloomFilter.md#%E5%AE%9E%E7%8E%B0)
      - [基础实现](algorithm/BloomFilter.md#%E5%9F%BA%E7%A1%80%E5%AE%9E%E7%8E%B0)
      - [生产实现](algorithm/BloomFilter.md#%E7%94%9F%E4%BA%A7%E5%AE%9E%E7%8E%B0)
+
+## [README](algorithm/README.md#readme)
+
+   - [算法学习 algorithm](algorithm/README.md#%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0-algorithm)
+   - [寻路算法](algorithm/README.md#%E5%AF%BB%E8%B7%AF%E7%AE%97%E6%B3%95)
+   - [协同编辑](algorithm/README.md#%E5%8D%8F%E5%90%8C%E7%BC%96%E8%BE%91)
 
 # blockchain
 
@@ -297,6 +301,7 @@ Table of Contents
      - [滥用 HTTP HEAD 请求](hacker/github-bug.md#%E6%BB%A5%E7%94%A8-http-head-%E8%AF%B7%E6%B1%82)
      - [参考](hacker/github-bug.md#%E5%8F%82%E8%80%83)
 <!-- end listify -->
+
 
 
 
