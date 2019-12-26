@@ -1,0 +1,41 @@
+Database
+-------
+
+## 分类与出色产品
+
+* SQL
+  * 关系型数据库
+    > MySQL, Oracle
+
+* NoSQL
+  * key-values数据库
+    > Redis, Memcache
+
+  * Document数据库
+    > MongoDB
+
+  * 列存储数据库
+    > HBase
+
+  * 时序数据库
+    > [IoTDB](https://iotdb.apache.org/), [LinDB](https://github.com/lindb/lindb) ,KariosDB, OpenTSDB, InfluxDB, Prometheus, [TDengine](https://github.com/taosdata/TDengine)
+
+  * 图数据库
+    > Neo4j, JanusGraph, [HugeGraph](https://hugegraph.github.io/hugegraph-doc/), [NebulaGraph](https://github.com/vesoft-inc/nebula)
+
+* NewSQL
+  * [TiDB](https://github.com/pingcap/tidb)
+
+
+## 关键字
+* ACID事务
+  > Atomic, Consistency, Isolation, Durability  
+  > **Atomic（原子性）**：指整个数据库事务是不可分割的工作单位。只有使据库中所有的操作执行成功，才算整个事务成功；事务中任何一个SQL语句执行失败，那么已经执行成功的SQL语句也必须撤销，数据库状态应该退回到执行事务前的状态。  
+  > **Consistency（一致性）**：指数据库事务不能破坏关系数据的完整性以及业务逻辑上的一致性。例如对银行转帐事务，不管事务成功还是失败，应该保证事务结束后ACCOUNTS表中Tom和Jack的存款总额为2000元。  
+  > **Isolation（隔离性）**：指的是在并发环境中，当不同的事务同时操纵相同的数据时，每个事务都有各自的完整数据空间。  
+  > **Durability（持久性）**：指的是只要事务成功结束，它对数据库所做的更新就必须永久保存下来。即使发生系统崩溃，重新启动数据库系统后，数据库还能恢复到事务成功结束时的状态。  
+
+* OLTP、OLAP
+  > 联机事务处理OLTP（on-line transaction processing）   
+  联机分析处理OLAP（On-Line Analytical Processing）  
+  [比较](https://www.cnblogs.com/hhandbibi/p/7118740.html)
