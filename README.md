@@ -32,6 +32,12 @@ Table of Contents
 
    - [SQL基础优化](Database/MYSQL基础优化.md#sql%E5%9F%BA%E7%A1%80%E4%BC%98%E5%8C%96)
 
+## [README](Database/README.md#readme)
+
+   - [Database](Database/README.md#database)
+   - [分类与出色产品](Database/README.md#%E5%88%86%E7%B1%BB%E4%B8%8E%E5%87%BA%E8%89%B2%E4%BA%A7%E5%93%81)
+   - [关键字](Database/README.md#%E5%85%B3%E9%94%AE%E5%AD%97)
+
 # DevOps
 
 ## MQ
@@ -292,6 +298,12 @@ Table of Contents
    - [Other Way](design-patterns/单例.md#other-way)
      - [懒饿汉及双重检查锁](design-patterns/单例.md#%E6%87%92%E9%A5%BF%E6%B1%89%E5%8F%8A%E5%8F%8C%E9%87%8D%E6%A3%80%E6%9F%A5%E9%94%81)
 
+## [适配器](design-patterns/适配器.md#%E9%80%82%E9%85%8D%E5%99%A8)
+
+   - [适配器模式 Adapter](design-patterns/适配器.md#%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F-adapter)
+   - [场景](design-patterns/适配器.md#%E5%9C%BA%E6%99%AF)
+   - [JDK源码中的案例](design-patterns/适配器.md#jdk%E6%BA%90%E7%A0%81%E4%B8%AD%E7%9A%84%E6%A1%88%E4%BE%8B)
+
 # hacker
 
 ## [github-bug](hacker/github-bug.md#github-bug)
@@ -301,6 +313,7 @@ Table of Contents
      - [滥用 HTTP HEAD 请求](hacker/github-bug.md#%E6%BB%A5%E7%94%A8-http-head-%E8%AF%B7%E6%B1%82)
      - [参考](hacker/github-bug.md#%E5%8F%82%E8%80%83)
 <!-- end listify -->
+
 
 
 
