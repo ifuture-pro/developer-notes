@@ -124,6 +124,7 @@ Table of Contents
        - [tags](Notepad/日常杂项.md#tags)
      - [子项目](Notepad/日常杂项.md#%E5%AD%90%E9%A1%B9%E7%9B%AE)
      - [保存密码](Notepad/日常杂项.md#%E4%BF%9D%E5%AD%98%E5%AF%86%E7%A0%81)
+     - [Github](Notepad/日常杂项.md#github)
    - [Mysql](Notepad/日常杂项.md#mysql)
      - [创建数据库](Notepad/日常杂项.md#%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93)
      - [创建用户并授权](Notepad/日常杂项.md#%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E5%B9%B6%E6%8E%88%E6%9D%83)
@@ -298,6 +299,13 @@ Table of Contents
    - [Other Way](design-patterns/单例.md#other-way)
      - [懒饿汉及双重检查锁](design-patterns/单例.md#%E6%87%92%E9%A5%BF%E6%B1%89%E5%8F%8A%E5%8F%8C%E9%87%8D%E6%A3%80%E6%9F%A5%E9%94%81)
 
+## [装饰者](design-patterns/装饰者.md#%E8%A3%85%E9%A5%B0%E8%80%85)
+
+   - [装饰者 Decorator](design-patterns/装饰者.md#%E8%A3%85%E9%A5%B0%E8%80%85-decorator)
+   - [场景](design-patterns/装饰者.md#%E5%9C%BA%E6%99%AF)
+   - [JDK及各大框架源码中的案例](design-patterns/装饰者.md#jdk%E5%8F%8A%E5%90%84%E5%A4%A7%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81%E4%B8%AD%E7%9A%84%E6%A1%88%E4%BE%8B)
+   - [代码案例](design-patterns/装饰者.md#%E4%BB%A3%E7%A0%81%E6%A1%88%E4%BE%8B)
+
 ## [适配器](design-patterns/适配器.md#%E9%80%82%E9%85%8D%E5%99%A8)
 
    - [适配器模式 Adapter](design-patterns/适配器.md#%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F-adapter)
@@ -306,6 +314,16 @@ Table of Contents
 
 # hacker
 
+## [blackchain-bug-erc](hacker/blackchain-bug-erc.md#blackchain-bug-erc)
+
+   - [ATN 抵御合约攻击的报告](hacker/blackchain-bug-erc.md#atn-%E6%8A%B5%E5%BE%A1%E5%90%88%E7%BA%A6%E6%94%BB%E5%87%BB%E7%9A%84%E6%8A%A5%E5%91%8A)
+     - [基于ERC223与DS-AUTH的混合漏洞](hacker/blackchain-bug-erc.md#%E5%9F%BA%E4%BA%8Eerc223%E4%B8%8Eds-auth%E7%9A%84%E6%B7%B7%E5%90%88%E6%BC%8F%E6%B4%9E)
+       - [攻击：](hacker/blackchain-bug-erc.md#%E6%94%BB%E5%87%BB)
+       - [漏洞评估：](hacker/blackchain-bug-erc.md#%E6%BC%8F%E6%B4%9E%E8%AF%84%E4%BC%B0)
+       - [应对措施：](hacker/blackchain-bug-erc.md#%E5%BA%94%E5%AF%B9%E6%8E%AA%E6%96%BD)
+       - [总结](hacker/blackchain-bug-erc.md#%E6%80%BB%E7%BB%93)
+       - [对其他以太坊Token合约的预警:](hacker/blackchain-bug-erc.md#%E5%AF%B9%E5%85%B6%E4%BB%96%E4%BB%A5%E5%A4%AA%E5%9D%8Atoken%E5%90%88%E7%BA%A6%E7%9A%84%E9%A2%84%E8%AD%A6)
+
 ## [github-bug](hacker/github-bug.md#github-bug)
 
    - [GitHub Security Bug Bounty](hacker/github-bug.md#github-security-bug-bounty)
@@ -313,6 +331,7 @@ Table of Contents
      - [滥用 HTTP HEAD 请求](hacker/github-bug.md#%E6%BB%A5%E7%94%A8-http-head-%E8%AF%B7%E6%B1%82)
      - [参考](hacker/github-bug.md#%E5%8F%82%E8%80%83)
 <!-- end listify -->
+
 
 
 
