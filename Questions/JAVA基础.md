@@ -1,3 +1,39 @@
+## Java 对象初始化
+
+创建 class Y 的执行顺序及对应字段值
+```java
+
+// class x
+public class X {
+	protected int xMask = 0x00ff;
+	protected int fullMask;
+
+	public X() {
+		fullMask = xMask;
+	}
+
+	public int mask(int origin) {
+		return (origin & fullMask);
+	}
+
+}
+
+// class y
+class Y extends X {
+
+	protected int yMask = 0xff00;
+
+	public Y() {
+		fullMask |= yMask;
+	}
+
+}
+
+```
+
+![java bean](../assets/img/javabean.png)
+
+
 ## Java内存模型
 * 原子性
 * 可见性
