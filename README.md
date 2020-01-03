@@ -137,6 +137,7 @@ Table of Contents
 
 ## [JAVA基础](Questions/JAVA基础.md#java%E5%9F%BA%E7%A1%80)
 
+   - [Java 对象初始化](Questions/JAVA基础.md#java-%E5%AF%B9%E8%B1%A1%E5%88%9D%E5%A7%8B%E5%8C%96)
    - [Java内存模型](Questions/JAVA基础.md#java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B)
      - [happens-before原则（先行发生原则）](Questions/JAVA基础.md#happens-before%E5%8E%9F%E5%88%99%E5%85%88%E8%A1%8C%E5%8F%91%E7%94%9F%E5%8E%9F%E5%88%99)
    - [序列化](Questions/JAVA基础.md#%E5%BA%8F%E5%88%97%E5%8C%96)
@@ -337,6 +338,7 @@ Table of Contents
      - [滥用 HTTP HEAD 请求](hacker/github-bug.md#%E6%BB%A5%E7%94%A8-http-head-%E8%AF%B7%E6%B1%82)
      - [参考](hacker/github-bug.md#%E5%8F%82%E8%80%83)
 <!-- end listify -->
+
 
 
 
