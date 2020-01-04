@@ -34,6 +34,23 @@ class Y extends X {
 ![java bean](../assets/img/javabean.png)
 
 
+## List集合，多线程计算总和
+1、使其在 Java8 之后 使用 stream api 最简单
+```java
+List.parallelStream().mapToDouble(value -> value).sum();
+```
+2、使用 FutureTask 将任务分解后合并
+
+## List 去重
+1、Java8 stream api
+```java
+list.stream().distinct().collect(Collectors.toList());
+```
+2、转换成 set 去重
+```java
+newSet = Set.addAll(list)//使用 HashSet 天然去重 
+newList.addAll(newSet)//将去重后的 Set 重新转换成 List
+```
 ## Java内存模型
 * 原子性
 * 可见性
