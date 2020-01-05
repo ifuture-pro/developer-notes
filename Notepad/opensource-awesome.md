@@ -15,6 +15,8 @@ Opensource
 ![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/awesome-mac?style=flat-square)    
 [Awesome-Windows](https://github.com/Awesome-Windows/Awesome)
 ![GitHub stars](https://img.shields.io/github/stars/Awesome-Windows/Awesome?style=flat-square)  
+[Awesome-BlockChain](https://github.com/chaozh/awesome-blockchain-cn)
+![GitHub stars](https://img.shields.io/github/stars/chaozh/awesome-blockchain-cn?style=flat-square)  
 
 ## Github 增强
 
