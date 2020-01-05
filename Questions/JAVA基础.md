@@ -48,9 +48,19 @@ list.stream().distinct().collect(Collectors.toList());
 ```
 2、转换成 set 去重
 ```java
-newSet = Set.addAll(list)//使用 HashSet 天然去重 
+newSet = Set.addAll(list)//使用 HashSet 天然去重
 newList.addAll(newSet)//将去重后的 Set 重新转换成 List
 ```
+## 三个线程顺序打印ABC
+感觉并没有什么优雅的方式，无非就是有个标志，每个线程不断获取标志，轮到自己了就执行。
+* synchronized, wait和notifyAll
+* Lock->ReentrantLock 和 state标志
+* Semaphore
+* AtomicInteger
+
+## 画一下RPC的架构图
+![rpc](../assets/img/rpc.jpg)
+
 ## Java内存模型
 * 原子性
 * 可见性
