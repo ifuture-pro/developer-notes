@@ -58,7 +58,7 @@ Github Actions
 ![GitHub stars](https://img.shields.io/github/stars/blockchain-jd-com/jdchain?style=flat-square)  
 
 
-## 最佳
+## 最佳实践
 [nodejs最佳实践](https://github.com/goldbergyoni/nodebestpractices)
 ![GitHub stars](https://img.shields.io/github/stars/goldbergyoni/nodebestpractices?style=flat-square)  
 
@@ -66,5 +66,5 @@ Github Actions
 
 Tools
 ---------
-[Google Remote Desktop](https://remotedesktop.google.com/)
+[Google Remote Desktop](https://remotedesktop.google.com/)  
 [MSDN I Tell You](https://msdn.itellyou.cn/) 纯净版 Windows 操作系统

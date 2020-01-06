@@ -18,7 +18,7 @@ Database
     > HBase
 
   * 时序数据库
-    > [IoTDB](https://iotdb.apache.org/), [LinDB](https://github.com/lindb/lindb) ,KariosDB, OpenTSDB, InfluxDB, Prometheus, [TDengine](https://github.com/taosdata/TDengine)
+    > [IoTDB](https://iotdb.apache.org/), [LinDB](https://github.com/lindb/lindb) ,KariosDB, OpenTSDB, [InfluxDB](https://github.com/influxdata/influxdb), Prometheus, [TDengine](https://github.com/taosdata/TDengine)
 
   * 图数据库
     > Neo4j, JanusGraph, [HugeGraph](https://hugegraph.github.io/hugegraph-doc/), [NebulaGraph](https://github.com/vesoft-inc/nebula)
@@ -28,6 +28,7 @@ Database
 
 
 ## 关键字
+* RDBMS（Relational DataBase Management System）关系型数据库管理系统
 * ACID事务
   > Atomic, Consistency, Isolation, Durability  
   > **Atomic（原子性）**：指整个数据库事务是不可分割的工作单位。只有使据库中所有的操作执行成功，才算整个事务成功；事务中任何一个SQL语句执行失败，那么已经执行成功的SQL语句也必须撤销，数据库状态应该退回到执行事务前的状态。  
