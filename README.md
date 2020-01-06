@@ -102,7 +102,7 @@ Table of Contents
    - [Github 增强](Notepad/opensource-awesome.md#github-%E5%A2%9E%E5%BC%BA)
    - [运维](Notepad/opensource-awesome.md#%E8%BF%90%E7%BB%B4)
    - [区块链](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE)
-   - [最佳](Notepad/opensource-awesome.md#%E6%9C%80%E4%BD%B3)
+   - [最佳实践](Notepad/opensource-awesome.md#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5)
    - [Tools](Notepad/opensource-awesome.md#tools)
 
 ## [日常杂项](Notepad/日常杂项.md#%E6%97%A5%E5%B8%B8%E6%9D%82%E9%A1%B9)
@@ -301,6 +301,14 @@ Table of Contents
 
 # design-patterns
 
+## [代理](design-patterns/代理.md#%E4%BB%A3%E7%90%86)
+
+   - [代理模式](design-patterns/代理.md#%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F)
+   - [场景](design-patterns/代理.md#%E5%9C%BA%E6%99%AF)
+   - [静态代理](design-patterns/代理.md#%E9%9D%99%E6%80%81%E4%BB%A3%E7%90%86)
+   - [动态代理](design-patterns/代理.md#%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86)
+   - [cglib](design-patterns/代理.md#cglib)
+
 ## [单例](design-patterns/单例.md#%E5%8D%95%E4%BE%8B)
 
    - [单例模式 singleton](design-patterns/单例.md#%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F-singleton)
@@ -342,6 +350,7 @@ Table of Contents
      - [滥用 HTTP HEAD 请求](hacker/github-bug.md#%E6%BB%A5%E7%94%A8-http-head-%E8%AF%B7%E6%B1%82)
      - [参考](hacker/github-bug.md#%E5%8F%82%E8%80%83)
 <!-- end listify -->
+
 
 
 
