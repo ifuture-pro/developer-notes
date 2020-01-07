@@ -61,8 +61,8 @@ Github Actions
 ## 最佳实践
 [nodejs最佳实践](https://github.com/goldbergyoni/nodebestpractices)
 ![GitHub stars](https://img.shields.io/github/stars/goldbergyoni/nodebestpractices?style=flat-square)  
-
-
+[以太坊智能合约最佳安全开发](https://github.com/ConsenSys/smart-contract-best-practices)
+![GitHub stars](https://img.shields.io/github/stars/ConsenSys/smart-contract-best-practices?style=flat-square)  
 
 Tools
 ---------
