@@ -18,6 +18,11 @@ Opensource
 [Awesome-BlockChain](https://github.com/chaozh/awesome-blockchain-cn)
 ![GitHub stars](https://img.shields.io/github/stars/chaozh/awesome-blockchain-cn?style=flat-square)  
 
+## free style
+[seafile](https://github.com/haiwen/seafile)
+![GitHub stars](https://img.shields.io/github/stars/haiwen/seafile?style=flat-square)
+云盘    
+
 ## Github 增强
 
 [Awesome-Actions](https://github.com/sdras/awesome-actions)
