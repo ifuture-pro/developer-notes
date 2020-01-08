@@ -135,48 +135,6 @@ Table of Contents
    - [Kubernetes](Notepad/日常杂项.md#kubernetes)
      - [Ingress](Notepad/日常杂项.md#ingress)
 
-# Questions
-
-## [JAVA基础](Questions/JAVA基础.md#java%E5%9F%BA%E7%A1%80)
-
-   - [Java 对象初始化](Questions/JAVA基础.md#java-%E5%AF%B9%E8%B1%A1%E5%88%9D%E5%A7%8B%E5%8C%96)
-   - [List集合，多线程计算总和](Questions/JAVA基础.md#list%E9%9B%86%E5%90%88%E5%A4%9A%E7%BA%BF%E7%A8%8B%E8%AE%A1%E7%AE%97%E6%80%BB%E5%92%8C)
-   - [List 去重](Questions/JAVA基础.md#list-%E5%8E%BB%E9%87%8D)
-   - [三个线程顺序打印ABC](Questions/JAVA基础.md#%E4%B8%89%E4%B8%AA%E7%BA%BF%E7%A8%8B%E9%A1%BA%E5%BA%8F%E6%89%93%E5%8D%B0abc)
-   - [画一下RPC的架构图](Questions/JAVA基础.md#%E7%94%BB%E4%B8%80%E4%B8%8Brpc%E7%9A%84%E6%9E%B6%E6%9E%84%E5%9B%BE)
-   - [Java内存模型](Questions/JAVA基础.md#java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B)
-     - [happens-before原则（先行发生原则）](Questions/JAVA基础.md#happens-before%E5%8E%9F%E5%88%99%E5%85%88%E8%A1%8C%E5%8F%91%E7%94%9F%E5%8E%9F%E5%88%99)
-   - [序列化](Questions/JAVA基础.md#%E5%BA%8F%E5%88%97%E5%8C%96)
-   - [IO](Questions/JAVA基础.md#io)
-     - [零拷贝](Questions/JAVA基础.md#%E9%9B%B6%E6%8B%B7%E8%B4%9D)
-
-## [Spring](Questions/Spring.md#spring)
-
-   - [Spring 问答](Questions/Spring.md#spring-%E9%97%AE%E7%AD%94)
-     - [Spring Bean 生命周期](Questions/Spring.md#spring-bean-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F)
-     - [PostConstruct,PreDestroy 实现原理](Questions/Spring.md#postconstructpredestroy-%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86)
-
-## [分布式锁](Questions/分布式锁.md#%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81)
-
-   - [分布式锁](Questions/分布式锁.md#%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81)
-   - [常见的实现方式](Questions/分布式锁.md#%E5%B8%B8%E8%A7%81%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F)
-   - [Redis 实现分布式锁](Questions/分布式锁.md#redis-%E5%AE%9E%E7%8E%B0%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81)
-     - [在 Spring 的实现](Questions/分布式锁.md#%E5%9C%A8-spring-%E7%9A%84%E5%AE%9E%E7%8E%B0)
-     - [实现代码 参考](Questions/分布式锁.md#%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81-%E5%8F%82%E8%80%83)
-
-## [如何限流](Questions/如何限流.md#%E5%A6%82%E4%BD%95%E9%99%90%E6%B5%81)
-
-   - [如何限流](Questions/如何限流.md#%E5%A6%82%E4%BD%95%E9%99%90%E6%B5%81)
-   - [主流框架的实现](Questions/如何限流.md#%E4%B8%BB%E6%B5%81%E6%A1%86%E6%9E%B6%E7%9A%84%E5%AE%9E%E7%8E%B0)
-     - [Nginx](Questions/如何限流.md#nginx)
-     - [spring-cloud-gateway](Questions/如何限流.md#spring-cloud-gateway)
-     - [Alibaba Sentinel](Questions/如何限流.md#alibaba-sentinel)
-       - [配置方式](Questions/如何限流.md#%E9%85%8D%E7%BD%AE%E6%96%B9%E5%BC%8F)
-   - [自己实现](Questions/如何限流.md#%E8%87%AA%E5%B7%B1%E5%AE%9E%E7%8E%B0)
-     - [计数器](Questions/如何限流.md#%E8%AE%A1%E6%95%B0%E5%99%A8)
-     - [队列](Questions/如何限流.md#%E9%98%9F%E5%88%97)
-     - [**令牌桶**](Questions/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
-
 ## [_coverpage](_coverpage.md#_coverpage)
 
  - [Developer notes](_coverpage.md#developer-notes)
@@ -351,7 +309,55 @@ Table of Contents
    - [绕开 GitHub OAuth](hacker/github-bug.md#%E7%BB%95%E5%BC%80-github-oauth)
      - [滥用 HTTP HEAD 请求](hacker/github-bug.md#%E6%BB%A5%E7%94%A8-http-head-%E8%AF%B7%E6%B1%82)
      - [参考](hacker/github-bug.md#%E5%8F%82%E8%80%83)
+
+# 面试
+
+## [JAVA基础](面试/JAVA基础.md#java%E5%9F%BA%E7%A1%80)
+
+   - [Java 对象初始化](面试/JAVA基础.md#java-%E5%AF%B9%E8%B1%A1%E5%88%9D%E5%A7%8B%E5%8C%96)
+   - [打印JAVA信息](面试/JAVA基础.md#%E6%89%93%E5%8D%B0java%E4%BF%A1%E6%81%AF)
+   - [List集合，多线程计算总和](面试/JAVA基础.md#list%E9%9B%86%E5%90%88%E5%A4%9A%E7%BA%BF%E7%A8%8B%E8%AE%A1%E7%AE%97%E6%80%BB%E5%92%8C)
+   - [List 去重](面试/JAVA基础.md#list-%E5%8E%BB%E9%87%8D)
+   - [三个线程顺序打印ABC](面试/JAVA基础.md#%E4%B8%89%E4%B8%AA%E7%BA%BF%E7%A8%8B%E9%A1%BA%E5%BA%8F%E6%89%93%E5%8D%B0abc)
+   - [画一下RPC的架构图](面试/JAVA基础.md#%E7%94%BB%E4%B8%80%E4%B8%8Brpc%E7%9A%84%E6%9E%B6%E6%9E%84%E5%9B%BE)
+   - [锁](面试/JAVA基础.md#%E9%94%81)
+     - [synchronized](面试/JAVA基础.md#synchronized)
+     - [CAS](面试/JAVA基础.md#cas)
+   - [对象在内存中的存储布局](面试/JAVA基础.md#%E5%AF%B9%E8%B1%A1%E5%9C%A8%E5%86%85%E5%AD%98%E4%B8%AD%E7%9A%84%E5%AD%98%E5%82%A8%E5%B8%83%E5%B1%80)
+   - [Java内存模型](面试/JAVA基础.md#java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B)
+     - [happens-before原则（先行发生原则）](面试/JAVA基础.md#happens-before%E5%8E%9F%E5%88%99%E5%85%88%E8%A1%8C%E5%8F%91%E7%94%9F%E5%8E%9F%E5%88%99)
+   - [序列化](面试/JAVA基础.md#%E5%BA%8F%E5%88%97%E5%8C%96)
+   - [IO](面试/JAVA基础.md#io)
+     - [零拷贝](面试/JAVA基础.md#%E9%9B%B6%E6%8B%B7%E8%B4%9D)
+
+## [Spring](面试/Spring.md#spring)
+
+   - [Spring 问答](面试/Spring.md#spring-%E9%97%AE%E7%AD%94)
+     - [Spring Bean 生命周期](面试/Spring.md#spring-bean-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F)
+     - [PostConstruct,PreDestroy 实现原理](面试/Spring.md#postconstructpredestroy-%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86)
+
+## [分布式锁](面试/分布式锁.md#%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81)
+
+   - [分布式锁](面试/分布式锁.md#%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81)
+   - [常见的实现方式](面试/分布式锁.md#%E5%B8%B8%E8%A7%81%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F)
+   - [Redis 实现分布式锁](面试/分布式锁.md#redis-%E5%AE%9E%E7%8E%B0%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81)
+     - [在 Spring 的实现](面试/分布式锁.md#%E5%9C%A8-spring-%E7%9A%84%E5%AE%9E%E7%8E%B0)
+     - [实现代码 参考](面试/分布式锁.md#%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81-%E5%8F%82%E8%80%83)
+
+## [如何限流](面试/如何限流.md#%E5%A6%82%E4%BD%95%E9%99%90%E6%B5%81)
+
+   - [如何限流](面试/如何限流.md#%E5%A6%82%E4%BD%95%E9%99%90%E6%B5%81)
+   - [主流框架的实现](面试/如何限流.md#%E4%B8%BB%E6%B5%81%E6%A1%86%E6%9E%B6%E7%9A%84%E5%AE%9E%E7%8E%B0)
+     - [Nginx](面试/如何限流.md#nginx)
+     - [spring-cloud-gateway](面试/如何限流.md#spring-cloud-gateway)
+     - [Alibaba Sentinel](面试/如何限流.md#alibaba-sentinel)
+       - [配置方式](面试/如何限流.md#%E9%85%8D%E7%BD%AE%E6%96%B9%E5%BC%8F)
+   - [自己实现](面试/如何限流.md#%E8%87%AA%E5%B7%B1%E5%AE%9E%E7%8E%B0)
+     - [计数器](面试/如何限流.md#%E8%AE%A1%E6%95%B0%E5%99%A8)
+     - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
+     - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
