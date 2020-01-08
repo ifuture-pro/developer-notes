@@ -33,6 +33,8 @@ class Y extends X {
 
 ![java bean](../assets/img/javabean.png)
 
+## 打印JAVA信息
+`java -XX:+PrintCommandLineFlags --version`
 
 ## List集合，多线程计算总和
 1、使其在 Java8 之后 使用 stream api 最简单
@@ -60,6 +62,43 @@ newList.addAll(newSet)//将去重后的 Set 重新转换成 List
 
 ## 画一下RPC的架构图
 ![rpc](../assets/img/rpc.jpg)
+
+## 锁
+### synchronized
+字节码 `monitorenter` `monitorexit`
+
+//TODO
+
+### CAS
+Compare And Swap | Compare And Exchange | 自旋锁 | 无锁
+常见问题：ABA问题。可以版本号去解决
+CPU指令：lock cmpxchg
+
+## 对象在内存中的存储布局
+```java
+java.lang.Object object internals:
+ OFFSET  SIZE   TYPE DESCRIPTION                               VALUE
+      0     4        (object header)                           05 00 00 00 (00000101 00000000 00000000 00000000) (5)
+      4     4        (object header)                           00 00 00 00 (00000000 00000000 00000000 00000000) (0)
+      8     4        (object header)                           00 10 00 00 (00000000 00010000 00000000 00000000) (4096)
+     12     4        (loss due to the next object alignment)
+Instance size: 16 bytes
+Space losses: 0 bytes internal + 4 bytes external = 4 bytes total
+```
+
+```java
+// JOL(java object layout) java对象内存布局
+<dependency>
+		<groupId>org.openjdk.jol</groupId>
+		<artifactId>jol-core</artifactId>
+		<version>0.9</version>
+</dependency>
+
+System.out.println(org.openjdk.jol.info.ClassLayout.parseInstance(new Object()).toPrintable());
+```
+
+HotSpot 虚拟机对象头包含 Mark Word（标记字段）和 Klass Pointer（类型指针）  
+MarkWord 用于存储对象自身的运行时数据，如哈希码（HashCode）、GC分代年龄、锁状态标志、线程持有的锁、偏向线程 ID、偏向时间戳等等
 
 ## Java内存模型
 * 原子性
