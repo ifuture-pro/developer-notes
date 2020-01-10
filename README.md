@@ -114,7 +114,9 @@ Table of Contents
        - [查看系统](Notepad/日常杂项.md#%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F)
        - [设置时区](Notepad/日常杂项.md#%E8%AE%BE%E7%BD%AE%E6%97%B6%E5%8C%BA)
      - [编辑](Notepad/日常杂项.md#%E7%BC%96%E8%BE%91)
-       - [VIM中文乱码](Notepad/日常杂项.md#vim%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81)
+       - [VIM](Notepad/日常杂项.md#vim)
+         - [中文乱码](Notepad/日常杂项.md#%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81)
+         - [实用操作](Notepad/日常杂项.md#%E5%AE%9E%E7%94%A8%E6%93%8D%E4%BD%9C)
        - [sed](Notepad/日常杂项.md#sed)
      - [安全](Notepad/日常杂项.md#%E5%AE%89%E5%85%A8)
        - [nmap](Notepad/日常杂项.md#nmap)
@@ -365,6 +367,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
