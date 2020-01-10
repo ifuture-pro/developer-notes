@@ -303,6 +303,14 @@ Table of Contents
        - [总结](hacker/blackchain-bug-erc.md#%E6%80%BB%E7%BB%93)
        - [对其他以太坊Token合约的预警:](hacker/blackchain-bug-erc.md#%E5%AF%B9%E5%85%B6%E4%BB%96%E4%BB%A5%E5%A4%AA%E5%9D%8Atoken%E5%90%88%E7%BA%A6%E7%9A%84%E9%A2%84%E8%AD%A6)
 
+## [blackchain-bug-parity-wallets](hacker/blackchain-bug-parity-wallets.md#blackchain-bug-parity-wallets)
+
+   - [Parity Wallet Multisig Hack](hacker/blackchain-bug-parity-wallets.md#parity-wallet-multisig-hack)
+   - [第一次攻击](hacker/blackchain-bug-parity-wallets.md#%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%94%BB%E5%87%BB)
+     - [解决方案](hacker/blackchain-bug-parity-wallets.md#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88)
+   - [第二次攻击](hacker/blackchain-bug-parity-wallets.md#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E6%94%BB%E5%87%BB)
+   - [最后](hacker/blackchain-bug-parity-wallets.md#%E6%9C%80%E5%90%8E)
+
 ## [github-bug](hacker/github-bug.md#github-bug)
 
    - [GitHub Security Bug Bounty](hacker/github-bug.md#github-security-bug-bounty)
@@ -357,6 +365,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
