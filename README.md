@@ -107,6 +107,24 @@ Table of Contents
    - [最佳实践](Notepad/opensource-awesome.md#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5)
    - [Tools](Notepad/opensource-awesome.md#tools)
 
+## [产品设计](Notepad/产品设计.md#%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1)
+
+   - [产品设计](Notepad/产品设计.md#%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1)
+   - [KISS 原则](Notepad/产品设计.md#kiss-%E5%8E%9F%E5%88%99)
+
+## [开源协议](Notepad/开源协议.md#%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE)
+
+   - [Opensource License](Notepad/开源协议.md#opensource-license)
+ - [GUN](Notepad/开源协议.md#gun)
+   - [GPL](Notepad/开源协议.md#gpl)
+   - [AGPL](Notepad/开源协议.md#agpl)
+   - [LGPL](Notepad/开源协议.md#lgpl)
+ - [BSD](Notepad/开源协议.md#bsd)
+ - [MIT](Notepad/开源协议.md#mit)
+ - [Apache](Notepad/开源协议.md#apache)
+   - [Apache Creative Commons](Notepad/开源协议.md#apache-creative-commons)
+ - [WTFPL](Notepad/开源协议.md#wtfpl)
+
 ## [日常杂项](Notepad/日常杂项.md#%E6%97%A5%E5%B8%B8%E6%9D%82%E9%A1%B9)
 
    - [Linux](Notepad/日常杂项.md#linux)
@@ -280,6 +298,12 @@ Table of Contents
    - [Other Way](design-patterns/单例.md#other-way)
      - [懒饿汉及双重检查锁](design-patterns/单例.md#%E6%87%92%E9%A5%BF%E6%B1%89%E5%8F%8A%E5%8F%8C%E9%87%8D%E6%A3%80%E6%9F%A5%E9%94%81)
 
+## [桥接](design-patterns/桥接.md#%E6%A1%A5%E6%8E%A5)
+
+   - [Bridge](design-patterns/桥接.md#bridge)
+   - [场景](design-patterns/桥接.md#%E5%9C%BA%E6%99%AF)
+   - [代码示例](design-patterns/桥接.md#%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B)
+
 ## [装饰者](design-patterns/装饰者.md#%E8%A3%85%E9%A5%B0%E8%80%85)
 
    - [装饰者 Decorator](design-patterns/装饰者.md#%E8%A3%85%E9%A5%B0%E8%80%85-decorator)
@@ -367,6 +391,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
