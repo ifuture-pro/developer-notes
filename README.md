@@ -304,6 +304,7 @@ Table of Contents
    - [场景](design-patterns/桥接.md#%E5%9C%BA%E6%99%AF)
    - [代码示例](design-patterns/桥接.md#%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B)
    - [项目案例](design-patterns/桥接.md#%E9%A1%B9%E7%9B%AE%E6%A1%88%E4%BE%8B)
+   - [Tutorial](design-patterns/桥接.md#tutorial)
 
 ## [装饰者](design-patterns/装饰者.md#%E8%A3%85%E9%A5%B0%E8%80%85)
 
@@ -345,11 +346,21 @@ Table of Contents
      - [滥用 HTTP HEAD 请求](hacker/github-bug.md#%E6%BB%A5%E7%94%A8-http-head-%E8%AF%B7%E6%B1%82)
      - [参考](hacker/github-bug.md#%E5%8F%82%E8%80%83)
 
+# web
+
+## [README](web/README.md#readme)
+
+ - [汇编](web/README.md#%E6%B1%87%E7%BC%96)
+   - [WebAssembly](web/README.md#webassembly)
+   - [asm.js](web/README.md#asmjs)
+
 # 面试
 
 ## [JAVA基础](面试/JAVA基础.md#java%E5%9F%BA%E7%A1%80)
 
    - [Java 对象初始化](面试/JAVA基础.md#java-%E5%AF%B9%E8%B1%A1%E5%88%9D%E5%A7%8B%E5%8C%96)
+   - [类加载机制](面试/JAVA基础.md#%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6)
+     - [类加载器](面试/JAVA基础.md#%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8)
    - [打印JAVA信息](面试/JAVA基础.md#%E6%89%93%E5%8D%B0java%E4%BF%A1%E6%81%AF)
    - [List集合，多线程计算总和](面试/JAVA基础.md#list%E9%9B%86%E5%90%88%E5%A4%9A%E7%BA%BF%E7%A8%8B%E8%AE%A1%E7%AE%97%E6%80%BB%E5%92%8C)
    - [List 去重](面试/JAVA基础.md#list-%E5%8E%BB%E9%87%8D)
@@ -364,6 +375,15 @@ Table of Contents
    - [序列化](面试/JAVA基础.md#%E5%BA%8F%E5%88%97%E5%8C%96)
    - [IO](面试/JAVA基础.md#io)
      - [零拷贝](面试/JAVA基础.md#%E9%9B%B6%E6%8B%B7%E8%B4%9D)
+
+## [JVM](面试/JVM.md#jvm)
+
+ - [CPU](面试/JVM.md#cpu)
+   - [Cache line](面试/JVM.md#cache-line)
+   - [MESI](面试/JVM.md#mesi)
+   - [合并写](面试/JVM.md#%E5%90%88%E5%B9%B6%E5%86%99)
+ - [JVM](面试/JVM.md#jvm)
+   - [Volatile](面试/JVM.md#volatile)
 
 ## [Spring](面试/Spring.md#spring)
 
@@ -392,6 +412,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
