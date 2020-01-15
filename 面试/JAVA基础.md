@@ -118,7 +118,7 @@ newList.addAll(newSet)//将去重后的 Set 重新转换成 List
 
 ### CAS
 Compare And Swap | Compare And Exchange | 自旋锁 | 无锁
-常见问题：ABA问题。可以版本号去解决
+常见问题：ABA问题。可以版本号，时间戳等方法去解决
 CPU指令：lock cmpxchg
 
 ## 对象在内存中的存储布局
