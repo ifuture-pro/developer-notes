@@ -28,9 +28,13 @@ Table of Contents
 
 # Database
 
-## [MYSQL基础优化](Database/MYSQL基础优化.md#mysql%E5%9F%BA%E7%A1%80%E4%BC%98%E5%8C%96)
+## [MYSQL基础及优化](Database/MYSQL基础及优化.md#mysql%E5%9F%BA%E7%A1%80%E5%8F%8A%E4%BC%98%E5%8C%96)
 
-   - [SQL基础优化](Database/MYSQL基础优化.md#sql%E5%9F%BA%E7%A1%80%E4%BC%98%E5%8C%96)
+   - [基本常用操作](Database/MYSQL基础及优化.md#%E5%9F%BA%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C)
+     - [创建数据库](Database/MYSQL基础及优化.md#%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93)
+     - [创建用户并授权](Database/MYSQL基础及优化.md#%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E5%B9%B6%E6%8E%88%E6%9D%83)
+     - [导入导出数据](Database/MYSQL基础及优化.md#%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA%E6%95%B0%E6%8D%AE)
+   - [SQL基础优化](Database/MYSQL基础及优化.md#sql%E5%9F%BA%E7%A1%80%E4%BC%98%E5%8C%96)
 
 ## [README](Database/README.md#readme)
 
@@ -147,10 +151,6 @@ Table of Contents
      - [子项目](Notepad/日常杂项.md#%E5%AD%90%E9%A1%B9%E7%9B%AE)
      - [保存密码](Notepad/日常杂项.md#%E4%BF%9D%E5%AD%98%E5%AF%86%E7%A0%81)
      - [Github](Notepad/日常杂项.md#github)
-   - [Mysql](Notepad/日常杂项.md#mysql)
-     - [创建数据库](Notepad/日常杂项.md#%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93)
-     - [创建用户并授权](Notepad/日常杂项.md#%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E5%B9%B6%E6%8E%88%E6%9D%83)
-     - [导入导出数据](Notepad/日常杂项.md#%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA%E6%95%B0%E6%8D%AE)
    - [Docker](Notepad/日常杂项.md#docker)
    - [Kubernetes](Notepad/日常杂项.md#kubernetes)
      - [Ingress](Notepad/日常杂项.md#ingress)
@@ -412,6 +412,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
