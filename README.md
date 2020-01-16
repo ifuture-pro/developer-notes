@@ -36,11 +36,11 @@ Table of Contents
      - [导入导出数据](Database/MYSQL基础及优化.md#%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA%E6%95%B0%E6%8D%AE)
    - [SQL基础优化](Database/MYSQL基础及优化.md#sql%E5%9F%BA%E7%A1%80%E4%BC%98%E5%8C%96)
 
-## [README](Database/README.md#readme)
+## [数据库](Database/数据库.md#%E6%95%B0%E6%8D%AE%E5%BA%93)
 
-   - [Database](Database/README.md#database)
-   - [分类与出色产品](Database/README.md#%E5%88%86%E7%B1%BB%E4%B8%8E%E5%87%BA%E8%89%B2%E4%BA%A7%E5%93%81)
-   - [关键字](Database/README.md#%E5%85%B3%E9%94%AE%E5%AD%97)
+   - [Database](Database/数据库.md#database)
+   - [分类与出色产品](Database/数据库.md#%E5%88%86%E7%B1%BB%E4%B8%8E%E5%87%BA%E8%89%B2%E4%BA%A7%E5%93%81)
+   - [关键字](Database/数据库.md#%E5%85%B3%E9%94%AE%E5%AD%97)
 
 # DevOps
 
@@ -171,11 +171,11 @@ Table of Contents
      - [基础实现](algorithm/BloomFilter.md#%E5%9F%BA%E7%A1%80%E5%AE%9E%E7%8E%B0)
      - [生产实现](algorithm/BloomFilter.md#%E7%94%9F%E4%BA%A7%E5%AE%9E%E7%8E%B0)
 
-## [README](algorithm/README.md#readme)
+## [算法学习](algorithm/算法学习.md#%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0)
 
-   - [算法学习 algorithm](algorithm/README.md#%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0-algorithm)
-   - [寻路算法](algorithm/README.md#%E5%AF%BB%E8%B7%AF%E7%AE%97%E6%B3%95)
-   - [协同编辑](algorithm/README.md#%E5%8D%8F%E5%90%8C%E7%BC%96%E8%BE%91)
+   - [算法学习 algorithm](algorithm/算法学习.md#%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0-algorithm)
+   - [寻路算法](algorithm/算法学习.md#%E5%AF%BB%E8%B7%AF%E7%AE%97%E6%B3%95)
+   - [协同编辑](algorithm/算法学习.md#%E5%8D%8F%E5%90%8C%E7%BC%96%E8%BE%91)
 
 # blockchain
 
@@ -313,6 +313,17 @@ Table of Contents
    - [JDK及各大框架源码中的案例](design-patterns/装饰者.md#jdk%E5%8F%8A%E5%90%84%E5%A4%A7%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81%E4%B8%AD%E7%9A%84%E6%A1%88%E4%BE%8B)
    - [代码案例](design-patterns/装饰者.md#%E4%BB%A3%E7%A0%81%E6%A1%88%E4%BE%8B)
 
+## [设计模式](design-patterns/设计模式.md#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)
+
+   - [关键字](design-patterns/设计模式.md#%E5%85%B3%E9%94%AE%E5%AD%97)
+     - [开闭原则](design-patterns/设计模式.md#%E5%BC%80%E9%97%AD%E5%8E%9F%E5%88%99)
+     - [里氏替换原则](design-patterns/设计模式.md#%E9%87%8C%E6%B0%8F%E6%9B%BF%E6%8D%A2%E5%8E%9F%E5%88%99)
+     - [依赖倒置原则](design-patterns/设计模式.md#%E4%BE%9D%E8%B5%96%E5%80%92%E7%BD%AE%E5%8E%9F%E5%88%99)
+     - [单一职责原则](design-patterns/设计模式.md#%E5%8D%95%E4%B8%80%E8%81%8C%E8%B4%A3%E5%8E%9F%E5%88%99)
+     - [接口隔离原则](design-patterns/设计模式.md#%E6%8E%A5%E5%8F%A3%E9%9A%94%E7%A6%BB%E5%8E%9F%E5%88%99)
+     - [迪米特法则](design-patterns/设计模式.md#%E8%BF%AA%E7%B1%B3%E7%89%B9%E6%B3%95%E5%88%99)
+     - [合成复用原则](design-patterns/设计模式.md#%E5%90%88%E6%88%90%E5%A4%8D%E7%94%A8%E5%8E%9F%E5%88%99)
+
 ## [适配器](design-patterns/适配器.md#%E9%80%82%E9%85%8D%E5%99%A8)
 
    - [适配器模式 Adapter](design-patterns/适配器.md#%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F-adapter)
@@ -412,6 +423,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
