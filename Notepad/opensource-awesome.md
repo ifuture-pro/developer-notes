@@ -17,6 +17,8 @@ Opensource
 ![GitHub stars](https://img.shields.io/github/stars/Awesome-Windows/Awesome?style=flat-square)  
 [Awesome-BlockChain](https://github.com/chaozh/awesome-blockchain-cn)
 ![GitHub stars](https://img.shields.io/github/stars/chaozh/awesome-blockchain-cn?style=flat-square)  
+[Awesome-Design-Tools](https://github.com/LisaDziuba/Awesome-Design-Tools)
+![GitHub stars](https://img.shields.io/github/stars/LisaDziuba/Awesome-Design-Tools?style=flat-square)  
 
 ## free style
 [seafile](https://github.com/haiwen/seafile)
