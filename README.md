@@ -109,6 +109,7 @@ Table of Contents
    - [运维](Notepad/opensource-awesome.md#%E8%BF%90%E7%BB%B4)
    - [区块链](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE)
    - [最佳实践](Notepad/opensource-awesome.md#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5)
+     - [最佳实践-工具使用](Notepad/opensource-awesome.md#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8)
    - [Tools](Notepad/opensource-awesome.md#tools)
 
 ## [产品设计](Notepad/产品设计.md#%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1)
@@ -315,6 +316,7 @@ Table of Contents
 
 ## [设计模式](design-patterns/设计模式.md#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)
 
+   - [23种设计模式](design-patterns/设计模式.md#23%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)
    - [关键字](design-patterns/设计模式.md#%E5%85%B3%E9%94%AE%E5%AD%97)
      - [开闭原则](design-patterns/设计模式.md#%E5%BC%80%E9%97%AD%E5%8E%9F%E5%88%99)
      - [里氏替换原则](design-patterns/设计模式.md#%E9%87%8C%E6%B0%8F%E6%9B%BF%E6%8D%A2%E5%8E%9F%E5%88%99)
@@ -423,6 +425,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
