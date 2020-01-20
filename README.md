@@ -371,10 +371,10 @@ Table of Contents
 
 ## [JAVA基础](面试/JAVA基础.md#java%E5%9F%BA%E7%A1%80)
 
-   - [Java 对象初始化](面试/JAVA基础.md#java-%E5%AF%B9%E8%B1%A1%E5%88%9D%E5%A7%8B%E5%8C%96)
-   - [类加载机制](面试/JAVA基础.md#%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6)
-     - [类加载器](面试/JAVA基础.md#%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8)
    - [打印JAVA信息](面试/JAVA基础.md#%E6%89%93%E5%8D%B0java%E4%BF%A1%E6%81%AF)
+   - [HashMap](面试/JAVA基础.md#hashmap)
+     - [链表与数组](面试/JAVA基础.md#%E9%93%BE%E8%A1%A8%E4%B8%8E%E6%95%B0%E7%BB%84)
+     - [红黑树](面试/JAVA基础.md#%E7%BA%A2%E9%BB%91%E6%A0%91)
    - [List集合，多线程计算总和](面试/JAVA基础.md#list%E9%9B%86%E5%90%88%E5%A4%9A%E7%BA%BF%E7%A8%8B%E8%AE%A1%E7%AE%97%E6%80%BB%E5%92%8C)
    - [List 去重](面试/JAVA基础.md#list-%E5%8E%BB%E9%87%8D)
    - [三个线程顺序打印ABC](面试/JAVA基础.md#%E4%B8%89%E4%B8%AA%E7%BA%BF%E7%A8%8B%E9%A1%BA%E5%BA%8F%E6%89%93%E5%8D%B0abc)
@@ -397,6 +397,9 @@ Table of Contents
    - [合并写](面试/JVM.md#%E5%90%88%E5%B9%B6%E5%86%99)
  - [JVM](面试/JVM.md#jvm)
    - [Volatile](面试/JVM.md#volatile)
+   - [Java 对象初始化](面试/JVM.md#java-%E5%AF%B9%E8%B1%A1%E5%88%9D%E5%A7%8B%E5%8C%96)
+   - [类加载机制](面试/JVM.md#%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6)
+     - [类加载器](面试/JVM.md#%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8)
 
 ## [Spring](面试/Spring.md#spring)
 
@@ -425,6 +428,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
