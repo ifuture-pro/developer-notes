@@ -19,6 +19,8 @@ Opensource
 ![GitHub stars](https://img.shields.io/github/stars/chaozh/awesome-blockchain-cn?style=flat-square)  
 [Awesome-Design-Tools](https://github.com/LisaDziuba/Awesome-Design-Tools)
 ![GitHub stars](https://img.shields.io/github/stars/LisaDziuba/Awesome-Design-Tools?style=flat-square)  
+[Beginner-friendly Projects](https://github.com/MunGell/awesome-for-beginners)
+![GitHub stars](https://img.shields.io/github/stars/MunGell/awesome-for-beginners?style=flat-square)  
 
 ## free style
 [seafile](https://github.com/haiwen/seafile)
