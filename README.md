@@ -180,36 +180,6 @@ Table of Contents
 
 # blockchain
 
-## [white-paper-bitcoin](blockchain/white-paper-bitcoin.md#white-paper-bitcoin)
-
-   - [Bitcoin: A Peer-to-Peer Electronic Cash System](blockchain/white-paper-bitcoin.md#bitcoin-a-peer-to-peer-electronic-cash-system)
-   - [比特币：一种点对点电子货币系统](blockchain/white-paper-bitcoin.md#%E6%AF%94%E7%89%B9%E5%B8%81%E4%B8%80%E7%A7%8D%E7%82%B9%E5%AF%B9%E7%82%B9%E7%94%B5%E5%AD%90%E8%B4%A7%E5%B8%81%E7%B3%BB%E7%BB%9F)
-   - [1. Introduction](blockchain/white-paper-bitcoin.md#1-introduction)
-   - [1、简介](blockchain/white-paper-bitcoin.md#1%E7%AE%80%E4%BB%8B)
-   - [2. Transactions](blockchain/white-paper-bitcoin.md#2-transactions)
-   - [2、交易](blockchain/white-paper-bitcoin.md#2%E4%BA%A4%E6%98%93)
-   - [3. Timestamp Server](blockchain/white-paper-bitcoin.md#3-timestamp-server)
-   - [3、时间戳服务器](blockchain/white-paper-bitcoin.md#3%E6%97%B6%E9%97%B4%E6%88%B3%E6%9C%8D%E5%8A%A1%E5%99%A8)
-   - [4. Proof-of-Work](blockchain/white-paper-bitcoin.md#4-proof-of-work)
-   - [4、工作量证明](blockchain/white-paper-bitcoin.md#4%E5%B7%A5%E4%BD%9C%E9%87%8F%E8%AF%81%E6%98%8E)
-   - [5. Network](blockchain/white-paper-bitcoin.md#5-network)
-   - [5、网络](blockchain/white-paper-bitcoin.md#5%E7%BD%91%E7%BB%9C)
-   - [6. Incentive](blockchain/white-paper-bitcoin.md#6-incentive)
-   - [6、激励](blockchain/white-paper-bitcoin.md#6%E6%BF%80%E5%8A%B1)
-   - [7. Reclaiming Disk Space](blockchain/white-paper-bitcoin.md#7-reclaiming-disk-space)
-   - [7、回收磁盘空间](blockchain/white-paper-bitcoin.md#7%E5%9B%9E%E6%94%B6%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4)
-   - [8. Simplified Payment Verification](blockchain/white-paper-bitcoin.md#8-simplified-payment-verification)
-   - [8、 简化的支付验证](blockchain/white-paper-bitcoin.md#8-%E7%AE%80%E5%8C%96%E7%9A%84%E6%94%AF%E4%BB%98%E9%AA%8C%E8%AF%81)
-   - [9. Combining and Splitting Value](blockchain/white-paper-bitcoin.md#9-combining-and-splitting-value)
-   - [9、合并和分割交易额](blockchain/white-paper-bitcoin.md#9%E5%90%88%E5%B9%B6%E5%92%8C%E5%88%86%E5%89%B2%E4%BA%A4%E6%98%93%E9%A2%9D)
-   - [10. Privacy](blockchain/white-paper-bitcoin.md#10-privacy)
-   - [10、隐私](blockchain/white-paper-bitcoin.md#10%E9%9A%90%E7%A7%81)
-   - [11. Calculations](blockchain/white-paper-bitcoin.md#11-calculations)
-   - [11、计算](blockchain/white-paper-bitcoin.md#11%E8%AE%A1%E7%AE%97)
-   - [12. Conclusion](blockchain/white-paper-bitcoin.md#12-conclusion)
-   - [12、总结](blockchain/white-paper-bitcoin.md#12%E6%80%BB%E7%BB%93)
-   - [参考文献 (References)](blockchain/white-paper-bitcoin.md#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE-references)
-
 ## [区块链与随机数](blockchain/区块链与随机数.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E4%B8%8E%E9%9A%8F%E6%9C%BA%E6%95%B0)
 
    - [区块链与随机数](blockchain/区块链与随机数.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E4%B8%8E%E9%9A%8F%E6%9C%BA%E6%95%B0)
@@ -272,6 +242,40 @@ Table of Contents
      - [假错误通知攻击](blockchain/区块链概念汇总.md#%E5%81%87%E9%94%99%E8%AF%AF%E9%80%9A%E7%9F%A5%E6%94%BB%E5%87%BB)
      - [粉尘攻击](blockchain/区块链概念汇总.md#%E7%B2%89%E5%B0%98%E6%94%BB%E5%87%BB)
      - [命令执行与控制 C2](blockchain/区块链概念汇总.md#%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E4%B8%8E%E6%8E%A7%E5%88%B6-c2)
+
+## [白皮书-以太坊](blockchain/白皮书-以太坊.md#%E7%99%BD%E7%9A%AE%E4%B9%A6-%E4%BB%A5%E5%A4%AA%E5%9D%8A)
+
+
+
+## [白皮书-比特币](blockchain/白皮书-比特币.md#%E7%99%BD%E7%9A%AE%E4%B9%A6-%E6%AF%94%E7%89%B9%E5%B8%81)
+
+   - [Bitcoin: A Peer-to-Peer Electronic Cash System](blockchain/白皮书-比特币.md#bitcoin-a-peer-to-peer-electronic-cash-system)
+   - [比特币：一种点对点电子货币系统](blockchain/白皮书-比特币.md#%E6%AF%94%E7%89%B9%E5%B8%81%E4%B8%80%E7%A7%8D%E7%82%B9%E5%AF%B9%E7%82%B9%E7%94%B5%E5%AD%90%E8%B4%A7%E5%B8%81%E7%B3%BB%E7%BB%9F)
+   - [1. Introduction](blockchain/白皮书-比特币.md#1-introduction)
+   - [1、简介](blockchain/白皮书-比特币.md#1%E7%AE%80%E4%BB%8B)
+   - [2. Transactions](blockchain/白皮书-比特币.md#2-transactions)
+   - [2、交易](blockchain/白皮书-比特币.md#2%E4%BA%A4%E6%98%93)
+   - [3. Timestamp Server](blockchain/白皮书-比特币.md#3-timestamp-server)
+   - [3、时间戳服务器](blockchain/白皮书-比特币.md#3%E6%97%B6%E9%97%B4%E6%88%B3%E6%9C%8D%E5%8A%A1%E5%99%A8)
+   - [4. Proof-of-Work](blockchain/白皮书-比特币.md#4-proof-of-work)
+   - [4、工作量证明](blockchain/白皮书-比特币.md#4%E5%B7%A5%E4%BD%9C%E9%87%8F%E8%AF%81%E6%98%8E)
+   - [5. Network](blockchain/白皮书-比特币.md#5-network)
+   - [5、网络](blockchain/白皮书-比特币.md#5%E7%BD%91%E7%BB%9C)
+   - [6. Incentive](blockchain/白皮书-比特币.md#6-incentive)
+   - [6、激励](blockchain/白皮书-比特币.md#6%E6%BF%80%E5%8A%B1)
+   - [7. Reclaiming Disk Space](blockchain/白皮书-比特币.md#7-reclaiming-disk-space)
+   - [7、回收磁盘空间](blockchain/白皮书-比特币.md#7%E5%9B%9E%E6%94%B6%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4)
+   - [8. Simplified Payment Verification](blockchain/白皮书-比特币.md#8-simplified-payment-verification)
+   - [8、 简化的支付验证](blockchain/白皮书-比特币.md#8-%E7%AE%80%E5%8C%96%E7%9A%84%E6%94%AF%E4%BB%98%E9%AA%8C%E8%AF%81)
+   - [9. Combining and Splitting Value](blockchain/白皮书-比特币.md#9-combining-and-splitting-value)
+   - [9、合并和分割交易额](blockchain/白皮书-比特币.md#9%E5%90%88%E5%B9%B6%E5%92%8C%E5%88%86%E5%89%B2%E4%BA%A4%E6%98%93%E9%A2%9D)
+   - [10. Privacy](blockchain/白皮书-比特币.md#10-privacy)
+   - [10、隐私](blockchain/白皮书-比特币.md#10%E9%9A%90%E7%A7%81)
+   - [11. Calculations](blockchain/白皮书-比特币.md#11-calculations)
+   - [11、计算](blockchain/白皮书-比特币.md#11%E8%AE%A1%E7%AE%97)
+   - [12. Conclusion](blockchain/白皮书-比特币.md#12-conclusion)
+   - [12、总结](blockchain/白皮书-比特币.md#12%E6%80%BB%E7%BB%93)
+   - [参考文献 (References)](blockchain/白皮书-比特币.md#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE-references)
 
 ## [联盟链](blockchain/联盟链.md#%E8%81%94%E7%9B%9F%E9%93%BE)
 
@@ -428,5 +432,6 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
