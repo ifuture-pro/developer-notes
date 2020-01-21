@@ -22,7 +22,10 @@ Opensource
 [Beginner-friendly Projects](https://github.com/MunGell/awesome-for-beginners)
 ![GitHub stars](https://img.shields.io/github/stars/MunGell/awesome-for-beginners?style=flat-square)  
 
-## free style
+## Free Dev
+
+[free-for-dev](https://github.com/ripienaar/free-for-dev)
+![GitHub stars](https://img.shields.io/github/stars/ripienaar/free-for-dev?style=flat-square)   
 [seafile](https://github.com/haiwen/seafile)
 ![GitHub stars](https://img.shields.io/github/stars/haiwen/seafile?style=flat-square)
 云盘    
