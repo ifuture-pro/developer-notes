@@ -84,3 +84,12 @@ Tools
 ---------
 [Google Remote Desktop](https://remotedesktop.google.com/)  
 [MSDN I Tell You](https://msdn.itellyou.cn/) 纯净版 Windows 操作系统
+
+国内开源镜像
+-----------
+* [阿里巴巴](https://developer.aliyun.com/mirror/)
+* [清华大学](https://mirrors.tuna.tsinghua.edu.cn/)
+* [腾讯](https://mirrors.cloud.tencent.com/)
+* [华为](https://mirrors.huaweicloud.com/)
+* [中国科学技术大学](https://mirrors.ustc.edu.cn/)
+* [网易](http://mirrors.cn99.com/)
