@@ -104,13 +104,14 @@ Table of Contents
    - [令人兴奋的开源项目](Notepad/opensource-awesome.md#%E4%BB%A4%E4%BA%BA%E5%85%B4%E5%A5%8B%E7%9A%84%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE)
    - [Opensource](Notepad/opensource-awesome.md#opensource)
    - [Awesome](Notepad/opensource-awesome.md#awesome)
-   - [free style](Notepad/opensource-awesome.md#free-style)
+   - [Free Dev](Notepad/opensource-awesome.md#free-dev)
    - [Github 增强](Notepad/opensource-awesome.md#github-%E5%A2%9E%E5%BC%BA)
    - [运维](Notepad/opensource-awesome.md#%E8%BF%90%E7%BB%B4)
    - [区块链](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE)
    - [最佳实践](Notepad/opensource-awesome.md#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5)
      - [最佳实践-工具使用](Notepad/opensource-awesome.md#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8)
    - [Tools](Notepad/opensource-awesome.md#tools)
+   - [国内开源镜像](Notepad/opensource-awesome.md#%E5%9B%BD%E5%86%85%E5%BC%80%E6%BA%90%E9%95%9C%E5%83%8F)
 
 ## [产品设计](Notepad/产品设计.md#%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1)
 
@@ -155,11 +156,6 @@ Table of Contents
    - [Docker](Notepad/日常杂项.md#docker)
    - [Kubernetes](Notepad/日常杂项.md#kubernetes)
      - [Ingress](Notepad/日常杂项.md#ingress)
-
-## [_coverpage](_coverpage.md#_coverpage)
-
- - [Developer notes](_coverpage.md#developer-notes)
-   - [开发者笔记](_coverpage.md#%E5%BC%80%E5%8F%91%E8%80%85%E7%AC%94%E8%AE%B0)
 
 # algorithm
 
@@ -318,6 +314,12 @@ Table of Contents
    - [JDK及各大框架源码中的案例](design-patterns/装饰者.md#jdk%E5%8F%8A%E5%90%84%E5%A4%A7%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81%E4%B8%AD%E7%9A%84%E6%A1%88%E4%BE%8B)
    - [代码案例](design-patterns/装饰者.md#%E4%BB%A3%E7%A0%81%E6%A1%88%E4%BE%8B)
 
+## [观察者](design-patterns/观察者.md#%E8%A7%82%E5%AF%9F%E8%80%85)
+
+   - [Observer](design-patterns/观察者.md#observer)
+   - [应用案例](design-patterns/观察者.md#%E5%BA%94%E7%94%A8%E6%A1%88%E4%BE%8B)
+   - [JDK源码及各大框架中的应用](design-patterns/观察者.md#jdk%E6%BA%90%E7%A0%81%E5%8F%8A%E5%90%84%E5%A4%A7%E6%A1%86%E6%9E%B6%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8)
+
 ## [设计模式](design-patterns/设计模式.md#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)
 
    - [23种设计模式](design-patterns/设计模式.md#23%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)
@@ -373,6 +375,10 @@ Table of Contents
 
 # 面试
 
+## [JAVA响应式编程](面试/JAVA响应式编程.md#java%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BC%96%E7%A8%8B)
+
+   - [Reactive 反应式编程](面试/JAVA响应式编程.md#reactive-%E5%8F%8D%E5%BA%94%E5%BC%8F%E7%BC%96%E7%A8%8B)
+
 ## [JAVA基础](面试/JAVA基础.md#java%E5%9F%BA%E7%A1%80)
 
    - [打印JAVA信息](面试/JAVA基础.md#%E6%89%93%E5%8D%B0java%E4%BF%A1%E6%81%AF)
@@ -383,8 +389,9 @@ Table of Contents
    - [List 去重](面试/JAVA基础.md#list-%E5%8E%BB%E9%87%8D)
    - [三个线程顺序打印ABC](面试/JAVA基础.md#%E4%B8%89%E4%B8%AA%E7%BA%BF%E7%A8%8B%E9%A1%BA%E5%BA%8F%E6%89%93%E5%8D%B0abc)
    - [画一下RPC的架构图](面试/JAVA基础.md#%E7%94%BB%E4%B8%80%E4%B8%8Brpc%E7%9A%84%E6%9E%B6%E6%9E%84%E5%9B%BE)
-   - [锁](面试/JAVA基础.md#%E9%94%81)
+   - [Lock 锁](面试/JAVA基础.md#lock-%E9%94%81)
      - [synchronized](面试/JAVA基础.md#synchronized)
+     - [ReentrantLock](面试/JAVA基础.md#reentrantlock)
      - [CAS](面试/JAVA基础.md#cas)
    - [对象在内存中的存储布局](面试/JAVA基础.md#%E5%AF%B9%E8%B1%A1%E5%9C%A8%E5%86%85%E5%AD%98%E4%B8%AD%E7%9A%84%E5%AD%98%E5%82%A8%E5%B8%83%E5%B1%80)
    - [Java内存模型](面试/JAVA基础.md#java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B)
@@ -432,6 +439,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
