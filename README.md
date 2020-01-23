@@ -1,8 +1,9 @@
 Developer Notes
 --------------------
 开发者笔记  
+----------
 汇聚，分布式、缓存、JVM、设计模式、数据库、算法、区块链、操作系统、黑客、DevOps、面试题、[Awesome](Notepad/opensource-awesome.md)
------------
+
 
 [![](https://github.com/ifuture-pro/developer-notes/workflows/Node%20CI/badge.svg)](https://github.com/ifuture-pro/developer-notes/actions)
 [![](https://img.shields.io/badge/listify-list%20of%20contents-green)](https://github.com/ifuture-pro/listify)
@@ -439,7 +440,3 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
-
-
-
-
