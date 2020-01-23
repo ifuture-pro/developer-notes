@@ -118,6 +118,9 @@ Table of Contents
 
    - [产品设计](Notepad/产品设计.md#%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1)
    - [KISS 原则](Notepad/产品设计.md#kiss-%E5%8E%9F%E5%88%99)
+   - [软件版本](Notepad/产品设计.md#%E8%BD%AF%E4%BB%B6%E7%89%88%E6%9C%AC)
+   - [通用](Notepad/产品设计.md#%E9%80%9A%E7%94%A8)
+   - [微软常用](Notepad/产品设计.md#%E5%BE%AE%E8%BD%AF%E5%B8%B8%E7%94%A8)
 
 ## [开源协议](Notepad/开源协议.md#%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE)
 
@@ -157,6 +160,11 @@ Table of Contents
    - [Docker](Notepad/日常杂项.md#docker)
    - [Kubernetes](Notepad/日常杂项.md#kubernetes)
      - [Ingress](Notepad/日常杂项.md#ingress)
+
+## [_coverpage](_coverpage.md#_coverpage)
+
+ - [Developer notes](_coverpage.md#developer-notes)
+   - [开发者笔记](_coverpage.md#%E5%BC%80%E5%8F%91%E8%80%85%E7%AC%94%E8%AE%B0)
 
 # algorithm
 
@@ -440,3 +448,4 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
