@@ -341,6 +341,13 @@ Table of Contents
      - [迪米特法则](design-patterns/设计模式.md#%E8%BF%AA%E7%B1%B3%E7%89%B9%E6%B3%95%E5%88%99)
      - [合成复用原则](design-patterns/设计模式.md#%E5%90%88%E6%88%90%E5%A4%8D%E7%94%A8%E5%8E%9F%E5%88%99)
 
+## [迭代器](design-patterns/迭代器.md#%E8%BF%AD%E4%BB%A3%E5%99%A8)
+
+   - [Iterator 迭代器模式](design-patterns/迭代器.md#iterator-%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F)
+   - [场景](design-patterns/迭代器.md#%E5%9C%BA%E6%99%AF)
+   - [代码示例](design-patterns/迭代器.md#%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B)
+   - [JDK源码中的案例](design-patterns/迭代器.md#jdk%E6%BA%90%E7%A0%81%E4%B8%AD%E7%9A%84%E6%A1%88%E4%BE%8B)
+
 ## [适配器](design-patterns/适配器.md#%E9%80%82%E9%85%8D%E5%99%A8)
 
    - [适配器模式 Adapter](design-patterns/适配器.md#%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F-adapter)
@@ -448,4 +455,5 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
