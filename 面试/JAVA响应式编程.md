@@ -1,4 +1,4 @@
-Reactive 反应式编程
+Reactive 响应式编程
 --------
 * [Reactive Streams](https://github.com/reactive-streams/reactive-streams-jvm)
 * [RxJava](https://github.com/ReactiveX/RxJava)
