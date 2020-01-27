@@ -17,6 +17,8 @@ Opensource
 ![GitHub stars](https://img.shields.io/github/stars/Awesome-Windows/Awesome?style=flat-square)  
 [Awesome-BlockChain](https://github.com/chaozh/awesome-blockchain-cn)
 ![GitHub stars](https://img.shields.io/github/stars/chaozh/awesome-blockchain-cn?style=flat-square)  
+[Awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs)
+![GitHub stars](https://img.shields.io/github/stars/sindresorhus/awesome-nodejs?style=flat-square)  
 [Awesome-Design-Tools](https://github.com/LisaDziuba/Awesome-Design-Tools)
 ![GitHub stars](https://img.shields.io/github/stars/LisaDziuba/Awesome-Design-Tools?style=flat-square)  
 [Beginner-friendly Projects](https://github.com/MunGell/awesome-for-beginners)
@@ -83,7 +85,7 @@ Github Actions
 Tools
 ---------
 [marktext](https://github.com/marktext/marktext)
-![GitHub stars](https://img.shields.io/github/stars/goldbergyoni/nodebestpractices?style=flat-square) 
+![GitHub stars](https://img.shields.io/github/stars/goldbergyoni/nodebestpractices?style=flat-square)
 所见即所得MarkDown    
 
 [Google Remote Desktop](https://remotedesktop.google.com/) 跨系统远程桌面  
