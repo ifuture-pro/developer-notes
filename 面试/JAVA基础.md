@@ -23,8 +23,9 @@
 -Xmn             新生代大小。通常为 Xmx 的 1/3 或 1/4。新生代 = Eden + 2 个 Survivor 空间。实际可用空间为 = Eden + 1 个 Survivor，即 90%
 -XX:NewRatio     新生代与老年代的比例，如 –XX:NewRatio=2，则新生代占整个堆空间的1/3，老年代占2/3
 -XX:SurvivorRatio     新生代中 Eden 与 Survivor 的比值。默认值为 8。即 Eden 占新生代空间的 8/10，另外两个 Survivor 各占 1/10
+-XX:MaxTenuringThreshold		进入老年代的年龄数，默认15岁。（如果需要分配一块较大的连续内存空间时（较大对象），直接进入老年代）
 -XX:PermSize     永久代(方法区)的初始大小
--XX:MaxPermSize       永久代(方法区)的最大值
+-XX:MaxPermSize       永久代(方法区)的最大值。JDK1.8中不再有永久代，而使用元数据区替代。（详细可查看本笔记JVM#GC）
 -XX:+HeapDumpOnOutOfMemoryError    让虚拟机在发生内存溢出时 Dump 出当前的内存堆转储快照，以便分析用
 
 ```
