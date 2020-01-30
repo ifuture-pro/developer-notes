@@ -27,6 +27,8 @@
 -XX:PermSize     永久代(方法区)的初始大小
 -XX:MaxPermSize       永久代(方法区)的最大值。JDK1.8中不再有永久代，而使用元数据区替代。（详细可查看本笔记JVM#GC）
 -XX:+HeapDumpOnOutOfMemoryError    让虚拟机在发生内存溢出时 Dump 出当前的内存堆转储快照，以便分析用
+-XX:MaxDirectMemorySize		设置最大堆外内存
+-XX:+DisableExplicitGC		禁止代码中显式调用System.gc()
 
 ```
 
@@ -186,6 +188,10 @@ System.out.println(org.openjdk.jol.info.ClassLayout.parseInstance(new Object()).
 
 HotSpot 虚拟机对象头包含 Mark Word（标记字段）和 Klass Pointer（类型指针）  
 MarkWord 用于存储对象自身的运行时数据，如哈希码（HashCode）、GC分代年龄、锁状态标志、线程持有的锁、偏向线程 ID、偏向时间戳等等
+
+## 堆外内存是什么？会溢出吗？什么时候会触发堆外内存回收？
+在JAVA中，可以通过Unsafe和NIO包下的ByteBuffer（DirectByteBuffer）来操作堆外内存。
+堆外内存会溢出，并且其垃圾回收依赖于代码显式调用System.gc()。
 
 ## Java内存模型
 * 原子性
