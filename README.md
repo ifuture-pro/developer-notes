@@ -411,6 +411,7 @@ Table of Contents
      - [CAS](面试/JAVA基础.md#cas)
      - [AQS](面试/JAVA基础.md#aqs)
    - [对象在内存中的存储布局](面试/JAVA基础.md#%E5%AF%B9%E8%B1%A1%E5%9C%A8%E5%86%85%E5%AD%98%E4%B8%AD%E7%9A%84%E5%AD%98%E5%82%A8%E5%B8%83%E5%B1%80)
+   - [堆外内存是什么？会溢出吗？什么时候会触发堆外内存回收？](面试/JAVA基础.md#%E5%A0%86%E5%A4%96%E5%86%85%E5%AD%98%E6%98%AF%E4%BB%80%E4%B9%88%E4%BC%9A%E6%BA%A2%E5%87%BA%E5%90%97%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E4%BC%9A%E8%A7%A6%E5%8F%91%E5%A0%86%E5%A4%96%E5%86%85%E5%AD%98%E5%9B%9E%E6%94%B6)
    - [Java内存模型](面试/JAVA基础.md#java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B)
      - [happens-before原则（先行发生原则）](面试/JAVA基础.md#happens-before%E5%8E%9F%E5%88%99%E5%85%88%E8%A1%8C%E5%8F%91%E7%94%9F%E5%8E%9F%E5%88%99)
    - [序列化](面试/JAVA基础.md#%E5%BA%8F%E5%88%97%E5%8C%96)
@@ -457,6 +458,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
