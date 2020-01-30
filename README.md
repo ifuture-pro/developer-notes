@@ -78,6 +78,12 @@ Table of Contents
 
 # Linux
 
+## [Computer](Linux/Computer.md#computer)
+
+   - [计算机](Linux/Computer.md#%E8%AE%A1%E7%AE%97%E6%9C%BA)
+   - [CPU](Linux/Computer.md#cpu)
+   - [内存](Linux/Computer.md#%E5%86%85%E5%AD%98)
+
 ## [HTTP](Linux/HTTP.md#http)
 
    - [握手](Linux/HTTP.md#%E6%8F%A1%E6%89%8B)
@@ -459,3 +465,4 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
