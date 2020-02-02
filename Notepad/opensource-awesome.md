@@ -62,6 +62,12 @@ Github Actions
 ![GitHub stars](https://img.shields.io/github/stars/mozilla/send?style=flat-square)
 发送文件
 
+### 自动化
+[puppeteer](https://github.com/puppeteer/puppeteer)
+![GitHub stars](https://img.shields.io/github/stars/puppeteer/puppeteer?style=flat-square)命令行浏览器  
+  - [playwright](https://github.com/microsoft/playwright)
+  ![GitHub stars](https://img.shields.io/github/stars/microsoft/playwright?style=flat-square)浏览器自动化  
+
 
 ##  区块链
 [FISCO](https://github.com/FISCO-BCOS/FISCO-BCOS)
