@@ -115,6 +115,7 @@ Table of Contents
    - [Free Dev](Notepad/opensource-awesome.md#free-dev)
    - [Github 增强](Notepad/opensource-awesome.md#github-%E5%A2%9E%E5%BC%BA)
    - [运维](Notepad/opensource-awesome.md#%E8%BF%90%E7%BB%B4)
+     - [自动化](Notepad/opensource-awesome.md#%E8%87%AA%E5%8A%A8%E5%8C%96)
    - [区块链](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE)
    - [最佳实践](Notepad/opensource-awesome.md#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5)
      - [最佳实践-工具使用](Notepad/opensource-awesome.md#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8)
@@ -465,4 +466,5 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
