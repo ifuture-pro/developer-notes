@@ -36,6 +36,11 @@ Table of Contents
      - [创建数据库](Database/MYSQL基础及优化.md#%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93)
      - [创建用户并授权](Database/MYSQL基础及优化.md#%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E5%B9%B6%E6%8E%88%E6%9D%83)
      - [导入导出数据](Database/MYSQL基础及优化.md#%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA%E6%95%B0%E6%8D%AE)
+   - [索引基础](Database/MYSQL基础及优化.md#%E7%B4%A2%E5%BC%95%E5%9F%BA%E7%A1%80)
+     - [聚簇索引](Database/MYSQL基础及优化.md#%E8%81%9A%E7%B0%87%E7%B4%A2%E5%BC%95)
+     - [覆盖索引](Database/MYSQL基础及优化.md#%E8%A6%86%E7%9B%96%E7%B4%A2%E5%BC%95)
+     - [索引下推](Database/MYSQL基础及优化.md#%E7%B4%A2%E5%BC%95%E4%B8%8B%E6%8E%A8)
+     - [查询优化器](Database/MYSQL基础及优化.md#%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96%E5%99%A8)
    - [SQL基础优化](Database/MYSQL基础及优化.md#sql%E5%9F%BA%E7%A1%80%E4%BC%98%E5%8C%96)
 
 ## [数据库](Database/数据库.md#%E6%95%B0%E6%8D%AE%E5%BA%93)
@@ -117,6 +122,7 @@ Table of Contents
    - [运维](Notepad/opensource-awesome.md#%E8%BF%90%E7%BB%B4)
      - [自动化](Notepad/opensource-awesome.md#%E8%87%AA%E5%8A%A8%E5%8C%96)
    - [区块链](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE)
+     - [区块链安全](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E5%AE%89%E5%85%A8)
    - [最佳实践](Notepad/opensource-awesome.md#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5)
      - [最佳实践-工具使用](Notepad/opensource-awesome.md#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8)
    - [Tools](Notepad/opensource-awesome.md#tools)
@@ -466,5 +472,6 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
