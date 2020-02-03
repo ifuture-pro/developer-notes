@@ -24,6 +24,10 @@ Opensource
 [Beginner-friendly Projects](https://github.com/MunGell/awesome-for-beginners)
 ![GitHub stars](https://img.shields.io/github/stars/MunGell/awesome-for-beginners?style=flat-square)  
 
+[开启开源的世界](https://github.com/github/opensource.guide)
+![GitHub stars](https://img.shields.io/github/stars/github/opensource.guide?style=flat-square)  
+
+
 ## Free Dev
 
 [free-for-dev](https://github.com/ripienaar/free-for-dev)
@@ -46,7 +50,7 @@ Github Actions
 自动发布release
 
 
-## 运维
+## DveOps
 [opendevops](https://github.com/opendevops-cn/opendevops)
 ![GitHub stars](https://img.shields.io/github/stars/opendevops-cn/opendevops?style=flat-square)
 运维平台
@@ -61,6 +65,13 @@ Github Actions
 [FireFox send](https://github.com/mozilla/send)
 ![GitHub stars](https://img.shields.io/github/stars/mozilla/send?style=flat-square)
 发送文件
+
+[keycloak](https://github.com/keycloak/keycloak)
+![GitHub stars](https://img.shields.io/github/stars/keycloak/keycloak?style=flat-square)
+SSO单点登录解决方案  
+[cas](https://github.com/apereo/cas)
+![GitHub stars](https://img.shields.io/github/stars/apereo/cas?style=flat-square)
+SSO单点登录解决方案  
 
 ### 自动化
 [puppeteer](https://github.com/puppeteer/puppeteer)
@@ -88,6 +99,10 @@ EVM 合约安全检查
 [以太坊智能合约最佳安全开发](https://github.com/ConsenSys/smart-contract-best-practices)
 ![GitHub stars](https://img.shields.io/github/stars/ConsenSys/smart-contract-best-practices?style=flat-square)  
 ### 最佳实践-工具使用
+[SonarQube](https://github.com/SonarSource/sonarqube)
+![GitHub stars](https://img.shields.io/github/stars/SonarSource/sonarqube?style=flat-square)
+CI(Continuous Inspection) 持续检测,代码质量管理  
+
 [VScode 远程开发](https://code.visualstudio.com/docs/remote/ssh)  
 [GitHub 代码运行](https://www.gitpod.io/)  
 [GitHub 代码运行](https://repl.it/)
