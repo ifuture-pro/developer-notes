@@ -76,6 +76,10 @@ Github Actions
 
 [京东区块链](https://github.com/blockchain-jd-com/jdchain)
 ![GitHub stars](https://img.shields.io/github/stars/blockchain-jd-com/jdchain?style=flat-square)  
+### 区块链安全
+[mythril](https://github.com/ConsenSys/mythril)
+![GitHub stars](https://img.shields.io/github/stars/ConsenSys/mythril?style=flat-square)
+EVM 合约安全检查  
 
 
 ## 最佳实践
