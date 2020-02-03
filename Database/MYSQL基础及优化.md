@@ -97,7 +97,7 @@ source /home/ubuntu/dbname.sql
 ### 索引下推
 MySQL5.6引入了索引下推优化，默认开启，使用`SET optimizer_switch = 'index_condition_pushdown=off'`;可以将其关闭。  
 官方文档中给的例子和解释如下： `people`表中`（zipcode，lastname，firstname）`构成一个索引
-```
+```sql
 SELECT * FROM people WHERE zipcode='95054' AND lastname LIKE '%etrunia%' AND address LIKE '%Main Street%'
 ```
 如果没有使用索引下推技术，则MySQL会通过`zipcode='95054'`从存储引擎中查询对应的数据，返回到MySQL服务端，然后MySQL服务端基于`lastname LIKE '%etrunia%'和address LIKE '%Main Street%'`来判断数据是否符合条件。   
@@ -110,6 +110,47 @@ SELECT * FROM people WHERE zipcode='95054' AND lastname LIKE '%etrunia%' AND add
 4. 对比各种执行方案的代价，找出成本最低的那一个
 
 所以并非创建索引就一定会通过索引来查找
+
+## 事务隔离级别
+* 读未提交（read uncommitted）：一个事务还没有提交时，它做的变更就能被别的事务看到。
+* 读提交（read committed）：一个事物提交之后，它做的变更才会被其他事务看到。
+* 可重复读（repeatable read）：一个事物执行过程中看到的数据，总是跟这个事务在启动时看到的数据是一致的。未提交变更对其他事务也是不可见的。
+* 串行化（serializable）：对于同一行记录，写会加“写锁”，读会加“读锁”，当出现锁冲突时，后访问的事务需要等前一个事务执行完成，才能继续执行。
+```sql
+show variables like 'tx_isolation';--默认REPEATABLE-READ
+select * from information_schema.innodb_trx where TIME_TO_SEC(timediff(now(),trx_started))>60;--查找持续时间超过 60s 的事务
+```
+|事务A|\||事务B|
+|----|---|----|
+|开启事务 `mysql> start transaction;` | \|| 开启事务 |
+|查询得到值：1 `select val from mytable where id=1;` | \|| 查询得到值：1 |
+| | \| | 将1改成2 `update mytable set val=2 where id=1` |
+|查询得到值：v1| \| | |
+| | \| |提交事务B `commit`|
+|查询得到值：v2| \| | |
+|提交事务A | \| | |
+|查询得到值：v3 | v | |
+
+在不同的隔离级别下，事务A查到的结果是不一样的：
+* **读未提交**: v1 的值是2，这时候事务 B 虽然还没有提交，但是结果已经被事务 A 看到了，因此 v2、v3 也都是2。
+* **读提交**: v1 是1，v2 的值是 2 ，事务 B 的更新在提交后才被事务 A 看到。所以 v3 的值也是 2。
+* **可重复读**: v1、v2是 1，v3 是2，之所以 v2 还是1，遵循的就是这个要求：事务在执行期间看到的数据前后必须是一致的。
+* **串行化**: 则在事务 B 执行“将 1 改成 2”的时候，会被锁住，直到事务 A 提交后，事务 B 才可以继续执行，所以从事务 A 的角度看，v1、v2的值是1，v3的值是2。
+
+在实现上，数据库里面会创建一个视图，访问的时候以视图的逻辑结果为准。在“可重复读”隔离级别下，这个视图是在事务启动时创建的，整个事务存在期间都用这个视图。在“读提交”隔离级别下，这个视图是在每个SQL语句开始执行的时候创建的。这里需要注意的是，“读未提交”隔离界别下直接返回记录上的最新值，没有视图概念；而“串行化”隔离级别下直接用加锁的方式来避免并行访问。
+
+* **脏读** : 当前事务可以查看到别的事务未提交的数据（侧重点在于别的事务未提交）。
+* **不可重读** : 不可重读的侧重点在于更新修改数据。表示在同一事务中，查询相同的数据范围时，同一个数据资源莫名的改变了。
+* **幻读** : 幻读的侧重点在于新增和删除。表示在同一事务中，使用相同的查询语句，第二次查询时，莫名的多出了一些之前不存在数据，或者莫名的不见了一些数据。
+
+事务的隔离级别越高，隔离性越强，所拥有的问题越少，并发能力越弱，所以，我们可以用如下表格进行总结
+
+|隔离级别\问题|脏读 (Dirty)| 不可重读 (NonRepeatable Read) | 幻读 （Phantom Read）|
+|-----|-----|------|----|
+|读未提交|o|o|o|
+|读提交|x|o|o|
+|可重复读|x|x|o|
+|串行化|x|x|x|
 
 ## SQL基础优化
 
