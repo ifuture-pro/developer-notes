@@ -41,6 +41,7 @@ Table of Contents
      - [覆盖索引](Database/MYSQL基础及优化.md#%E8%A6%86%E7%9B%96%E7%B4%A2%E5%BC%95)
      - [索引下推](Database/MYSQL基础及优化.md#%E7%B4%A2%E5%BC%95%E4%B8%8B%E6%8E%A8)
      - [查询优化器](Database/MYSQL基础及优化.md#%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96%E5%99%A8)
+   - [事务隔离级别](Database/MYSQL基础及优化.md#%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB)
    - [SQL基础优化](Database/MYSQL基础及优化.md#sql%E5%9F%BA%E7%A1%80%E4%BC%98%E5%8C%96)
 
 ## [数据库](Database/数据库.md#%E6%95%B0%E6%8D%AE%E5%BA%93)
@@ -119,7 +120,7 @@ Table of Contents
    - [Awesome](Notepad/opensource-awesome.md#awesome)
    - [Free Dev](Notepad/opensource-awesome.md#free-dev)
    - [Github 增强](Notepad/opensource-awesome.md#github-%E5%A2%9E%E5%BC%BA)
-   - [运维](Notepad/opensource-awesome.md#%E8%BF%90%E7%BB%B4)
+   - [DveOps](Notepad/opensource-awesome.md#dveops)
      - [自动化](Notepad/opensource-awesome.md#%E8%87%AA%E5%8A%A8%E5%8C%96)
    - [区块链](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE)
      - [区块链安全](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E5%AE%89%E5%85%A8)
@@ -472,6 +473,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
