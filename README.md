@@ -451,6 +451,9 @@ Table of Contents
    - [Spring 问答](面试/Spring.md#spring-%E9%97%AE%E7%AD%94)
      - [Spring Bean 生命周期](面试/Spring.md#spring-bean-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F)
      - [PostConstruct,PreDestroy 实现原理](面试/Spring.md#postconstructpredestroy-%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86)
+     - [Spring 事务隔离级别与传播机制](面试/Spring.md#spring-%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB%E4%B8%8E%E4%BC%A0%E6%92%AD%E6%9C%BA%E5%88%B6)
+       - [事务传播机制](面试/Spring.md#%E4%BA%8B%E5%8A%A1%E4%BC%A0%E6%92%AD%E6%9C%BA%E5%88%B6)
+       - [隔离级别](面试/Spring.md#%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB)
 
 ## [分布式锁](面试/分布式锁.md#%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81)
 
@@ -473,6 +476,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
