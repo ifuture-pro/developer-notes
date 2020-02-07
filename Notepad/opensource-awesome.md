@@ -23,6 +23,11 @@ Opensource
 ![GitHub stars](https://img.shields.io/github/stars/LisaDziuba/Awesome-Design-Tools?style=flat-square)  
 [Beginner-friendly Projects](https://github.com/MunGell/awesome-for-beginners)
 ![GitHub stars](https://img.shields.io/github/stars/MunGell/awesome-for-beginners?style=flat-square)  
+[Awesome-spider](https://github.com/facert/awesome-spider)
+![GitHub stars](https://img.shields.io/github/stars/facert/awesome-spider?style=flat-square)  
+[Awesome-wechat-weapp](https://github.com/justjavac/awesome-wechat-weapp)
+![GitHub stars](https://img.shields.io/github/stars/justjavac/awesome-wechat-weapp?style=flat-square)  
+
 
 [开启开源的世界](https://github.com/github/opensource.guide)
 ![GitHub stars](https://img.shields.io/github/stars/github/opensource.guide?style=flat-square)  
@@ -78,6 +83,9 @@ SSO单点登录解决方案
 [yAPI](https://github.com/YMFE/yapi)
 ![GitHub stars](https://img.shields.io/github/stars/YMFE/yapi?style=flat-square)
 可视化的接口管理平台    
+[kutt](https://github.com/thedevs-network/kutt)
+![GitHub stars](https://img.shields.io/github/stars/thedevs-network/kutt?style=flat-square)
+短连接解决方案
 
 ### 自动化
 [puppeteer](https://github.com/puppeteer/puppeteer)
