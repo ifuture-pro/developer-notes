@@ -27,6 +27,7 @@ Opensource
 ![GitHub stars](https://img.shields.io/github/stars/facert/awesome-spider?style=flat-square)  
 [Awesome-wechat-weapp](https://github.com/justjavac/awesome-wechat-weapp)
 ![GitHub stars](https://img.shields.io/github/stars/justjavac/awesome-wechat-weapp?style=flat-square)  
+[Awesome-lesscode](https://github.com/dream2023/awesome-lesscode)
 
 
 [开启开源的世界](https://github.com/github/opensource.guide)
