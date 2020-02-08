@@ -112,6 +112,16 @@ Table of Contents
 
 # Notepad
 
+## [emoji](Notepad/emoji.md#emoji)
+
+   - [Emoji list](Notepad/emoji.md#emoji-list)
+   - [People](Notepad/emoji.md#people)
+   - [Nature](Notepad/emoji.md#nature)
+   - [Objects](Notepad/emoji.md#objects)
+   - [Places](Notepad/emoji.md#places)
+   - [Symbols](Notepad/emoji.md#symbols)
+   - [Links](Notepad/emoji.md#links)
+
 ## [opensource-awesome](Notepad/opensource-awesome.md#opensource-awesome)
 
    - [令人兴奋的开源项目](Notepad/opensource-awesome.md#%E4%BB%A4%E4%BA%BA%E5%85%B4%E5%A5%8B%E7%9A%84%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE)
@@ -475,3 +485,4 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
