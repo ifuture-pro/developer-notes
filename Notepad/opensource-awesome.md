@@ -1,4 +1,4 @@
-令人兴奋的开源项目
+精彩的开源项目
 ----------------------
 好多非常优秀的开源项目，我们应该给予一个 ⭐️ 表示支持  
 但过后我们要在我们的`Stars`里再次找到她可就没这么容易了。  
@@ -13,6 +13,8 @@ Opensource
 ![GitHub stars](https://img.shields.io/github/stars/sindresorhus/awesome?style=flat-square)  
 [Awesome-mac](https://github.com/jaywcjlove/awesome-mac/)
 ![GitHub stars](https://img.shields.io/github/stars/jaywcjlove/awesome-mac?style=flat-square)    
+[open-source-mac-os-apps](https://github.com/serhii-londar/open-source-mac-os-apps)
+![GitHub stars](https://img.shields.io/github/stars/serhii-londar/open-source-mac-os-apps?style=flat-square)    
 [Awesome-Windows](https://github.com/Awesome-Windows/Awesome)
 ![GitHub stars](https://img.shields.io/github/stars/Awesome-Windows/Awesome?style=flat-square)  
 [Awesome-BlockChain](https://github.com/chaozh/awesome-blockchain-cn)
@@ -27,8 +29,13 @@ Opensource
 ![GitHub stars](https://img.shields.io/github/stars/facert/awesome-spider?style=flat-square)  
 [Awesome-wechat-weapp](https://github.com/justjavac/awesome-wechat-weapp)
 ![GitHub stars](https://img.shields.io/github/stars/justjavac/awesome-wechat-weapp?style=flat-square)  
-[Awesome-lesscode](https://github.com/dream2023/awesome-lesscode)
-
+[Awesome-lesscode](https://github.com/dream2023/awesome-lesscode)  
+[Build your own](https://github.com/danistefanovic/build-your-own-x)
+![GitHub stars](https://img.shields.io/github/stars/danistefanovic/build-your-own-x?style=flat-square)  
+[awesome-university-courses](https://github.com/prakhar1989/awesome-courses)
+![GitHub stars](https://img.shields.io/github/stars/prakhar1989/awesome-courses?style=flat-square)  
+[free-programming-books](https://github.com/EbookFoundation/free-programming-books)
+![GitHub stars](https://img.shields.io/github/stars/EbookFoundation/free-programming-books?style=flat-square)  
 
 [开启开源的世界](https://github.com/github/opensource.guide)
 ![GitHub stars](https://img.shields.io/github/stars/github/opensource.guide?style=flat-square)  
@@ -94,6 +101,8 @@ SSO单点登录解决方案
   - [playwright](https://github.com/microsoft/playwright)
   ![GitHub stars](https://img.shields.io/github/stars/microsoft/playwright?style=flat-square)浏览器自动化  
 
+[vnpy](https://github.com/vnpy/vnpy)
+![GitHub stars](https://img.shields.io/github/stars/vnpy/vnpy?style=flat-square)量化交易平台开发框架  
 
 ##  区块链
 [FISCO](https://github.com/FISCO-BCOS/FISCO-BCOS)
