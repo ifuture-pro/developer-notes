@@ -10,6 +10,8 @@ ALTER DATABASE database_name CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_c
 ALTER TABLE table_name CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 -- For each column:
 ALTER TABLE table_name CHANGE column_name column_name VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+-- 删除数据库
+DROP DATABASE database_name;
 ```
 /etc/mysql/my.cnf
 ```
