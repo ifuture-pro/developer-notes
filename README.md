@@ -141,7 +141,7 @@ Table of Contents
 
 ## [opensource-awesome](Notepad/opensource-awesome.md#opensource-awesome)
 
-   - [令人兴奋的开源项目](Notepad/opensource-awesome.md#%E4%BB%A4%E4%BA%BA%E5%85%B4%E5%A5%8B%E7%9A%84%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE)
+   - [精彩的开源项目](Notepad/opensource-awesome.md#%E7%B2%BE%E5%BD%A9%E7%9A%84%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE)
    - [Opensource](Notepad/opensource-awesome.md#opensource)
    - [Awesome](Notepad/opensource-awesome.md#awesome)
    - [Free Dev](Notepad/opensource-awesome.md#free-dev)
@@ -221,6 +221,7 @@ Table of Contents
 ## [算法学习](algorithm/算法学习.md#%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0)
 
    - [算法学习 algorithm](algorithm/算法学习.md#%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0-algorithm)
+   - [基础](algorithm/算法学习.md#%E5%9F%BA%E7%A1%80)
    - [寻路算法](algorithm/算法学习.md#%E5%AF%BB%E8%B7%AF%E7%AE%97%E6%B3%95)
    - [协同编辑](algorithm/算法学习.md#%E5%8D%8F%E5%90%8C%E7%BC%96%E8%BE%91)
 
@@ -472,6 +473,20 @@ Table of Contents
      - [类加载器](面试/JVM.md#%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8)
    - [GC](面试/JVM.md#gc)
 
+## [SSO](面试/SSO.md#sso)
+
+   - [SSO (Single Sign On) 单点登录](面试/SSO.md#sso-single-sign-on-%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95)
+   - [OAuth2](面试/SSO.md#oauth2)
+     - [角色](面试/SSO.md#%E8%A7%92%E8%89%B2)
+     - [授权协议](面试/SSO.md#%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE)
+       - [授权码模式（authorization code）](面试/SSO.md#%E6%8E%88%E6%9D%83%E7%A0%81%E6%A8%A1%E5%BC%8Fauthorization-code)
+       - [简化模式（implicit）](面试/SSO.md#%E7%AE%80%E5%8C%96%E6%A8%A1%E5%BC%8Fimplicit)
+       - [密码模式（Password）](面试/SSO.md#%E5%AF%86%E7%A0%81%E6%A8%A1%E5%BC%8Fpassword)
+       - [客户端模式（client credentials）](面试/SSO.md#%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%A8%A1%E5%BC%8Fclient-credentials)
+   - [JWT](面试/SSO.md#jwt)
+   - [Open ID](面试/SSO.md#open-id)
+   - [SAML](面试/SSO.md#saml)
+
 ## [Spring](面试/Spring.md#spring)
 
    - [Spring 问答](面试/Spring.md#spring-%E9%97%AE%E7%AD%94)
@@ -502,5 +517,6 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
