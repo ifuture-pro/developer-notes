@@ -108,9 +108,22 @@ G. 浏览器将令牌发给客户端；
 #### 密码模式（Password）  
 适用于受信任客户端应用，例如同个组织的内部或外部应用。
 #### 客户端模式（client credentials）  
-适用于客户端调用主服务API型应用（比如百度API Store）
+* 客户端调用认证服务器，认证客户端的合法性。与用户无关
+
+  在 authorization_code 模式下，拿到 code 后，客户端在后台发起此类请求获取 access_token
+  ```
+    http://localhost:8000/oauth/token?code=x6sk8Z&client_id=clientId&client_secret=secretpassword&grant_type=client_credentials
+  ```
+* 用于客户端调用主服务API型应用（比如百度API Store）
 
 
 ## JWT
+JSON Web token
+
+包含：
+* Header: 标题包含了令牌的元数据，并且在最小包含签名和/或加密算法的类型
+* Claims: Claims 也称 Payload 包含您想要签署的任何信息
+* JSON Web Signature (JWS): 在header中指定的使用该算法的数字签名和声明
+[在线解析](https://jwt.io/#encoded-jwt)
 ## Open ID
 ## SAML
