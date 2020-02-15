@@ -57,3 +57,66 @@ Constructor > @Autowired > @PostConstruct
 * ISOLOCATION_READ_COMMITTED:  允许读取已提交的读，可能导致不可重复读，幻读
 * ISOLOCATION_REPEATABLE_READ : 不能能更新另一个事务修改单尚未提交(回滚)的数据，可能引起幻读
 * ISOLOCATION_SERIALIZABLE: 序列执行效率低
+
+
+## Spring Security
+
+### Spring-Security-OAuth
+关键源码位置
+#### 授权
+
+```
+/oauth/authorize
+org.springframework.security.oauth2.provider.endpoint.AuthorizationEndpoint
+
+授权确认
+/oauth/confirm_access
+org.springframework.security.oauth2.provider.endpoint.WhitelabelApprovalEndpoint
+
+授权失败
+/oauth/error
+org.springframework.security.oauth2.provider.endpoint.WhitelabelErrorEndpoint
+
+自定义上面两个URL
+org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerEndpointsConfiguration#authorizationEndpoint
+org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer#pathMapping
+```
+
+#### 获得 token
+
+```
+/oauth/token
+org.springframework.security.oauth2.provider.endpoint.TokenEndpoint
+生产 Token
+org.springframework.security.oauth2.provider.token.AbstractTokenGranter
+```
+
+#### Token Key
+
+```
+/oauth/token_key
+org.springframework.security.oauth2.provider.endpoint.TokenKeyEndpoint
+```
+
+返回 JWT具体算法和公钥，如果没有使用 `KeyPair` 直接用 `SigningKey` 将直接这个 `SigningKey` 这是很危险的
+
+#### 验证解析 Token
+
+```
+/oauth/check_token
+org.springframework.security.oauth2.provider.endpoint.CheckTokenEndpoint
+```
+
+#### 认证
+
+```
+org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter
+```
+
+从 header 、query 里获取 token 进行认证处理
+
+#### 异常
+
+```
+org.springframework.security.oauth2.provider.error.DefaultWebResponseExceptionTranslator
+```
