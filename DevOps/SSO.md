@@ -58,10 +58,10 @@ E. 认证服务器核对了授权码和重定向URI，确认无误后，向客�
 
 ```
 //获取授权码。一般情况下会跳到认证服务器的登录页面，让用户登录，并确认授权
-GET https://auth.z.com/oauth/authorize?client_id=zzzclient&response_type=code&redirect_uri=https://admin.z.com/
+GET https://auth.ifuture.pro/oauth/authorize?client_id=zzzclient&response_type=code&redirect_uri=https://admin.z.com/
 
 //拿到 code 后向认证服务器请求获得 token。一般情况这个请求得在后台进行
-POST https://auth.z.com/oauth/token?code=kQoo2G&client_id=zzzclient&client_secret=111111&grant_type=authorization_code&redirect_uri=https://admin.z.com/
+POST https://auth.ifuture.pro/oauth/token?code=kQoo2G&client_id=zzzclient&client_secret=111111&grant_type=authorization_code&redirect_uri=https://admin.z.com/
 ```
 
 
@@ -114,6 +114,15 @@ E. 资源服务器返回一个网页，其中包含的代码可以获取Hash值�
 F. 浏览器执行上一步获得的脚本，提取出令牌；  
 G. 浏览器将令牌发给客户端；  
 
+主要就是没有获取 code 这一步了
+
+```
+// 发起请求，用户登录
+https://auth.ifuture.pro/oauth/authorize?client_id=client&response_type=token&redirect_uri=https://ifuture.pro/callback/
+// 直接返回 token
+https://auth.ifuture.pro/callback/#access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsiaWQiOjEsInVzZXJuYW1lIjoienp6.-WJP1h9_FE6CzrB_WAL09gxmyvrmrcBi604pRIj8er0&token_type=bearer&expires_in=86399&scope=all%20read%20write&jti=547d4c82-426c-48ef-bc56-2d0095a01c3a
+```
+
 #### 密码模式（Password）  
 适用于受信任客户端应用，例如同个组织的内部或外部应用。
 
@@ -121,12 +130,18 @@ G. 浏览器将令牌发给客户端；
 
 ```
 //登录页面获取用户密码后，在后台发起下面请求获取 token
-POST https://auth.z.com/oauth/token?username=zzz&password=123123&grant_type=password&client_id=zzzApp&client_secret=111111
+POST https://auth.ifuture.pro/oauth/token?username=zzz&password=123123&grant_type=password&client_id=zzzApp&client_secret=111111
 ```
 
 #### 客户端模式（client credentials）  
-* 客户端调用认证服务器，认证客户端的合法性。与用户无关
+* 客户端调用认证服务器，认证客户端的合法性，获得合法 token 。**与用户无关**
+  > 因为与用户无关，所以不能获取用户信息（并没有当天登录用户这一概念），一般是服务于服务直接的调用认证使用，与用户无关。
+
 * 用于客户端调用主服务API型应用（比如百度API Store）
+
+```
+POST http://localhost:8000/oauth/token?client_id=client&client_secret=111111&grant_type=client_credentials
+```
 
 
 ## JWT

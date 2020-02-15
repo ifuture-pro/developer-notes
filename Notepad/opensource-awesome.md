@@ -93,7 +93,10 @@ SSO单点登录解决方案
 可视化的接口管理平台    
 [kutt](https://github.com/thedevs-network/kutt)
 ![GitHub stars](https://img.shields.io/github/stars/thedevs-network/kutt?style=flat-square)
-短连接解决方案
+短连接解决方案    
+[nodetube](https://github.com/mayeaux/nodetube)
+![GitHub stars](https://img.shields.io/github/stars/thedevs-network/kutt?style=flat-square)
+视频网站解决方案，类似youtube
 
 ### 自动化
 [puppeteer](https://github.com/puppeteer/puppeteer)
