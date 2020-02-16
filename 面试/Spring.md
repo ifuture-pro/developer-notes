@@ -60,63 +60,69 @@ Constructor > @Autowired > @PostConstruct
 
 
 ## Spring Security
-
+[SSO OAuth关键概念](../DevOps/SSO.md)
 ### Spring-Security-OAuth
-关键源码位置
+关键源码位置，结合[官网文档](https://projects.spring.io/spring-security-oauth/docs/oauth2.html)效果更好
 #### 授权
 
-```
-/oauth/authorize
+* 授权端点 `/oauth/authorize`
+```java
 org.springframework.security.oauth2.provider.endpoint.AuthorizationEndpoint
+```
 
-授权确认
-/oauth/confirm_access
+* 授权确认端点 `/oauth/confirm_access`
+```java
 org.springframework.security.oauth2.provider.endpoint.WhitelabelApprovalEndpoint
+```
+  客户端是否自动确认授权取决于 `org.springframework.security.oauth2.providerClientDetails#isAutoApprove`
 
-授权失败
-/oauth/error
+* 授权失败端点 `/oauth/error`
+```java
 org.springframework.security.oauth2.provider.endpoint.WhitelabelErrorEndpoint
+```
 
-自定义上面两个URL
+* 自定义上面两个URL
+```java
 org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerEndpointsConfiguration#authorizationEndpoint
 org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer#pathMapping
 ```
 
-#### 获得 token
 
-```
-/oauth/token
+#### 获得 token
+* 获得令牌端点 `/oauth/token`
+```java
 org.springframework.security.oauth2.provider.endpoint.TokenEndpoint
-生产 Token
+```
+* 生产 Token
+```java
 org.springframework.security.oauth2.provider.token.AbstractTokenGranter
 ```
 
-#### Token Key
-
-```
-/oauth/token_key
+#### 获得 Token Key
+返回 JWT具体算法和公钥，如果没有使用 `KeyPair` 直接用 `SigningKey` 将直接这个 `SigningKey` 这是很危险的
+* 获得令牌签名（公钥）端点 `/oauth/token_key`
+```java
 org.springframework.security.oauth2.provider.endpoint.TokenKeyEndpoint
 ```
 
-返回 JWT具体算法和公钥，如果没有使用 `KeyPair` 直接用 `SigningKey` 将直接这个 `SigningKey` 这是很危险的
-
 #### 验证解析 Token
-
-```
-/oauth/check_token
+* 验证解析令牌端点 `/oauth/check_token`
+```java
 org.springframework.security.oauth2.provider.endpoint.CheckTokenEndpoint
 ```
+  官方文档介绍，主要考虑授权服务与资源服务分开的情况，`RemoteTokenServices` 它将允许资源服务器通过HTTP请求来解码令牌（也就是授权服务的 `/oauth/check_token` 端点）。如果你的资源服务没有太大的访问量的话，那么使用`RemoteTokenServices` 将会很方便（所有受保护的资源请求都将请求一次授权服务用以检验token值），或者你可以通过缓存来保存每一个token验证的结果
 
-#### 认证
-
-```
+* 验证流程
+```java
 org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter
 ```
-
-从 header 、query 里获取 token 进行认证处理
+  从 `header(Bearer Token Header)` 、`query(access_token)` 里获取 token 进行认证处理
 
 #### 异常
-
-```
+* 默认处理
+```java
 org.springframework.security.oauth2.provider.error.DefaultWebResponseExceptionTranslator
 ```
+
+* Spring MVC 处理
+  `@ExceptionHandler` `HttpMessageConverters`
