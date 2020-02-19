@@ -500,9 +500,8 @@ Table of Contents
      - [Spring-Security-OAuth](面试/Spring.md#spring-security-oauth)
        - [授权](面试/Spring.md#%E6%8E%88%E6%9D%83)
        - [获得 token](面试/Spring.md#%E8%8E%B7%E5%BE%97-token)
-       - [Token Key](面试/Spring.md#token-key)
+       - [获得 Token Key](面试/Spring.md#%E8%8E%B7%E5%BE%97-token-key)
        - [验证解析 Token](面试/Spring.md#%E9%AA%8C%E8%AF%81%E8%A7%A3%E6%9E%90-token)
-       - [认证](面试/Spring.md#%E8%AE%A4%E8%AF%81)
        - [异常](面试/Spring.md#%E5%BC%82%E5%B8%B8)
 
 ## [分布式锁](面试/分布式锁.md#%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81)
@@ -526,6 +525,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
