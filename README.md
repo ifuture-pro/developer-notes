@@ -110,6 +110,7 @@ Table of Contents
    - [缓存穿透](DevOps/缓存.md#%E7%BC%93%E5%AD%98%E7%A9%BF%E9%80%8F)
    - [Redis](DevOps/缓存.md#redis)
      - [数据结构](DevOps/缓存.md#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
+     - [淘汰策略](DevOps/缓存.md#%E6%B7%98%E6%B1%B0%E7%AD%96%E7%95%A5)
      - [应用](DevOps/缓存.md#%E5%BA%94%E7%94%A8)
 
 # Linux
@@ -203,6 +204,8 @@ Table of Contents
        - [sed](Notepad/日常杂项.md#sed)
      - [安全](Notepad/日常杂项.md#%E5%AE%89%E5%85%A8)
        - [nmap](Notepad/日常杂项.md#nmap)
+   - [OpenSSL](Notepad/日常杂项.md#openssl)
+     - [生成RSA秘钥对](Notepad/日常杂项.md#%E7%94%9F%E6%88%90rsa%E7%A7%98%E9%92%A5%E5%AF%B9)
    - [Git](Notepad/日常杂项.md#git)
      - [基础](Notepad/日常杂项.md#%E5%9F%BA%E7%A1%80)
        - [查看所有分支(包括远程)](Notepad/日常杂项.md#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E5%88%86%E6%94%AF%E5%8C%85%E6%8B%AC%E8%BF%9C%E7%A8%8B)
@@ -525,6 +528,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
