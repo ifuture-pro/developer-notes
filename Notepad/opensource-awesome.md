@@ -95,8 +95,11 @@ SSO单点登录解决方案
 ![GitHub stars](https://img.shields.io/github/stars/thedevs-network/kutt?style=flat-square)
 短连接解决方案    
 [nodetube](https://github.com/mayeaux/nodetube)
-![GitHub stars](https://img.shields.io/github/stars/thedevs-network/kutt?style=flat-square)
-视频网站解决方案，类似youtube
+![GitHub stars](https://img.shields.io/github/stars/mayeaux/nodetube?style=flat-square)
+视频网站解决方案，类似youtube   
+[crawlab](https://github.com/crawlab-team/crawlab)
+![GitHub stars](https://img.shields.io/github/stars/crawlab-team/crawlab?style=flat-square)
+分布式爬虫管理平台  
 
 ### 自动化
 [puppeteer](https://github.com/puppeteer/puppeteer)
