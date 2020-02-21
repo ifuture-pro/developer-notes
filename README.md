@@ -9,7 +9,7 @@ Developer Notes
 [![](https://img.shields.io/badge/web-ifuture-green?style=plastic&logo=appveyor)](https://developer.ifuture.pro/)
 [![](https://badgen.net/badge/icon/Website?icon=chrome&amp;label)](https://ifuture.pro/)
 
-
+**为什么要做这个库**。现在好多人都把技术文章放微信公众号，各种自媒体上面，看完了，下次就找不到了，就算你收藏起来了也无法搜索，根本无法复习，查找。这里可以借助 docsify search 和 Github search 不仅可以搜索标题，还可以搜索内容。也有完整的目录可以系统的回顾一些关键知识点。欢迎PR。
 
 **tools:**  
 - [listify](https://github.com/ifuture-pro/listify)  生成全站目录
@@ -528,13 +528,3 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
-
-
-
-
-
-
-
-
-
-
