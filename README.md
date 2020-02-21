@@ -382,6 +382,13 @@ Table of Contents
    - [项目案例](design-patterns/桥接.md#%E9%A1%B9%E7%9B%AE%E6%A1%88%E4%BE%8B)
    - [Tutorial](design-patterns/桥接.md#tutorial)
 
+## [模板](design-patterns/模板.md#%E6%A8%A1%E6%9D%BF)
+
+   - [Template method](design-patterns/模板.md#template-method)
+   - [场景](design-patterns/模板.md#%E5%9C%BA%E6%99%AF)
+   - [示例](design-patterns/模板.md#%E7%A4%BA%E4%BE%8B)
+   - [JDK及各大框架源码中的应用](design-patterns/模板.md#jdk%E5%8F%8A%E5%90%84%E5%A4%A7%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8)
+
 ## [装饰者](design-patterns/装饰者.md#%E8%A3%85%E9%A5%B0%E8%80%85)
 
    - [装饰者 Decorator](design-patterns/装饰者.md#%E8%A3%85%E9%A5%B0%E8%80%85-decorator)
@@ -537,4 +544,5 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
