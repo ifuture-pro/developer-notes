@@ -58,6 +58,43 @@ Constructor > @Autowired > @PostConstruct
 * ISOLOCATION_REPEATABLE_READ : 不能能更新另一个事务修改单尚未提交(回滚)的数据，可能引起幻读
 * ISOLOCATION_SERIALIZABLE: 序列执行效率低
 
+### Bean的作用域
+```java
+@Service
+@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
+public class MilestoneServiceImpl implements MilestoneService {
+}
+```
+
+* org.springframework.beans.factory.config.ConfigurableBeanFactory#SCOPE_PROTOTYPE
+
+  唯一bean实例，Spring中的bean默认都是单例的。
+
+* org.springframework.beans.factory.config.ConfigurableBeanFactory#SCOPE_SINGLETON
+
+  每次请求都会创建一个新的bean实例。
+
+* org.springframework.web.context.WebApplicationContext#SCOPE_REQUEST
+
+  每一次HTTP请求都会产生一个新的bean，该bean仅在当前HTTP request内有效
+
+* org.springframework.web.context.WebApplicationContext#SCOPE_SESSION
+
+  每一次HTTP请求都会产生一个新的bean，该bean仅在当前HTTP session内有效。
+
+默认单例情况下，有可能发生线程安全问题。当多个线程操作同一个对象的时候，对这个对象的非静态成员变量的写操作会存在线程安全问题。
+
+1. 在bean对象中尽量避免定义可变的成员变量
+2. 使用 ThreadLocal。Spring 源码中多种上下文都是这么使用的
+
+### Spring框架中用到了哪些设计模式
+* 工厂设计模式：Spring使用工厂模式通过BeanFactory和ApplicationContext创建bean对象。
+* 代理设计模式：Spring AOP功能的实现。
+* 单例设计模式：Spring中的bean默认都是单例的。
+* 模板方法模式：Spring中的jdbcTemplate、hibernateTemplate等以Template结尾的对数据库操作的类，它们就使用到了模板模式。
+* 包装器设计模式：我们的项目需要连接多个数据库，而且不同的客户在每次访问中根据需要会去访问不同的数据库。这种模式让我们可以根据客户的需求能够动态切换不同的数据源。
+* 观察者模式：定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都得到通知并被自动更新。spring中Observer模式常用的地方是listener的实现。如ApplicationListener。
+* 适配器模式：Spring AOP的增强或通知（Advice）使用到了适配器模式、Spring MVC中也是用到了适配器模式适配Controller。
 
 ## Spring Security
 [SSO OAuth关键概念](../DevOps/SSO.md)
