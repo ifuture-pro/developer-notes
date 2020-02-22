@@ -4,6 +4,7 @@
 --创建数据库，并设定编码集为utf8
 CREATE DATABASE IF NOT EXISTS database_name DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
 --但其实MySQL中的UTF-8不是正在的UTF-8应该转为utf8mb4,如果已经设置了建议修改
+CREATE DATABASE IF NOT EXISTS database_name DEFAULT CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci;
 -- For each database:
 ALTER DATABASE database_name CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
 -- For each table:
@@ -73,8 +74,11 @@ GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123456' WITH GRANT OPTI
 --刷新权限
 flush privileges;
 
-查看用户权限
+--查看用户权限
 show grants for test;
+--查看表状态
+show table status \G
+
 ```
 
 ### 导入导出数据
