@@ -129,6 +129,8 @@ EVM 合约安全检查
 ![GitHub stars](https://img.shields.io/github/stars/goldbergyoni/nodebestpractices?style=flat-square)  
 [以太坊智能合约最佳安全开发](https://github.com/ConsenSys/smart-contract-best-practices)
 ![GitHub stars](https://img.shields.io/github/stars/ConsenSys/smart-contract-best-practices?style=flat-square)  
+[Web安全笔记](https://github.com/LyleMi/Learn-Web-Hacking)
+![GitHub stars](https://img.shields.io/github/stars/LyleMi/Learn-Web-Hacking?style=flat-square)  
 ### 最佳实践-工具使用
 [SonarQube](https://github.com/SonarSource/sonarqube)
 ![GitHub stars](https://img.shields.io/github/stars/SonarSource/sonarqube?style=flat-square)
