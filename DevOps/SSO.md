@@ -167,8 +167,36 @@ JSON Web token
   OpenID Connect
 
 ## Open ID
+OpenID 与 OAuth2 类似。
+
+OpenID ：只用于 **身份认证（Authentication）**，允许你以 同一个账户 在 多个网站登陆。它仅仅是为你的 合法身份 背书，当你以 Facebook 账号登陆某个站点之后，该站点 无权访问 你的在 Facebook 上的 数据
+
+OAuth2：用于 **授权（Authorisation）**，允许 被授权方 访问 授权方 的 用户数据。
+
+
+
+
 
 ## SAML
+SAML (Security Assertion Markup Language) 安全断言标记语言。诞生于2005年。
+
+### SAML1.1
+
+### SAML2.0
+
+![SAML](../assets/img/SAML.png)
+
+1. 还 未登陆 的用户 打开浏览器 访问你的网站（SP），网站 提供服务 但是并 不负责用户认证。
+2. 于是 SP 会生成一个 SAML 的认证请求数据包，把这个请求放在一个 html 的 form 表达的隐藏域中，这个 form 后面有一句 javascript 自动提交这个 form。 而 form 的action地址就是 提前配置好的 idp地址
+3. 提交这个 form 用户浏览器 重定向到 IDP。
+4. IDP 在验证完来自 SP 的 请求无误 之后，在浏览器中呈现 登陆表单
+5. 用户填写 用户名 和 密码 进行登陆。
+6. 用户登陆成功， IDP 会生成一个包含 用户信息的 SAML token（SAML token 又称为 SAML Assertion，本质上是 XML ）。生产一个带 token 的 form 表单 返回至浏览器。
+7. 自动提交这个带 token 的表单，用户重定向 到 SP 。
+8. SP 对拿到的 token 进行验证，并从中解析出 用户信息（双方持有对方的公钥），例如 用户是谁 以及 用户的权限 有哪些。此时就能够根据这些信息允许用户访问我们网站的内容。
+
+[OpenSAML](https://www.jianshu.com/p/d041935641b4)
+
 
 ## LDAP
 
