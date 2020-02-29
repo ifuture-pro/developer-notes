@@ -146,8 +146,16 @@ POST http://localhost:8000/oauth/token?client_id=client&client_secret=111111&gra
 ```
 
 
+## Open ID
+OpenID 与 OAuth2 类似。
+
+OpenID ：只用于 **身份认证（Authentication）**，允许你以 同一个账户 在 多个网站登陆。它仅仅是为你的 合法身份 背书，当你以 Facebook 账号登陆某个站点之后，该站点 无权访问 你的在 Facebook 上的 数据
+
+OAuth2：用于 **授权（Authorisation）**，允许 被授权方 访问 授权方 的 用户数据。
+
+
 ## JWT
-JSON Web token
+[JSON Web token](https://tools.ietf.org/html/rfc7519)
 
 包含：
 * Header: 标题包含了令牌的元数据，并且在最小包含签名和/或加密算法的类型
@@ -160,22 +168,17 @@ JSON Web token
   - nbf: 定义在什么时间之前，该jwt都是不可用的.
   - jti: jwt的唯一身份标识，主要用来作为一次性token,从而回避重放攻击。
 
-* JSON Web Signature (JWS): 在header中指定的使用该算法的数字签名和声明
+* [JSON Web Signature (JWS)](https://tools.ietf.org/html/rfc7515): 在header中指定的使用该算法的数字签名和声明
 [在线解析](https://jwt.io/#encoded-jwt)
 
+
 ## OIDC
-  OpenID Connect
 
-## Open ID
-OpenID 与 OAuth2 类似。
+[OpenID Connect](https://openid.net/connect/) = (Identity, Authentication) + OAuth 2.0
 
-OpenID ：只用于 **身份认证（Authentication）**，允许你以 同一个账户 在 多个网站登陆。它仅仅是为你的 合法身份 背书，当你以 Facebook 账号登陆某个站点之后，该站点 无权访问 你的在 Facebook 上的 数据
+OpenId的身份标识 + OAuth2的授权 + JWT数据包装方式 = OIDC
 
-OAuth2：用于 **授权（Authorisation）**，允许 被授权方 访问 授权方 的 用户数据。
-
-
-
-
+[OpenID-Connect-Java-Spring-Server](https://github.com/mitreid-connect/OpenID-Connect-Java-Spring-Server/)
 
 ## SAML
 SAML (Security Assertion Markup Language) 安全断言标记语言。诞生于2005年。
