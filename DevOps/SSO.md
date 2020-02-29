@@ -162,5 +162,37 @@ JSON Web token
 
 * JSON Web Signature (JWS): 在header中指定的使用该算法的数字签名和声明
 [在线解析](https://jwt.io/#encoded-jwt)
+
+## OIDC
+  OpenID Connect
+
 ## Open ID
+
 ## SAML
+
+## LDAP
+
+LDAP（Light Directory Access Portocol），它是基于X.500标准的 **轻量级目录访问协议**
+
+**目录数据库和关系数据库不同**，它有优异的读性能，但写性能差，并且没有事务处理、回滚等复杂功能，不适于存储修改频繁的数据。所以目录天生是用来查询的，就好象它的名字一样。LDAP目录服务是由目录数据库和一套访问协议组成的系统。
+
+### 关键字
+
+|关键字 |英文全称 |含义 |
+|-----|-------|-----|
+|dc  |Domain Component| 域名的部分，其格式是将完整的域名分成几部分，如域名为example.com变成dc=example,dc=com（一条记录的所属位置）|
+|uid |User Id |用户ID songtao.xu（一条记录的ID）|
+|ou |Organization Unit |组织单位，组织单位可以包含其他各种对象（包括其他组织单元），如“oa组”（一条记录的所属组织）|
+|cn | Common Name |公共名称，如“Thomas Johansson”（一条记录的名称）|
+|sn |Surname |姓，如“万”|
+|dn| Distinguished Name |“uid=songtao.xu,ou=oa组,dc=example,dc=com”，一条记录的位置（唯一）|
+|rdn |Relative dn |相对辨别名，类似于文件系统中的相对路径，它是与目录树结构无关的部分，如“uid=tom”或“cn= Thomas Johansson”|
+
+### 产品
+
+#### 服务
+* Microsoft Active Directory 使用非常广
+* OpenLDAP
+
+#### 接入方案
+* [Spring LDAP](https://spring.io/projects/spring-ldap)
