@@ -154,6 +154,8 @@ OpenID ：只用于 **身份认证（Authentication）**，允许你以 同一�
 OAuth2：用于 **授权（Authorisation）**，允许 被授权方 访问 授权方 的 用户数据。
 
 
+
+
 ## JWT
 [JSON Web token](https://tools.ietf.org/html/rfc7519)
 
@@ -178,7 +180,45 @@ OAuth2：用于 **授权（Authorisation）**，允许 被授权方 访问 授�
 
 OpenId的身份标识 + OAuth2的授权 + JWT数据包装方式 = OIDC
 
-[OpenID-Connect-Java-Spring-Server](https://github.com/mitreid-connect/OpenID-Connect-Java-Spring-Server/)
+
+### 关键字
+* EU：End User：用户。
+* RP：Relying Party ,用来代指OAuth2中的受信任的客户端，身份认证和授权信息的消费方；
+* OP：OpenID Provider，有能力提供EU认证的服务（比如OAuth2中的授权服务），用来为RP提供EU的身份认证信息；
+* ID Token：JWT格式的数据，包含EU身份认证的信息。
+* UserInfo Endpoint：用户信息接口（受OAuth2保护），当RP使用Access Token访问时，返回授权用户的信息，此接口必须使用HTTPS。
+
++--------+                                   +--------+
+|        |                                   |        |
+|        |---------(1) AuthN Request-------->|        |
+|        |                                   |        |
+|        |  +--------+                       |        |
+|        |  |        |                       |        |
+|        |  |  End-  |<--(2) AuthN & AuthZ-->|        |
+|        |  |  User  |                       |        |
+|   RP   |  |        |                       |   OP   |
+|        |  +--------+                       |        |
+|        |                                   |        |
+|        |<--------(3) AuthN Response--------|        |
+|        |                                   |        |
+|        |---------(4) UserInfo Request----->|        |
+|        |                                   |        |
+|        |<--------(5) UserInfo Response-----|        |
+|        |                                   |        |
++--------+                                   +--------+
+
+https://openid.net/specs/openid-connect-core-1_0.html
+
+1. RP发送一个认证请求给OP；
+2. OP对EU进行身份认证，然后提供授权；
+3. OP把ID Token和Access Token（需要的话）返回给RP；
+4. RP使用Access Token发送一个请求UserInfo EndPoint；
+5. UserInfo EndPoint返回EU的Claims。
+
+AuthN=Authentication（认证），AuthZ=Authorization（授权）
+
+https://github.com/mitreid-connect/OpenID-Connect-Java-Spring-Server/
+https://blog.csdn.net/iamlake/article/details/93415206
 
 ## SAML
 SAML (Security Assertion Markup Language) 安全断言标记语言。诞生于2005年。
