@@ -42,13 +42,6 @@ Opensource
 [开发者路线图](https://github.com/kamranahmedse/developer-roadmap)
 ![GitHub stars](https://img.shields.io/github/stars/kamranahmedse/developer-roadmap?style=flat-square)  
 
-## Free Dev
-
-[free-for-dev](https://github.com/ripienaar/free-for-dev)
-![GitHub stars](https://img.shields.io/github/stars/ripienaar/free-for-dev?style=flat-square)   
-[seafile](https://github.com/haiwen/seafile)
-![GitHub stars](https://img.shields.io/github/stars/haiwen/seafile?style=flat-square)
-云盘    
 
 ## Github 增强
 
@@ -69,9 +62,6 @@ Github Actions
 ![GitHub stars](https://img.shields.io/github/stars/opendevops-cn/opendevops?style=flat-square)
 运维平台
 
-[gitter](https://gitter.im/) 社区即时通讯，有点Slack的感觉 https://sidecar.gitter.im/
-
-
 [WeChatLuckyMoney](https://github.com/geeeeeeeeek/WeChatLuckyMoney)
 ![GitHub stars](https://img.shields.io/github/stars/geeeeeeeeek/WeChatLuckyMoney?style=flat-square)
 微信红包机器人
@@ -80,12 +70,7 @@ Github Actions
 ![GitHub stars](https://img.shields.io/github/stars/mozilla/send?style=flat-square)
 发送文件
 
-[keycloak](https://github.com/keycloak/keycloak)
-![GitHub stars](https://img.shields.io/github/stars/keycloak/keycloak?style=flat-square)
-SSO单点登录解决方案  
-[cas](https://github.com/apereo/cas)
-![GitHub stars](https://img.shields.io/github/stars/apereo/cas?style=flat-square)
-SSO单点登录解决方案  
+
 [killbill](https://github.com/killbill/killbill)
 ![GitHub stars](https://img.shields.io/github/stars/killbill/killbill?style=flat-square)
 计价支付  
@@ -95,12 +80,10 @@ SSO单点登录解决方案
 [kutt](https://github.com/thedevs-network/kutt)
 ![GitHub stars](https://img.shields.io/github/stars/thedevs-network/kutt?style=flat-square)
 短连接解决方案    
-[nodetube](https://github.com/mayeaux/nodetube)
-![GitHub stars](https://img.shields.io/github/stars/mayeaux/nodetube?style=flat-square)
-视频网站解决方案，类似youtube   
 [crawlab](https://github.com/crawlab-team/crawlab)
 ![GitHub stars](https://img.shields.io/github/stars/crawlab-team/crawlab?style=flat-square)
 分布式爬虫管理平台  
+
 
 ### 自动化
 [puppeteer](https://github.com/puppeteer/puppeteer)
@@ -110,6 +93,64 @@ SSO单点登录解决方案
 
 [vnpy](https://github.com/vnpy/vnpy)
 ![GitHub stars](https://img.shields.io/github/stars/vnpy/vnpy?style=flat-square)量化交易平台开发框架  
+
+
+## 行业产品-开源可替代方案
+[free-for-dev](https://github.com/ripienaar/free-for-dev)
+![GitHub stars](https://img.shields.io/github/stars/ripienaar/free-for-dev)   
+
+### GitHub
+* [Gogs](https://github.com/gogs/gogs)
+![GitHub stars](https://img.shields.io/github/stars/gogs/gogs)
+* [GitLab](https://github.com/gitlabhq/gitlabhq)
+![GitHub stars](https://img.shields.io/github/stars/gitlabhq/gitlabhq)
+* [Gitea](https://github.com/go-gitea/gitea)
+![GitHub stars](https://img.shields.io/github/stars/go-gitea/gitea)
+* [Pagure](https://github.com/Pagure/pagure)
+![GitHub stars](https://img.shields.io/github/stars/Pagure/pagure)
+
+### Youtube
+* [PeerTube](https://github.com/Chocobozzz/PeerTube)
+![GitHub stars](https://img.shields.io/github/stars/Chocobozzz/PeerTube)
+* [nodetube](https://github.com/mayeaux/nodetube)
+![GitHub stars](https://img.shields.io/github/stars/mayeaux/nodetube)
+
+### Slack
+* [gitter](https://gitter.im/) [sidecar](https://sidecar.gitter.im/)
+* [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat)
+![GitHub stars](https://img.shields.io/github/stars/RocketChat/Rocket.Chat)
+* [Mattermost-server](https://github.com/mattermost/mattermost-server)
+![GitHub stars](https://img.shields.io/github/stars/mattermost/mattermost-server)
+* [Zulip](https://github.com/zulip/zulip)
+![GitHub stars](https://img.shields.io/github/stars/zulip/zulip)
+* [Riot-web](https://github.com/vector-im/riot-web)
+![GitHub stars](https://img.shields.io/github/stars/vector-im/riot-web)
+* [Wire](https://github.com/wireapp/wire)
+![GitHub stars](https://img.shields.io/github/stars/wireapp/wire)
+
+### Google Drive
+* [Nextcloud](https://github.com/nextcloud/server)
+![GitHub stars](https://img.shields.io/github/stars/nextcloud/server)
+* [Seafile](https://github.com/haiwen/seafile)
+![GitHub stars](https://img.shields.io/github/stars/haiwen/seafile)
+* [Owncloud](https://github.com/owncloud/core)
+![GitHub stars](https://img.shields.io/github/stars/owncloud/core)
+
+### [zendesk](https://zen.com/)
+* [Zammad](https://github.com/zammad/zammad)
+![GitHub stars](https://img.shields.io/github/stars/zammad/zammad)
+* [UVDesk](https://github.com/uvdesk/community-skeleton)
+![GitHub stars](https://img.shields.io/github/stars/uvdesk/community-skeleton)
+
+### [Auth0](https://auth0.com/)
+* [keycloak](https://github.com/keycloak/keycloak)
+![GitHub stars](https://img.shields.io/github/stars/keycloak/keycloak)
+* [cas](https://github.com/apereo/cas)
+![GitHub stars](https://img.shields.io/github/stars/apereo/cas)
+* [FusionAuth](https://github.com/FusionAuth/fusionauth-containers)
+![GitHub stars](https://img.shields.io/github/stars/FusionAuth/fusionauth-containers)
+
+
 
 ##  区块链
 [FISCO](https://github.com/FISCO-BCOS/FISCO-BCOS)
