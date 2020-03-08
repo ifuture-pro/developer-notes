@@ -294,15 +294,6 @@ Table of Contents
      - [TPS](blockchain/区块链概念汇总.md#tps)
    - [共识](blockchain/区块链概念汇总.md#%E5%85%B1%E8%AF%86)
      - [共识算法](blockchain/区块链概念汇总.md#%E5%85%B1%E8%AF%86%E7%AE%97%E6%B3%95)
-       - [PBFT](blockchain/区块链概念汇总.md#pbft)
-         - [leader 选举](blockchain/区块链概念汇总.md#leader-%E9%80%89%E4%B8%BE)
-         - [角色](blockchain/区块链概念汇总.md#%E8%A7%92%E8%89%B2)
-         - [共识流程](blockchain/区块链概念汇总.md#%E5%85%B1%E8%AF%86%E6%B5%81%E7%A8%8B)
-           - [打包区块 生成Prepare](blockchain/区块链概念汇总.md#%E6%89%93%E5%8C%85%E5%8C%BA%E5%9D%97-%E7%94%9F%E6%88%90prepare)
-           - [Pre-prepare](blockchain/区块链概念汇总.md#pre-prepare)
-           - [Prepare](blockchain/区块链概念汇总.md#prepare)
-           - [Commit](blockchain/区块链概念汇总.md#commit)
-           - [ViewChange](blockchain/区块链概念汇总.md#viewchange)
    - [隐私保护](blockchain/区块链概念汇总.md#%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4)
      - [隐私保护算法](blockchain/区块链概念汇总.md#%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4%E7%AE%97%E6%B3%95)
    - [区块链产品](blockchain/区块链概念汇总.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E4%BA%A7%E5%93%81)
@@ -332,6 +323,21 @@ Table of Contents
      - [假错误通知攻击](blockchain/区块链概念汇总.md#%E5%81%87%E9%94%99%E8%AF%AF%E9%80%9A%E7%9F%A5%E6%94%BB%E5%87%BB)
      - [粉尘攻击](blockchain/区块链概念汇总.md#%E7%B2%89%E5%B0%98%E6%94%BB%E5%87%BB)
      - [命令执行与控制 C2](blockchain/区块链概念汇总.md#%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E4%B8%8E%E6%8E%A7%E5%88%B6-c2)
+
+## [区块链设计](blockchain/区块链设计.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E8%AE%BE%E8%AE%A1)
+
+   - [共识算法](blockchain/区块链设计.md#%E5%85%B1%E8%AF%86%E7%AE%97%E6%B3%95)
+     - [PBFT](blockchain/区块链设计.md#pbft)
+       - [leader 选举](blockchain/区块链设计.md#leader-%E9%80%89%E4%B8%BE)
+       - [角色](blockchain/区块链设计.md#%E8%A7%92%E8%89%B2)
+       - [共识流程](blockchain/区块链设计.md#%E5%85%B1%E8%AF%86%E6%B5%81%E7%A8%8B)
+         - [打包区块 生成Prepare](blockchain/区块链设计.md#%E6%89%93%E5%8C%85%E5%8C%BA%E5%9D%97-%E7%94%9F%E6%88%90prepare)
+         - [Pre-prepare](blockchain/区块链设计.md#pre-prepare)
+         - [Prepare](blockchain/区块链设计.md#prepare)
+         - [Commit](blockchain/区块链设计.md#commit)
+         - [ViewChange](blockchain/区块链设计.md#viewchange)
+   - [轻节点](blockchain/区块链设计.md#%E8%BD%BB%E8%8A%82%E7%82%B9)
+     - [默克尔树 Merkle tree](blockchain/区块链设计.md#%E9%BB%98%E5%85%8B%E5%B0%94%E6%A0%91-merkle-tree)
 
 ## [白皮书-以太坊](blockchain/白皮书-以太坊.md#%E7%99%BD%E7%9A%AE%E4%B9%A6-%E4%BB%A5%E5%A4%AA%E5%9D%8A)
 
@@ -374,6 +380,7 @@ Table of Contents
      - [节点准入机制](blockchain/联盟链.md#%E8%8A%82%E7%82%B9%E5%87%86%E5%85%A5%E6%9C%BA%E5%88%B6)
        - [网络准入机制](blockchain/联盟链.md#%E7%BD%91%E7%BB%9C%E5%87%86%E5%85%A5%E6%9C%BA%E5%88%B6)
        - [群组准入机制](blockchain/联盟链.md#%E7%BE%A4%E7%BB%84%E5%87%86%E5%85%A5%E6%9C%BA%E5%88%B6)
+     - [国密算法](blockchain/联盟链.md#%E5%9B%BD%E5%AF%86%E7%AE%97%E6%B3%95)
      - [WeBASE](blockchain/联盟链.md#webase)
      - [WeIdentity](blockchain/联盟链.md#weidentity)
 
@@ -567,6 +574,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
