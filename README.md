@@ -240,6 +240,7 @@ Table of Contents
      - [子项目](Notepad/日常杂项.md#%E5%AD%90%E9%A1%B9%E7%9B%AE)
      - [保存密码](Notepad/日常杂项.md#%E4%BF%9D%E5%AD%98%E5%AF%86%E7%A0%81)
      - [Github](Notepad/日常杂项.md#github)
+     - [其他](Notepad/日常杂项.md#%E5%85%B6%E4%BB%96)
    - [Docker](Notepad/日常杂项.md#docker)
      - [基础安装](Notepad/日常杂项.md#%E5%9F%BA%E7%A1%80%E5%AE%89%E8%A3%85)
    - [Kubernetes](Notepad/日常杂项.md#kubernetes)
@@ -341,7 +342,38 @@ Table of Contents
 
 ## [白皮书-以太坊](blockchain/白皮书-以太坊.md#%E7%99%BD%E7%9A%AE%E4%B9%A6-%E4%BB%A5%E5%A4%AA%E5%9D%8A)
 
-
+     - [历史](blockchain/白皮书-以太坊.md#%E5%8E%86%E5%8F%B2)
+     - [作为状态转换系统的比特币](blockchain/白皮书-以太坊.md#%E4%BD%9C%E4%B8%BA%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%AF%94%E7%89%B9%E5%B8%81)
+     - [挖矿](blockchain/白皮书-以太坊.md#%E6%8C%96%E7%9F%BF)
+     - [默克尔树](blockchain/白皮书-以太坊.md#%E9%BB%98%E5%85%8B%E5%B0%94%E6%A0%91)
+     - [其它的区块链应用](blockchain/白皮书-以太坊.md#%E5%85%B6%E5%AE%83%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E5%BA%94%E7%94%A8)
+     - [脚本](blockchain/白皮书-以太坊.md#%E8%84%9A%E6%9C%AC)
+   - [以太坊](blockchain/白皮书-以太坊.md#%E4%BB%A5%E5%A4%AA%E5%9D%8A)
+     - [以太坊账户](blockchain/白皮书-以太坊.md#%E4%BB%A5%E5%A4%AA%E5%9D%8A%E8%B4%A6%E6%88%B7)
+     - [消息和交易](blockchain/白皮书-以太坊.md#%E6%B6%88%E6%81%AF%E5%92%8C%E4%BA%A4%E6%98%93)
+     - [以太坊状态转换函数](blockchain/白皮书-以太坊.md#%E4%BB%A5%E5%A4%AA%E5%9D%8A%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2%E5%87%BD%E6%95%B0)
+     - [代码执行](blockchain/白皮书-以太坊.md#%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C)
+     - [区块链和挖矿](blockchain/白皮书-以太坊.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E5%92%8C%E6%8C%96%E7%9F%BF)
+   - [应用](blockchain/白皮书-以太坊.md#%E5%BA%94%E7%94%A8)
+     - [令牌系统](blockchain/白皮书-以太坊.md#%E4%BB%A4%E7%89%8C%E7%B3%BB%E7%BB%9F)
+     - [金融衍生品和价值稳定的货币](blockchain/白皮书-以太坊.md#%E9%87%91%E8%9E%8D%E8%A1%8D%E7%94%9F%E5%93%81%E5%92%8C%E4%BB%B7%E5%80%BC%E7%A8%B3%E5%AE%9A%E7%9A%84%E8%B4%A7%E5%B8%81)
+     - [身份和信誉系统](blockchain/白皮书-以太坊.md#%E8%BA%AB%E4%BB%BD%E5%92%8C%E4%BF%A1%E8%AA%89%E7%B3%BB%E7%BB%9F)
+     - [去中心化存储](blockchain/白皮书-以太坊.md#%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%98%E5%82%A8)
+     - [去中心化自治组织](blockchain/白皮书-以太坊.md#%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E8%87%AA%E6%B2%BB%E7%BB%84%E7%BB%87)
+     - [进一步的应用](blockchain/白皮书-以太坊.md#%E8%BF%9B%E4%B8%80%E6%AD%A5%E7%9A%84%E5%BA%94%E7%94%A8)
+   - [杂项和关注](blockchain/白皮书-以太坊.md#%E6%9D%82%E9%A1%B9%E5%92%8C%E5%85%B3%E6%B3%A8)
+     - [改进版幽灵协议的实施](blockchain/白皮书-以太坊.md#%E6%94%B9%E8%BF%9B%E7%89%88%E5%B9%BD%E7%81%B5%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%AE%9E%E6%96%BD)
+     - [费用](blockchain/白皮书-以太坊.md#%E8%B4%B9%E7%94%A8)
+     - [计算和图灵完备](blockchain/白皮书-以太坊.md#%E8%AE%A1%E7%AE%97%E5%92%8C%E5%9B%BE%E7%81%B5%E5%AE%8C%E5%A4%87)
+     - [货币和发行](blockchain/白皮书-以太坊.md#%E8%B4%A7%E5%B8%81%E5%92%8C%E5%8F%91%E8%A1%8C)
+     - [发行分解](blockchain/白皮书-以太坊.md#%E5%8F%91%E8%A1%8C%E5%88%86%E8%A7%A3)
+     - [挖矿的中心化](blockchain/白皮书-以太坊.md#%E6%8C%96%E7%9F%BF%E7%9A%84%E4%B8%AD%E5%BF%83%E5%8C%96)
+     - [扩展性](blockchain/白皮书-以太坊.md#%E6%89%A9%E5%B1%95%E6%80%A7)
+   - [综述：去中心化应用](blockchain/白皮书-以太坊.md#%E7%BB%BC%E8%BF%B0%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%BA%94%E7%94%A8)
+   - [结论](blockchain/白皮书-以太坊.md#%E7%BB%93%E8%AE%BA)
+   - [注解与进阶阅读](blockchain/白皮书-以太坊.md#%E6%B3%A8%E8%A7%A3%E4%B8%8E%E8%BF%9B%E9%98%B6%E9%98%85%E8%AF%BB)
+     - [　注解](blockchain/白皮书-以太坊.md#%E6%B3%A8%E8%A7%A3)
+     - [　进阶阅读](blockchain/白皮书-以太坊.md#%E8%BF%9B%E9%98%B6%E9%98%85%E8%AF%BB)
 
 ## [白皮书-比特币](blockchain/白皮书-比特币.md#%E7%99%BD%E7%9A%AE%E4%B9%A6-%E6%AF%94%E7%89%B9%E5%B8%81)
 
@@ -574,6 +606,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
