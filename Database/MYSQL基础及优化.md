@@ -93,6 +93,13 @@ mysqldump -udbuser -p -d --add-drop-table dbname >d:/dbname_db.sql
 login mysql then:
 source /home/ubuntu/dbname.sql
 ```
+
+## 关键字
+* 数据库查询语言（DQL）：select
+* 数据库定义语言（DDL）：create database、drop database 、create table、drop table、alter
+* 数据库操作语言（DML）：update 、insert 、delete
+
+
 ## 索引基础
 与CPU类似为了提高性能，CPU寄存器向内存取数据时可能会连带数据的邻居数据一起取出，这是CPU的`缓存行对齐`以64个字节为一个基本单位取数据。（这部分在其他笔记中记载了，可以在整个笔记中搜索`缓存行对齐`查找）。MySQL 数据库也使用类似的方式，减少对磁盘的IO次数以提高性能，MySQL 中使用了 `Page` 页，在InnoDb引擎中页的大小是16KB，插入数据时进行排序形成多个页目录，最终形成索引结构 `B+树` 优化查询效率。  
 在联合索引中排序有这么一个原则，从左往右依次比较大小也就是`最左前缀匹配原则`。如联合索引(key1,key2,key3)，相当于创建了（key1）、(key1,key2)和(key1,key2,key3)三个索引，这就是最左匹配原则
