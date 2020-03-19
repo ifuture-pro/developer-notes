@@ -114,6 +114,10 @@ Table of Contents
        - [服务](DevOps/SSO.md#%E6%9C%8D%E5%8A%A1)
        - [接入方案](DevOps/SSO.md#%E6%8E%A5%E5%85%A5%E6%96%B9%E6%A1%88)
 
+## [大数据](DevOps/大数据.md#%E5%A4%A7%E6%95%B0%E6%8D%AE)
+
+   - [Big Data](DevOps/大数据.md#big-data)
+
 ## [微服务](DevOps/微服务.md#%E5%BE%AE%E6%9C%8D%E5%8A%A1)
 
    - [微服务](DevOps/微服务.md#%E5%BE%AE%E6%9C%8D%E5%8A%A1)
@@ -130,6 +134,7 @@ Table of Contents
    - [Redis](DevOps/缓存.md#redis)
      - [数据结构](DevOps/缓存.md#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
      - [淘汰策略](DevOps/缓存.md#%E6%B7%98%E6%B1%B0%E7%AD%96%E7%95%A5)
+     - [持久化机制](DevOps/缓存.md#%E6%8C%81%E4%B9%85%E5%8C%96%E6%9C%BA%E5%88%B6)
      - [应用](DevOps/缓存.md#%E5%BA%94%E7%94%A8)
 
 # Linux
@@ -200,6 +205,7 @@ Table of Contents
      - [Google Drive](Notepad/opensource-awesome.md#google-drive)
      - [zendesk](Notepad/opensource-awesome.md#zendesk)
      - [Auth0](Notepad/opensource-awesome.md#auth0)
+     - [CI/CD](Notepad/opensource-awesome.md#cicd)
    - [区块链](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE)
      - [区块链安全](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E5%AE%89%E5%85%A8)
    - [最佳实践](Notepad/opensource-awesome.md#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5)
@@ -212,6 +218,7 @@ Table of Contents
    - [产品设计](Notepad/产品设计.md#%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1)
    - [KISS 原则](Notepad/产品设计.md#kiss-%E5%8E%9F%E5%88%99)
    - [POC](Notepad/产品设计.md#poc)
+   - [图片素材](Notepad/产品设计.md#%E5%9B%BE%E7%89%87%E7%B4%A0%E6%9D%90)
    - [软件版本](Notepad/产品设计.md#%E8%BD%AF%E4%BB%B6%E7%89%88%E6%9C%AC)
    - [通用](Notepad/产品设计.md#%E9%80%9A%E7%94%A8)
    - [微软常用](Notepad/产品设计.md#%E5%BE%AE%E8%BD%AF%E5%B8%B8%E7%94%A8)
@@ -259,6 +266,23 @@ Table of Contents
      - [基础安装](Notepad/日常杂项.md#%E5%9F%BA%E7%A1%80%E5%AE%89%E8%A3%85)
    - [Kubernetes](Notepad/日常杂项.md#kubernetes)
      - [Ingress](Notepad/日常杂项.md#ingress)
+
+## [软件架构师](Notepad/软件架构师.md#%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E5%B8%88)
+
+ - [什么是软件架构师](Notepad/软件架构师.md#%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E5%B8%88)
+ - [架构师级别](Notepad/软件架构师.md#%E6%9E%B6%E6%9E%84%E5%B8%88%E7%BA%A7%E5%88%AB)
+ - [基本工作内容](Notepad/软件架构师.md#%E5%9F%BA%E6%9C%AC%E5%B7%A5%E4%BD%9C%E5%86%85%E5%AE%B9)
+ - [应具备的技能](Notepad/软件架构师.md#%E5%BA%94%E5%85%B7%E5%A4%87%E7%9A%84%E6%8A%80%E8%83%BD)
+   - [1. 设计](Notepad/软件架构师.md#1-%E8%AE%BE%E8%AE%A1)
+   - [2. 决策](Notepad/软件架构师.md#2-%E5%86%B3%E7%AD%96)
+   - [3. 简化](Notepad/软件架构师.md#3-%E7%AE%80%E5%8C%96)
+   - [4. 编码](Notepad/软件架构师.md#4-%E7%BC%96%E7%A0%81)
+   - [5. 文档](Notepad/软件架构师.md#5-%E6%96%87%E6%A1%A3)
+   - [6. 沟通](Notepad/软件架构师.md#6-%E6%B2%9F%E9%80%9A)
+   - [7. 评估](Notepad/软件架构师.md#7-%E8%AF%84%E4%BC%B0)
+   - [8. 平衡](Notepad/软件架构师.md#8-%E5%B9%B3%E8%A1%A1)
+   - [9. 指导、答疑](Notepad/软件架构师.md#9-%E6%8C%87%E5%AF%BC%E7%AD%94%E7%96%91)
+   - [10. 市场](Notepad/软件架构师.md#10-%E5%B8%82%E5%9C%BA)
 
 ## [_coverpage](_coverpage.md#_coverpage)
 
@@ -630,3 +654,4 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
