@@ -150,7 +150,11 @@ Github Actions
 * [FusionAuth](https://github.com/FusionAuth/fusionauth-containers)
 ![GitHub stars](https://img.shields.io/github/stars/FusionAuth/fusionauth-containers)
 
-
+### CI/CD
+* [jenkins](https://github.com/jenkinsci/jenkins)
+![GitHub stars](https://img.shields.io/github/stars/jenkinsci/jenkins)
+* [drone](https://github.com/drone/drone)
+![GitHub stars](https://img.shields.io/github/stars/drone/drone)
 
 ##  区块链
 [FISCO](https://github.com/FISCO-BCOS/FISCO-BCOS)
