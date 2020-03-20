@@ -389,6 +389,15 @@ Table of Contents
    - [Event/Log](blockchain/智能合约-solidity.md#eventlog)
    - [修饰符](blockchain/智能合约-solidity.md#%E4%BF%AE%E9%A5%B0%E7%AC%A6)
 
+## [智能合约-设计模式](blockchain/智能合约-设计模式.md#%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)
+
+   - [设计模式](blockchain/智能合约-设计模式.md#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)
+     - [安全 Security](blockchain/智能合约-设计模式.md#%E5%AE%89%E5%85%A8-security)
+     - [可维护性 Maintaince](blockchain/智能合约-设计模式.md#%E5%8F%AF%E7%BB%B4%E6%8A%A4%E6%80%A7-maintaince)
+     - [生命周期 Lifecycle](blockchain/智能合约-设计模式.md#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F-lifecycle)
+     - [权限 Authorization](blockchain/智能合约-设计模式.md#%E6%9D%83%E9%99%90-authorization)
+     - [行为控制 Action And Control](blockchain/智能合约-设计模式.md#%E8%A1%8C%E4%B8%BA%E6%8E%A7%E5%88%B6-action-and-control)
+
 ## [白皮书-以太坊](blockchain/白皮书-以太坊.md#%E7%99%BD%E7%9A%AE%E4%B9%A6-%E4%BB%A5%E5%A4%AA%E5%9D%8A)
 
      - [历史](blockchain/白皮书-以太坊.md#%E5%8E%86%E5%8F%B2)
@@ -655,5 +664,6 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
