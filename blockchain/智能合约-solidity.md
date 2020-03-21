@@ -33,8 +33,8 @@ var event = demoContract.Transfer({from: ["xxxx","xxxx","xxxxx"]});
 ```
 
 高效使用：
-* 异步获取执行结果
-* 和前端交互
+* 异步获取执行结果，并可提供过滤器，支持参数的检索和过滤。
+* 提供一种回调机制，在事件执行成功后，由节点向注册监听的SDK发送回调通知，触发回调函数被执行。Oracle 的原理
 * 存储合约数据，巧用日志去存储数据，可以大大减少交易费用
   > storage存储的大概价格为：每32字节需要消耗20000Gas，而日志存储价格大概为每字节8Gas
 
@@ -53,12 +53,18 @@ var event = demoContract.Transfer({from: ["xxxx","xxxx","xxxxx"]});
   函数：与`view`等价。  
   变量：不允许赋值（初始化除外），它不会占据 `storage slot`
 
-* `external` - 可以从其他合约和交易中调用
-* `public` - 可以在内部或通过消息调用。
+* `external` - 可以从其他合约和交易中调用，不可内部调用，在接收大量数据时更为高效。
+
+  当函数的某个参数非常大时，如果显式地将函数标记为external，可以强制将函数存储的位置设置为 `calldata`，这会节约函数执行时所需存储或计算资源。
+
+* `public` - 可以在内部或通过消息调用。没指定默认为 public
 
   变量：会自动生成一个 `getter` 函数
 
 * `internal` - 只能是内部访问
+
+  变量：状态变量的修饰符默认是`internal`
+
 * `private` - 仅在当前定义它们的合约中使用，并且不能被派生合约使用
 
 **修饰事件参数**
@@ -68,3 +74,20 @@ var event = demoContract.Transfer({from: ["xxxx","xxxx","xxxxx"]});
 
 **修饰器**
 * `modifier` - [修饰器](https://solidity-cn.readthedocs.io/zh/develop/contracts.html#modifier)
+
+  有点面向切面编程的感觉。
+```javascript
+event LogStartMethod();
+event LogEndMethod();
+modifier logMethod {
+    emit LogStartMethod();
+    _;//表示所修饰函数中的代码,也就是在函数的最前与最后插入代码
+    emit LogEndMethod();
+}
+function doing(address _owner) public logMethod {
+    // something...
+}
+```
+
+## 抽象类与接口
+[docs](https://solidity-cn.readthedocs.io/zh/develop/contracts.html#index-17) 与其他语言类似。但需要注意合适地使用接口或抽象合约有助于增强合约设计的可扩展性。但是，由于区块链EVM上计算和存储资源的限制，切忌过度设计，这也是从高级语言技术栈转到Solidity开发的老司机常常会陷入的天坑。
