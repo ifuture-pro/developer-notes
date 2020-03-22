@@ -96,6 +96,9 @@ newList.addAll(newSet)//将去重后的 Set 重新转换成 List
 * Semaphore
 * AtomicInteger
 
+## 可以实现多继承吗？
+Java 不允许多继承，但在 Python 可以多继承，在使用多继承时需要注意 **钻石继承** 问题。
+
 ## 画一下RPC的架构图
 ![rpc](../assets/img/rpc.jpg)
 

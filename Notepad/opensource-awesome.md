@@ -156,6 +156,18 @@ Github Actions
 * [drone](https://github.com/drone/drone)
 ![GitHub stars](https://img.shields.io/github/stars/drone/drone)
 
+### Zoom
+* [BigBlueButton](https://github.com/bigbluebutton/bigbluebutton)
+![GitHub stars](https://img.shields.io/github/stars/bigbluebutton/bigbluebutton)
+* [OpenVidu](https://github.com/OpenVidu/openvidu)
+![GitHub stars](https://img.shields.io/github/stars/OpenVidu/openvidu)
+
+### Jira
+* [jira_clone](https://github.com/oldboyxx/jira_clone)
+![GitHub stars](https://img.shields.io/github/stars/oldboyxx/jira_clone)
+* [redmine](https://www.redmine.org/)
+
+
 ##  区块链
 [FISCO](https://github.com/FISCO-BCOS/FISCO-BCOS)
 ![GitHub stars](https://img.shields.io/github/stars/FISCO-BCOS/FISCO-BCOS?style=flat-square)  
