@@ -32,6 +32,114 @@
 
 ```
 
+
+## 版本
+### JDK 1.0
+> 1996.1
+
+### JDK 1.1
+> 1997.2
+
+* 内部类
+* JDBC
+* JavaBeans
+
+### J2SE 1.2
+> 1998.12
+
+* Java集合框架
+* Swing图像化API
+* JIT编译器
+
+### J2SE 1.3
+> 2000.5
+
+* HotSpot JVM
+* JNDI
+* JPDA
+* 用于实现动态代理的类
+
+### J2SE 1.4
+> 2002.2
+
+* assert 关键字
+* 异常链
+* NIO
+
+### J2SE 5.0
+> 2004.9
+
+* 泛型
+* 元数据
+* 自动封箱、自动拆箱
+* 枚举
+* 可变参数函数
+* 强化for each循环
+* Swing
+* java.util.concurrent包
+
+### Java SE 6
+> 2006.12
+
+* 支持JDBC 4.0
+
+### Java SE 7
+> 2011.7
+
+* 在switch中使用字符串类型
+* try-with-resources
+* 新的invokedynamic字节码指令
+* 允许在数值字面值中加入下划线
+
+### Java SE 8
+> 2014.3
+
+* Lambda表达式
+* Nashorn
+* 移除了虚拟机内存管理中的永久代
+* 新的日期和时间 API
+
+### Java SE 9
+> 2017.9
+
+* Jigsaw项目中将JDK模块化
+* jshell
+* jlink
+
+### Java SE 10
+> 2018.3
+
+* 局部变量类型推断
+* 适用于G1的多线程完全垃圾回收
+
+### Java SE 11
+> 2018.9
+
+* ZGC
+* Epsilon
+
+### Java SE 12
+> 2019.3
+
+* Shenandoah
+* Switch 表达式（预览）
+
+### Java SE 13
+> 2019.9
+
+* Text Blocks（预览阶段）
+* 动态 CDS 归档
+
+### Java SE 14
+> 2020.3
+
+* Records
+* Switch 表达式
+* 友好的空指针异常
+* 打包工具
+
+
+
 ## HashMap
 JAVA1.8 HashMap采用 数组+链表+红黑树的方式实现。  
 1. **HashMap**：它根据键的hashCode值存储数据，大多数情况下可以直接定位到它的值，因而具有很快的访问速度，但遍历顺序却是不确定的。 HashMap最多只允许一条记录的键为null，允许多条记录的值为null。HashMap非线程安全，即任一时刻可以有多个线程同时写HashMap，可能会导致数据的不一致。如果需要满足线程安全，可以用 Collections的synchronizedMap方法使HashMap具有线程安全的能力，或者使用ConcurrentHashMap。
