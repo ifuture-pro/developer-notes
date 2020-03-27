@@ -2,9 +2,11 @@ Solidity
 -----------
 [Solidity](https://solidity.readthedocs.io/) 是一门面向合约的、为实现智能合约而创建的高级编程语言，运作在以太坊虚拟机（EVM）上。
 
-[官方文档](https://solidity.readthedocs.io/)
-[中文文档](https://learnblockchain.cn/docs/solidity/)
+[官方文档](https://solidity.readthedocs.io/)  
+[非官方中文文档](https://learnblockchain.cn/docs/solidity/)  
+[Openzeppelin合约类库](https://github.com/OpenZeppelin/openzeppelin-contracts)  
 
+> 以太坊虚拟机（EVM）是一个 “The World Machine” 所以请原谅它简陋的语法特性、令人抓狂的debug体验、近乎贫瘠的类库支持、动不动就需要插入汇编语句来解决一下问题。Solidity 语言在这种环境下必须严格遵循的设计原则以及权衡后必须付出的代价。
 
 ## ABI
 Application Binary Interface(ABI)
@@ -91,3 +93,13 @@ function doing(address _owner) public logMethod {
 
 ## 抽象类与接口
 [docs](https://solidity-cn.readthedocs.io/zh/develop/contracts.html#index-17) 与其他语言类似。但需要注意合适地使用接口或抽象合约有助于增强合约设计的可扩展性。但是，由于区块链EVM上计算和存储资源的限制，切忌过度设计，这也是从高级语言技术栈转到Solidity开发的老司机常常会陷入的天坑。
+
+
+## 常见问题
+* 一个合约中，入参、返回值、内部变量不能超过了16个
+```javascript
+Compiler error: Stack too deep, try removing local variables.
+```
+EVM所设计用于最大的栈深度为16。所有的计算都在一个栈内执行，对栈的访问只限于其顶端，限制方式为：允许拷贝最顶端16个元素中的一个到栈顶，或者将栈顶元素和下面16个元素中的一个交换。所有其他操作都只能取最顶的几个元素，运算后，把结果压入栈顶。当然可以把栈上的元素放到存储或内存中。但无法只访问栈上指定深度的那个元素，除非先从栈顶移除其他元素。
+
+  **建议** 使用结构体或数组来封装入参或返回值，达到减少栈顶元素使用的目的，从而避免此错误。对于智能合约也应该[避免过多的设计](./智能合约-设计模式.md)。需要分布式协作的重要数据才上链，非必需数据不上链；链上验证，链下授权。
