@@ -117,8 +117,13 @@ Table of Contents
 ## [大数据](DevOps/大数据.md#%E5%A4%A7%E6%95%B0%E6%8D%AE)
 
    - [Big Data](DevOps/大数据.md#big-data)
-   - [存储引擎](DevOps/大数据.md#%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E)
-     - [LSM](DevOps/大数据.md#lsm)
+   - [涉及关键知识点](DevOps/大数据.md#%E6%B6%89%E5%8F%8A%E5%85%B3%E9%94%AE%E7%9F%A5%E8%AF%86%E7%82%B9)
+     - [存储引擎](DevOps/大数据.md#%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E)
+       - [LSM](DevOps/大数据.md#lsm)
+     - [容错 数据冗余技术](DevOps/大数据.md#%E5%AE%B9%E9%94%99-%E6%95%B0%E6%8D%AE%E5%86%97%E4%BD%99%E6%8A%80%E6%9C%AF)
+       - [副本策略](DevOps/大数据.md#%E5%89%AF%E6%9C%AC%E7%AD%96%E7%95%A5)
+       - [纠删码 Erasure Code](DevOps/大数据.md#%E7%BA%A0%E5%88%A0%E7%A0%81-erasure-code)
+       - [磁盘阵列](DevOps/大数据.md#%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97)
 
 ## [微服务](DevOps/微服务.md#%E5%BE%AE%E6%9C%8D%E5%8A%A1)
 
@@ -694,6 +699,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
