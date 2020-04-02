@@ -114,6 +114,22 @@ Table of Contents
        - [服务](DevOps/SSO.md#%E6%9C%8D%E5%8A%A1)
        - [接入方案](DevOps/SSO.md#%E6%8E%A5%E5%85%A5%E6%96%B9%E6%A1%88)
 
+## [分布式系统数据一致性](DevOps/分布式系统数据一致性.md#%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E6%95%B0%E6%8D%AE%E4%B8%80%E8%87%B4%E6%80%A7)
+
+   - [分布式系统数据一致性](DevOps/分布式系统数据一致性.md#%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E6%95%B0%E6%8D%AE%E4%B8%80%E8%87%B4%E6%80%A7)
+   - [分布式系统](DevOps/分布式系统数据一致性.md#%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F)
+     - [两阶段提交协议（2PC：Two-Phase Commit）](DevOps/分布式系统数据一致性.md#%E4%B8%A4%E9%98%B6%E6%AE%B5%E6%8F%90%E4%BA%A4%E5%8D%8F%E8%AE%AE2pctwo-phase-commit)
+       - [第一阶段：投票](DevOps/分布式系统数据一致性.md#%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E6%8A%95%E7%A5%A8)
+       - [第二阶段：事务提交](DevOps/分布式系统数据一致性.md#%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E4%BA%8B%E5%8A%A1%E6%8F%90%E4%BA%A4)
+       - [缺点与存在的问题](DevOps/分布式系统数据一致性.md#%E7%BC%BA%E7%82%B9%E4%B8%8E%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98)
+     - [三阶段提交协议（3PC：Three-Phase Commit）](DevOps/分布式系统数据一致性.md#%E4%B8%89%E9%98%B6%E6%AE%B5%E6%8F%90%E4%BA%A4%E5%8D%8F%E8%AE%AE3pcthree-phase-commit)
+       - [第一阶段：预询盘](DevOps/分布式系统数据一致性.md#%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E9%A2%84%E8%AF%A2%E7%9B%98)
+       - [第二阶段：预提交](DevOps/分布式系统数据一致性.md#%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A2%84%E6%8F%90%E4%BA%A4)
+       - [第三阶段：事务提交](DevOps/分布式系统数据一致性.md#%E7%AC%AC%E4%B8%89%E9%98%B6%E6%AE%B5%E4%BA%8B%E5%8A%A1%E6%8F%90%E4%BA%A4)
+   - [区块链分布式系统](DevOps/分布式系统数据一致性.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F)
+     - [哈希时间锁定](DevOps/分布式系统数据一致性.md#%E5%93%88%E5%B8%8C%E6%97%B6%E9%97%B4%E9%94%81%E5%AE%9A)
+     - [Paxos](DevOps/分布式系统数据一致性.md#paxos)
+
 ## [大数据](DevOps/大数据.md#%E5%A4%A7%E6%95%B0%E6%8D%AE)
 
    - [Big Data](DevOps/大数据.md#big-data)
@@ -699,6 +715,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
