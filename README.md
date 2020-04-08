@@ -129,6 +129,9 @@ Table of Contents
    - [区块链分布式系统](DevOps/分布式系统数据一致性.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F)
      - [哈希时间锁定](DevOps/分布式系统数据一致性.md#%E5%93%88%E5%B8%8C%E6%97%B6%E9%97%B4%E9%94%81%E5%AE%9A)
      - [Paxos](DevOps/分布式系统数据一致性.md#paxos)
+       - [角色](DevOps/分布式系统数据一致性.md#%E8%A7%92%E8%89%B2)
+       - [第一阶段：Prepare阶段](DevOps/分布式系统数据一致性.md#%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5prepare%E9%98%B6%E6%AE%B5)
+       - [第二阶段：Accept阶段](DevOps/分布式系统数据一致性.md#%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5accept%E9%98%B6%E6%AE%B5)
 
 ## [大数据](DevOps/大数据.md#%E5%A4%A7%E6%95%B0%E6%8D%AE)
 
@@ -718,6 +721,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
