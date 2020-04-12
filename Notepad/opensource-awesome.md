@@ -94,7 +94,7 @@ Github Actions
 [vnpy](https://github.com/vnpy/vnpy)
 ![GitHub stars](https://img.shields.io/github/stars/vnpy/vnpy?style=flat-square)量化交易平台开发框架  
 [akshare](https://github.com/jindaxiang/akshare)
-![GitHub stars](https://img.shields.io/github/stars/jindaxiang/akshare?style=flat-square)jindaxiang/akshare  
+![GitHub stars](https://img.shields.io/github/stars/jindaxiang/akshare?style=flat-square)财经数据接口
 
 ## 行业产品-开源可替代方案
 [free-for-dev](https://github.com/ripienaar/free-for-dev)
