@@ -106,6 +106,7 @@ Table of Contents
      - [索引下推](Database/MYSQL基础及优化.md#%E7%B4%A2%E5%BC%95%E4%B8%8B%E6%8E%A8)
      - [查询优化器](Database/MYSQL基础及优化.md#%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96%E5%99%A8)
    - [事务隔离级别](Database/MYSQL基础及优化.md#%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB)
+   - [Binlog](Database/MYSQL基础及优化.md#binlog)
    - [SQL基础优化](Database/MYSQL基础及优化.md#sql%E5%9F%BA%E7%A1%80%E4%BC%98%E5%8C%96)
 
 ## [数据库](Database/数据库.md#%E6%95%B0%E6%8D%AE%E5%BA%93)
@@ -170,6 +171,12 @@ Table of Contents
        - [角色](DevOps/分布式系统数据一致性.md#%E8%A7%92%E8%89%B2)
        - [第一阶段：Prepare阶段](DevOps/分布式系统数据一致性.md#%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5prepare%E9%98%B6%E6%AE%B5)
        - [第二阶段：Accept阶段](DevOps/分布式系统数据一致性.md#%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5accept%E9%98%B6%E6%AE%B5)
+
+## [反编译](DevOps/反编译.md#%E5%8F%8D%E7%BC%96%E8%AF%91)
+
+ - [反编译 Reverse engineering](DevOps/反编译.md#%E5%8F%8D%E7%BC%96%E8%AF%91-reverse-engineering)
+   - [Objective-C](DevOps/反编译.md#objective-c)
+   - [Java](DevOps/反编译.md#java)
 
 ## [微服务](DevOps/微服务.md#%E5%BE%AE%E6%9C%8D%E5%8A%A1)
 
@@ -748,6 +755,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
