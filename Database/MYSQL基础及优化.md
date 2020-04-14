@@ -168,6 +168,7 @@ select * from information_schema.innodb_trx where TIME_TO_SEC(timediff(now(),trx
 ## Binlog
 MySQL二进制日志,用于记录用户对数据库操作的SQL语句（(除了数据查询语句）信息。可以使用mysqlbin命令查看二进制日志的内容。
 
+### 模式分类
 * STATMENT  
   基于SQL语句的复制(statement-based replication, SBR)，每一条会修改数据的sql语句会记录到binlog中。
   * 优点：不需要记录每一条SQL语句与每行的数据变化，这样子binlog的日志也会比较少，减少了磁盘IO，提高性能。
@@ -181,6 +182,7 @@ MySQL二进制日志,用于记录用户对数据库操作的SQL语句（(除了�
 * MIXED  
   混合模式复制(mixed-based replication, MBR)：以上两种模式的混合使用，一般的复制使用STATEMENT模式保存binlog，对于STATEMENT模式无法复制的操作使用ROW模式保存binlog，MySQL会根据执行的SQL语句选择日志保存方式。
 
+### 配置
 ```cnf
 [mysqld]
 
@@ -202,6 +204,11 @@ binlog_cache_size = 4m
 #最大binlog缓存大小
 max_binlog_cache_size = 512m
 ```
+
+### 命令
+* `show variables like 'log_%'` 查看binlog日志是否开启
+* `show master logs` 查看所有binlog日志列表
+* `mysqlbinlog mysql-bin.0000001` 查看具体日志
 
 ## SQL基础优化
 
