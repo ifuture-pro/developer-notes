@@ -432,6 +432,8 @@ Table of Contents
 
 ## [区块链设计](blockchain/区块链设计.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E8%AE%BE%E8%AE%A1)
 
+   - [P2P网络](blockchain/区块链设计.md#p2p%E7%BD%91%E7%BB%9C)
+     - [分布式哈希表](blockchain/区块链设计.md#%E5%88%86%E5%B8%83%E5%BC%8F%E5%93%88%E5%B8%8C%E8%A1%A8)
    - [共识算法](blockchain/区块链设计.md#%E5%85%B1%E8%AF%86%E7%AE%97%E6%B3%95)
      - [PBFT](blockchain/区块链设计.md#pbft)
        - [leader 选举](blockchain/区块链设计.md#leader-%E9%80%89%E4%B8%BE)
@@ -563,6 +565,12 @@ Table of Contents
    - [Best Way](design-patterns/单例.md#best-way)
    - [Other Way](design-patterns/单例.md#other-way)
      - [懒饿汉及双重检查锁](design-patterns/单例.md#%E6%87%92%E9%A5%BF%E6%B1%89%E5%8F%8A%E5%8F%8C%E9%87%8D%E6%A3%80%E6%9F%A5%E9%94%81)
+
+## [外观](design-patterns/外观.md#%E5%A4%96%E8%A7%82)
+
+   - [外观 Facade](design-patterns/外观.md#%E5%A4%96%E8%A7%82-facade)
+   - [场景](design-patterns/外观.md#%E5%9C%BA%E6%99%AF)
+   - [示例代码](design-patterns/外观.md#%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81)
 
 ## [桥接](design-patterns/桥接.md#%E6%A1%A5%E6%8E%A5)
 
@@ -758,4 +766,5 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
