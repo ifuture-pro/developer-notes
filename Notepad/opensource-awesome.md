@@ -60,7 +60,11 @@ Github Actions
 ## DveOps
 [opendevops](https://github.com/opendevops-cn/opendevops)
 ![GitHub stars](https://img.shields.io/github/stars/opendevops-cn/opendevops?style=flat-square)
-运维平台
+运维平台  
+[Prometheus](https://github.com/prometheus/prometheus)
+![GitHub stars](https://img.shields.io/github/stars/prometheus/prometheus?style=flat-square)
+监控平台
+
 
 [WeChatLuckyMoney](https://github.com/geeeeeeeeek/WeChatLuckyMoney)
 ![GitHub stars](https://img.shields.io/github/stars/geeeeeeeeek/WeChatLuckyMoney?style=flat-square)
@@ -135,7 +139,12 @@ Github Actions
 * [Seafile](https://github.com/haiwen/seafile)
 ![GitHub stars](https://img.shields.io/github/stars/haiwen/seafile)
 * [Owncloud](https://github.com/owncloud/core)
-![GitHub stars](https://img.shields.io/github/stars/owncloud/core)
+![GitHub stars](https://img.shields.io/github/stars/owncloud/core)  
+* [KODExplorer](https://gitee.com/kalcaddle/KODExplorer)  
+* [DzzOffice](https://github.com/zyx0814/dzzoffice)
+![GitHub stars](https://img.shields.io/github/stars/zyx0814/dzzoffice)  
+* [droppy](https://github.com/silverwind/droppy)
+![GitHub stars](https://img.shields.io/github/stars/silverwind/droppy)  
 
 ### [zendesk](https://zen.com/)
 * [Zammad](https://github.com/zammad/zammad)
