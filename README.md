@@ -124,6 +124,22 @@ Table of Contents
 
  - [Kubernetes](DevOps/Kubernetes.md#kubernetes)
    - [组件](DevOps/Kubernetes.md#%E7%BB%84%E4%BB%B6)
+   - [关键概念](DevOps/Kubernetes.md#%E5%85%B3%E9%94%AE%E6%A6%82%E5%BF%B5)
+     - [Pod](DevOps/Kubernetes.md#pod)
+     - [Replication Controller](DevOps/Kubernetes.md#replication-controller)
+     - [Replica Set](DevOps/Kubernetes.md#replica-set)
+     - [Deployment](DevOps/Kubernetes.md#deployment)
+     - [Service](DevOps/Kubernetes.md#service)
+     - [Job](DevOps/Kubernetes.md#job)
+     - [DaemonSet](DevOps/Kubernetes.md#daemonset)
+     - [StatefulSet](DevOps/Kubernetes.md#statefulset)
+     - [Federation](DevOps/Kubernetes.md#federation)
+     - [Volume](DevOps/Kubernetes.md#volume)
+     - [Node](DevOps/Kubernetes.md#node)
+     - [Secret](DevOps/Kubernetes.md#secret)
+     - [User Account 、Service Account](DevOps/Kubernetes.md#user-account-service-account)
+     - [Namespace](DevOps/Kubernetes.md#namespace)
+     - [RBAC](DevOps/Kubernetes.md#rbac)
    - [HelloWorld](DevOps/Kubernetes.md#helloworld)
    - [Ingress](DevOps/Kubernetes.md#ingress)
    - [Helm](DevOps/Kubernetes.md#helm)
@@ -594,6 +610,11 @@ Table of Contents
    - [示例](design-patterns/模板.md#%E7%A4%BA%E4%BE%8B)
    - [JDK及各大框架源码中的应用](design-patterns/模板.md#jdk%E5%8F%8A%E5%90%84%E5%A4%A7%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8)
 
+## [策略](design-patterns/策略.md#%E7%AD%96%E7%95%A5)
+
+   - [策略 Strategy](design-patterns/策略.md#%E7%AD%96%E7%95%A5-strategy)
+   - [示例代码](design-patterns/策略.md#%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81)
+
 ## [装饰者](design-patterns/装饰者.md#%E8%A3%85%E9%A5%B0%E8%80%85)
 
    - [装饰者 Decorator](design-patterns/装饰者.md#%E8%A3%85%E9%A5%B0%E8%80%85-decorator)
@@ -773,6 +794,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
