@@ -11,6 +11,24 @@ Solidity
 ## ABI
 Application Binary Interface(ABI)
 
+## 存储
+**栈** 用于存储字节码指令的操作数。在Solidity中，局部变量若是整型、定长字节数组等类型，就会随着指令的运行入栈、出栈。对于这类变量，无法强行改变它们的存储方式，如果在它们之前放置memory修饰符，编译会报错。  
+**内存** 类似java中的堆，它用于储存"对象"。在Solidity编程中，如果一个局部变量属于变长字节数组、字符串、结构体等类型，其通常会被memory修饰符修饰，以表明存储在内存中。  
+**状态存储** 用于存储合约的状态字段。从实现而言，不同的链可能采用不同实现，比较经典的是以太坊所采用的MPT树。由于MPT树性能、扩展性等问题，FISCO BCOS放弃了这一结构，而采用了分布式存储，通过rocksdb或mysql来存储状态数据，使存储的性能、可扩展性得到提高。
+```javascript
+contract Demo{
+    //状态存储
+    uint private _state;
+
+    function set(uint state) public {
+        //栈存储
+        uint i = 0;
+        //内存存储
+        string memory str = "aaa";
+    }
+}
+```
+
 ## Event/Log
 
 ```javascript
