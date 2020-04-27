@@ -124,6 +124,19 @@ Table of Contents
 
  - [Kubernetes](DevOps/Kubernetes.md#kubernetes)
    - [组件](DevOps/Kubernetes.md#%E7%BB%84%E4%BB%B6)
+     - [etcd](DevOps/Kubernetes.md#etcd)
+       - [竞品](DevOps/Kubernetes.md#%E7%AB%9E%E5%93%81)
+     - [kube-apiserver](DevOps/Kubernetes.md#kube-apiserver)
+     - [kube-controller-manager](DevOps/Kubernetes.md#kube-controller-manager)
+     - [kube-scheduler](DevOps/Kubernetes.md#kube-scheduler)
+     - [kubelet](DevOps/Kubernetes.md#kubelet)
+     - [Container runtime](DevOps/Kubernetes.md#container-runtime)
+     - [kube-proxy](DevOps/Kubernetes.md#kube-proxy)
+     - [Ingress Controller](DevOps/Kubernetes.md#ingress-controller)
+     - [Heapster](DevOps/Kubernetes.md#heapster)
+     - [Dashboard](DevOps/Kubernetes.md#dashboard)
+     - [Federation](DevOps/Kubernetes.md#federation)
+     - [Fluentd-elasticsearch](DevOps/Kubernetes.md#fluentd-elasticsearch)
    - [关键概念](DevOps/Kubernetes.md#%E5%85%B3%E9%94%AE%E6%A6%82%E5%BF%B5)
      - [Pod](DevOps/Kubernetes.md#pod)
      - [Replication Controller](DevOps/Kubernetes.md#replication-controller)
@@ -141,7 +154,7 @@ Table of Contents
      - [Namespace](DevOps/Kubernetes.md#namespace)
      - [RBAC](DevOps/Kubernetes.md#rbac)
    - [HelloWorld](DevOps/Kubernetes.md#helloworld)
-   - [Ingress](DevOps/Kubernetes.md#ingress)
+   - [Rook Ceph](DevOps/Kubernetes.md#rook-ceph)
    - [Helm](DevOps/Kubernetes.md#helm)
      - [组件](DevOps/Kubernetes.md#%E7%BB%84%E4%BB%B6)
 
@@ -476,6 +489,7 @@ Table of Contents
 
    - [Solidity](blockchain/智能合约-solidity.md#solidity)
    - [ABI](blockchain/智能合约-solidity.md#abi)
+   - [存储](blockchain/智能合约-solidity.md#%E5%AD%98%E5%82%A8)
    - [Event/Log](blockchain/智能合约-solidity.md#eventlog)
    - [修饰符](blockchain/智能合约-solidity.md#%E4%BF%AE%E9%A5%B0%E7%AC%A6)
    - [抽象类与接口](blockchain/智能合约-solidity.md#%E6%8A%BD%E8%B1%A1%E7%B1%BB%E4%B8%8E%E6%8E%A5%E5%8F%A3)
@@ -794,6 +808,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
