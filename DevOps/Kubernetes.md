@@ -3,18 +3,47 @@
 ![](../assets/img/kubernetes-ecosystem.png)
 
 ## 组件
-* etcd 保存了整个集群的状态；
-* kube-apiserver 提供了资源操作的唯一入口，并提供认证、授权、访问控制、API 注册和发现等机制；
-* kube-controller-manager 负责维护集群的状态，比如故障检测、自动扩展、滚动更新等；
-* kube-scheduler 负责资源的调度，按照预定的调度策略将 Pod 调度到相应的机器上；
-* kubelet 负责维持容器的生命周期，同时也负责 Volume（CVI）和网络（CNI）的管理；
-* Container runtime 负责镜像管理以及 Pod 和容器的真正运行（CRI），默认的容器运行时为 Docker；
-* kube-proxy 负责为 Service 提供 cluster 内部的服务发现和负载均衡；
-* Ingress Controller 为服务提供外网入口
-* Heapster 提供资源监控
-* Dashboard 提供 GUI
-* Federation 提供跨可用区的集群
-* Fluentd-elasticsearch 提供集群日志采集、存储与查询
+### [etcd](https://github.com/coreos/etcd/)
+  * 保存了整个集群的状态，是Kubernetes提供默认的存储系统，保存所有集群数据，使用时需要为etcd数据提供备份计划
+  * 基于 Raft 开发的分布式 key-value 存储
+  * key 的过期及续约机制，服务发现、共享配置以及一致性保障（如数据库选主、分布式锁等）。
+  * 监听机制
+  * 原子 CAS 和 CAD，用于分布式锁和 leader 选举
+
+#### 竞品
+  * Zookeeper
+  > Etcd 和 Zookeeper 提供的能力非常相似，都是通用的一致性元信息存储，都提供 watch 机制用于变更通知和分发，也都被分布式系统用来作为共享信息存储，在软件生态中所处的位置也几乎是一样的，可以互相替代的。二者除了实现细节，语言，一致性协议上的区别，最大的区别在周边生态圈。Zookeeper 是 apache 下的，用 java 写的，提供 rpc 接口，最早从 hadoop 项目中孵化出来，在分布式系统中得到广泛使用（hadoop, solr, kafka, mesos 等）。Etcd 是 coreos 公司旗下的开源产品，比较新，以其简单好用的 rest 接口以及活跃的社区俘获了一批用户，在新的一些集群中得到使用（比如 kubernetes）。虽然 v3 为了性能也改成二进制 rpc 接口了，但其易用性上比 Zookeeper 还是好一些。
+  * Consul
+  > Consul 的目标则更为具体一些，Etcd 和 Zookeeper 提供的是分布式一致性存储能力，具体的业务场景需要用户自己实现，比如服务发现，比如配置变更。而 Consul 则以服务发现和配置变更为主要目标，同时附带了 kv 存储，在Spring Cloud 中与 Eureka 一起成为主要的服务发现产品。
+
+### kube-apiserver
+  * 提供了资源操作的唯一入口，并提供认证、数据校验、授权、访问控制、集群状态变更、API 注册和发现等机制；
+  * 提供其他模块之间的数据交互和通信的枢纽（其他模块通过 API Server 查询或修改数据，只有 API Server 才直接操作 etcd）
+
+
+### kube-controller-manager
+负责维护集群的状态，比如故障检测、自动扩展、滚动更新等；
+### kube-scheduler
+负责资源的调度，按照预定的调度策略将 Pod 调度到相应的机器上；
+### kubelet
+负责维持容器的生命周期，同时也负责 Volume（CVI）和网络（CNI）的管理；
+### Container runtime
+负责镜像管理以及 Pod 和容器的真正运行（CRI），默认的容器运行时为 Docker；
+### kube-proxy
+负责为 Service 提供 cluster 内部的服务发现和负载均衡；
+### Ingress Controller
+  * 为服务提供外网入口
+  * k8s 网关，服务暴露
+  * ingress-nginx deploy    [官网](https://kubernetes.github.io/ingress-nginx/deploy/)  [博客](https://blog.csdn.net/java_zyq/article/details/82179107)
+  
+### Heapster
+提供资源监控
+### Dashboard
+提供 GUI
+### Federation
+提供跨可用区的集群
+### Fluentd-elasticsearch
+提供集群日志采集、存储与查询
 
 
 ## 关键概念
@@ -121,12 +150,8 @@ kubectl delete deployment -n zzz -l run=test-ubuntu
 
 kubectl run --generator=run-pod/v1 -n zzz -i --tty test-busybox --image=busybox
 ```
+## Rook Ceph
 
-## Ingress
-
-k8s 网关，服务暴露
-
-* ingress-nginx deploy    [官网](https://kubernetes.github.io/ingress-nginx/deploy/)  [博客](https://blog.csdn.net/java_zyq/article/details/82179107)
 
 ## Helm
 Helm 是 Deis 开发的一个用于 Kubernetes 应用的包管理工具，主要用来管理 Charts。有点类似于 Ubuntu 中的 APT 或 CentOS 中的 YUM。
