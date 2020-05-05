@@ -60,6 +60,8 @@ Table of Contents
    - [BI (Business Intelligence) 商业智能](BigData/商业智能.md#bi-business-intelligence-%E5%95%86%E4%B8%9A%E6%99%BA%E8%83%BD)
    - [ETL Extract-Transform-Load](BigData/商业智能.md#etl-extract-transform-load)
    - [ELT](BigData/商业智能.md#elt)
+   - [案例](BigData/商业智能.md#%E6%A1%88%E4%BE%8B)
+     - [架构设计](BigData/商业智能.md#%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1)
 
 ## [大数据](BigData/大数据.md#%E5%A4%A7%E6%95%B0%E6%8D%AE)
 
@@ -808,6 +810,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
