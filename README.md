@@ -855,6 +855,8 @@ Table of Contents
    - [Lock 锁](面试/JAVA基础.md#lock-%E9%94%81)
      - [synchronized](面试/JAVA基础.md#synchronized)
      - [ReentrantLock](面试/JAVA基础.md#reentrantlock)
+     - [ReadWriteLock 读写锁](面试/JAVA基础.md#readwritelock-%E8%AF%BB%E5%86%99%E9%94%81)
+     - [StampedLock](面试/JAVA基础.md#stampedlock)
      - [CAS](面试/JAVA基础.md#cas)
      - [AQS](面试/JAVA基础.md#aqs)
      - [ThreadLocal](面试/JAVA基础.md#threadlocal)
@@ -863,6 +865,13 @@ Table of Contents
    - [序列化](面试/JAVA基础.md#%E5%BA%8F%E5%88%97%E5%8C%96)
    - [IO](面试/JAVA基础.md#io)
      - [零拷贝](面试/JAVA基础.md#%E9%9B%B6%E6%8B%B7%E8%B4%9D)
+
+## [JAVA字节码](面试/JAVA字节码.md#java%E5%AD%97%E8%8A%82%E7%A0%81)
+
+   - [Java 字节码 Bytecode](面试/JAVA字节码.md#java-%E5%AD%97%E8%8A%82%E7%A0%81-bytecode)
+   - [简述](面试/JAVA字节码.md#%E7%AE%80%E8%BF%B0)
+   - [JavaAgent](面试/JAVA字节码.md#javaagent)
+   - [应用](面试/JAVA字节码.md#%E5%BA%94%E7%94%A8)
 
 ## [JVM](面试/JVM.md#jvm)
 
@@ -962,6 +971,7 @@ Table of Contents
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
 <!-- end listify -->
+
 
 
 
