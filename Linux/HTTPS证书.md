@@ -13,7 +13,9 @@ Transport Layer Security
 用于两个应用程序之间提供保密性和数据完整性。该协议由两层组成：TLS记录协议和TLS握手协议。
 
 
-SSL是Netscape开发的专门用于保护Web通讯的，目前版本为3.0.最新版本的TLS 1.0是IETE（工程任务组）指定的一种新的协议，它建立在SSL 3.0协议规范之上，是SSL 3.0的后续版本。两者差别极小，可以理解为SSL 3.1，它是写入了RFC的。
+众所周知，网景公司 20 世纪 90 年代在和微软的竞争中最终败下阵来，之后网景公司将 SSL 协议的管理权转交给 IETF（Internet Engineering Task Force, www.ietf.org）。  
+于是 IETF 将 SSL 作了标准化，重新命名为 TLS（Transport Layer Security）。在 1999 年，TLS 1.0 诞生了（其实也就是 SSL 3.1）  
+HTTPS（HyperText Transfer Protocol Secure）是建立在 SSL/TLS 协议之上，信息通信通过 SSL/TLS 进行加密，最后一个 S 就是 Secure 的缩写，代表安全的意思，HTTPS = HTTP+SSL/TLS。
 
 ### ACME
 [Automatic Certificate Management Environment](https://tools.ietf.org/html/rfc8555)
