@@ -120,3 +120,25 @@ cat cert.cer emptyline.cer chain.cer> fullchain.cer
 BIND （Berkeley Internet Name Domain）
 
 `yum -y install bind bind-chroot bind-utils`
+
+
+## 泛域名
+```shell
+chmod +x certbot-auto wget https://dl.eff.org/certbot-auto
+
+./certbot-auto certonly --email 邮箱 -d *.xx.com -d 域名2 --manual --preferred-challenges dns --server https://acme-v02.api.letsencrypt.org/directory  
+
+
+certonly 表示安装模式，Certbot 有安装模式和验证模式两种类型的插件。
+--manual 表示手动交互模式，Certbot 有很多插件，不同的插件都可以申请证书，用户可以根据需要自行选择
+
+-d 为那些主机申请证书，如果是通配符，输入 *.xxxx.com （可以替换为你自己的域名）
+
+--preferred-challenges 使用 DNS 方式校验域名所有权
+
+--server Let's Encrypt ACME v2 版本使用的服务器不同于 v1 版本，需要显示指定。
+```
+
+* [用Certbot申请免费Let's Encrypt泛域名证书+自动续期](https://www.willh.cn/articles/2018/07/27/1532676216270.html)
+* [泛域名自动续签](https://github.com/ywdblog/certbot-letencrypt-wildcardcertificates-alydns-au)
+* [官方支持的插件](https://certbot.eff.org/docs/using.html#dns-plugins)
