@@ -57,7 +57,66 @@ ACME成为标准对证书颁发和管理的重要性体现在两个方面。第�
 
   ```
 
+  https://certbot.eff.org/lets-encrypt/ubuntubionic-nginx
+
 
 * https://github.com/acmesh-official/acme.sh
 
   [使用教程](https://github.com/acmesh-official/acme.sh/wiki/%E8%AF%B4%E6%98%8E)
+
+## 配置证书
+[SSL Configuration Generator](https://ssl-config.mozilla.org/#server=nginx)
+
+## 证书格式
+* PEM
+> 适用于Apache、Nginx、Candy Server等Web服务器  
+常见的文件后缀为.pem、.crt、.cer、.key  
+可以存放证书或私钥，或者两者都包含  
+.key后缀一般只用于证书私钥文件  
+
+* PFX
+> 适用于IIS等Web服务器  
+常见的文件后缀为.pfx、.p12  
+同时包含证书和私钥，且一般有密码保护  
+
+* JKS
+> 适用于Tomcat、Weblogic、JBoss、Jetty等Web服务器  
+常见的文件后缀为.jks
+
+> Let's Encrypt颁发的HTTPS证书一般包括以下几个文件：  
+cert.key（PEM格式）：私钥文件  
+cert.cer（PEM格式）：证书文件  
+fullchain.cer（PEM格式）：包含证书和中间证书  
+
+**PEM ===> PFX**  
+` openssl pkcs12 -export -out cert.pfx -inkey cert.key -in fullchain.cer`
+
+**PFX ===> JKS**  
+`  keytool -importkeystore -srckeystore cert.pfx -destkeystore cert.jks -srcstoretype PKCS12 -deststoretype JKS
+`
+
+**PEM ===> JKS**  
+先将PEM文件转换为PFX文件，然后再将PFX文件转换为JKS文件
+
+**PFX ===> PEM**  
+1. 使用cert.pfx文件生成临时文件temp.cer，temp.cer中包含了证书和私钥  
+`openssl pkcs12 -in cert.pfx -nodes -out temp.cer`  
+1. 使用临时文件temp.cer文件生成私钥文件cert.key
+  `openssl rsa -in temp.cer -out cert.key`
+1. 使用临时文件temp.cer文件生成证书文件cert.cer
+  `openssl x509 -in temp.cer -out cert.cer`
+1. 使用cert.pfx生成中间证书文件chain.cer，合并cert.cer、空白行、chain.cer即可得到fullchain.cer
+```shell
+openssl pkcs12 -in cert.pfx -cacerts -nokeys -chain | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > chain.cer
+echo '\n' > emptyline.cer
+cat cert.cer emptyline.cer chain.cer> fullchain.cer
+```
+
+**JKS ===> PFX**  
+`  keytool -importkeystore -srckeystore cert.jks -destkeystore cert.pfx -srcstoretype JKS -deststoretype PKCS12
+`
+
+## DNS 服务器
+BIND （Berkeley Internet Name Domain）
+
+`yum -y install bind bind-chroot bind-utils`
