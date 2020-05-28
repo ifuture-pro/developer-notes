@@ -92,8 +92,8 @@ Github Actions
 ### 自动化
 [puppeteer](https://github.com/puppeteer/puppeteer)
 ![GitHub stars](https://img.shields.io/github/stars/puppeteer/puppeteer?style=flat-square)命令行浏览器  
-  - [playwright](https://github.com/microsoft/playwright)
-  ![GitHub stars](https://img.shields.io/github/stars/microsoft/playwright?style=flat-square)浏览器自动化  
+[playwright](https://github.com/microsoft/playwright)
+![GitHub stars](https://img.shields.io/github/stars/microsoft/playwright?style=flat-square)浏览器自动化  
 
 [vnpy](https://github.com/vnpy/vnpy)
 ![GitHub stars](https://img.shields.io/github/stars/vnpy/vnpy?style=flat-square)量化交易平台开发框架  
@@ -145,6 +145,8 @@ Github Actions
 ![GitHub stars](https://img.shields.io/github/stars/zyx0814/dzzoffice)  
 * [droppy](https://github.com/silverwind/droppy)
 ![GitHub stars](https://img.shields.io/github/stars/silverwind/droppy)  
+* [Chevereto](https://github.com/Chevereto/Chevereto-Free)
+![GitHub stars](https://img.shields.io/github/stars/Chevereto/Chevereto-Free)图床    
 
 ### [zendesk](https://zen.com/)
 * [Zammad](https://github.com/zammad/zammad)
