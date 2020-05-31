@@ -107,6 +107,7 @@ source /home/ubuntu/dbname.sql
 所谓聚簇索引，就是将索引和数据放到一起，找到索引也就找到了数据，我们刚才看到的B+树索引就是一种聚簇索引，而非聚簇索引就是将数据和索引分开，查找时需要先查找到索引，然后通过索引回表找到相应的数据。InnoDB有且只有一个聚簇索引，而MyISAM中都是非聚簇索引。
 ### 覆盖索引
 覆盖索引（covering index）指一个查询语句的执行只用从索引中就能够取得，不必从数据表中读取。也可以称之为实现了索引覆盖。 当一条查询语句符合覆盖索引条件时，MySQL只需要通过索引就可以返回查询所需要的数据，这样避免了查到索引后再返回表操作，减少I/O提高效率。 如，表covering_index_sample中有一个普通索引 idx_key1_key2(key1,key2)。当我们通过SQL语句：select key2 from covering_index_sample where key1 = 'keytest';的时候，就可以通过覆盖索引查询，无需回表。
+
 ### 索引下推
 MySQL5.6引入了索引下推优化，默认开启，使用`SET optimizer_switch = 'index_condition_pushdown=off'`;可以将其关闭。  
 官方文档中给的例子和解释如下： `people`表中`（zipcode，lastname，firstname）`构成一个索引
@@ -115,6 +116,9 @@ SELECT * FROM people WHERE zipcode='95054' AND lastname LIKE '%etrunia%' AND add
 ```
 如果没有使用索引下推技术，则MySQL会通过`zipcode='95054'`从存储引擎中查询对应的数据，返回到MySQL服务端，然后MySQL服务端基于`lastname LIKE '%etrunia%'和address LIKE '%Main Street%'`来判断数据是否符合条件。   
 如果使用了索引下推技术，则MYSQL首先会返回符合`zipcode='95054'`的索引，然后根据`lastname LIKE '%etrunia%'和address LIKE '%Main Street%'`来判断索引是否符合条件。如果符合条件，则根据该索引来定位对应的数据，如果不符合，则直接reject掉。 有了索引下推优化，**可以在有like条件查询的情况下，减少回表次数**。
+
+`SELECT COUNT(*) FROM table_name` 也不一定会进行全表扫描。针对无 where_clause 的 `COUNT(*)`，MySQL 是有优化的，优化器会选择成本最小的辅助索引查询计数，其实反而性能最高。可以使用`EXPLAIN SELECT COUNT(*) FROM table_name` 验证
+
 ### 查询优化器
 一条SQL语句的查询，可以有不同的执行方案，至于最终选择哪种方案，需要通过优化器进行选择，选择执行成本最低的方案。 在一条单表查询语句真正执行之前，MySQL的查询优化器会找出执行该语句所有可能使用的方案，对比之后找出成本最低的方案。这个成本最低的方案就是所谓的执行计划。 优化过程大致如下：
 1. 根据搜索条件，找出所有可能使用的索引
