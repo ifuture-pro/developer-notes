@@ -128,6 +128,45 @@ SELECT * FROM people WHERE zipcode='95054' AND lastname LIKE '%etrunia%' AND add
 
 所以并非创建索引就一定会通过索引来查找
 
+### 测试表
+```SQL
+-- 创建表
+CREATE TABLE `person` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `score` int(11) NOT NULL,
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `name_score` (`name`(191),`score`),
+  KEY `create_time` (`create_time`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+-- 使用存储过程模拟100W条数据
+CREATE PROCEDURE insert_person()
+begin
+    declare c_id integer default 1;
+    while c_id<=1000000 do
+    insert into person values(c_id, concat('name',c_id), c_id+100, date_sub(NOW(), interval c_id second));
+    set c_id=c_id+1;
+    end while;
+end
+-- 执行存储过程
+call insert_person()
+-- 查询索引使用情况
+explain select count(*) from person;
++----+-------------+--------+-------+---------------+-------------+---------+------+---------+-------------+
+| id | select_type | table  | type  | possible_keys | key         | key_len | ref  | rows    | Extra       |
++----+-------------+--------+-------+---------------+-------------+---------+------+---------+-------------+
+|  1 | SIMPLE      | person | index | NULL          | create_time | 4       | NULL | 3023554 | Using index |
++----+-------------+--------+-------+---------------+-------------+---------+------+---------+-------------+
+
+-- optimizer trace 功能来查看优化器生成计划的整个过程
+SET optimizer_trace="enabled=on";
+SELECT create_time FROM person WHERE NAME >'name84059' AND create_time > '2020-05-23 14:39:18';
+SELECT * FROM information_schema.OPTIMIZER_TRACE;
+SET optimizer_trace="enabled=off";
+```
+![mysql explain](../assets/img/mysql-explain.png)
+
 ## 事务隔离级别
 * 读未提交（read uncommitted）：一个事务还没有提交时，它做的变更就能被别的事务看到。
 * 读提交（read committed）：一个事物提交之后，它做的变更才会被其他事务看到。
@@ -239,8 +278,8 @@ select price from orders where id='123' and regin='beijing';
 ```
 > 那么第二次同样的查询，请保持以上语句的一致性，比如不要将where语句里面的id和region位置调换顺序。
 
-* 尽量避免使用 “SELECT *”
-> 如果不查询表中所有的列，尽量避免使用 SELECT *，因为它会进行全表扫描，不能有效利用索引，增大了数据库服务器的负担，以及它与应用程序客户端之间的网络IO开销。
+* 尽量避免使用 `SELECT *`
+> 如果不查询表中所有的列，尽量避免使用 `SELECT *`，因为它会进行全表扫描，不能有效利用索引，增大了数据库服务器的负担，以及它与应用程序客户端之间的网络IO开销。
 
 * WHERE , JOIN , ORDER BY 子句里面的列尽量被索引
 > 只是“尽量”，并不是说所有的列。根据实际情况进行调整，因为有时索引太多也会降低性能。
