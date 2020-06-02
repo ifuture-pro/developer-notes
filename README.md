@@ -157,6 +157,7 @@ Table of Contents
      - [Namespace](DevOps/Kubernetes.md#namespace)
      - [RBAC](DevOps/Kubernetes.md#rbac)
    - [HelloWorld](DevOps/Kubernetes.md#helloworld)
+     - [快速搭建本地 k8s 环境](DevOps/Kubernetes.md#%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0-k8s-%E7%8E%AF%E5%A2%83)
    - [Rook Ceph](DevOps/Kubernetes.md#rook-ceph)
    - [Helm](DevOps/Kubernetes.md#helm)
      - [组件](DevOps/Kubernetes.md#%E7%BB%84%E4%BB%B6)
@@ -978,7 +979,9 @@ Table of Contents
      - [计数器](面试/如何限流.md#%E8%AE%A1%E6%95%B0%E5%99%A8)
      - [队列](面试/如何限流.md#%E9%98%9F%E5%88%97)
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
+     - [Spring Redis Lua](面试/如何限流.md#spring-redis-lua)
 <!-- end listify -->
+
 
 
 
