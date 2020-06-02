@@ -35,7 +35,7 @@
   * 为服务提供外网入口
   * k8s 网关，服务暴露
   * ingress-nginx deploy    [官网](https://kubernetes.github.io/ingress-nginx/deploy/)  [博客](https://blog.csdn.net/java_zyq/article/details/82179107)
-  
+
 ### Heapster
 提供资源监控
 ### Dashboard
@@ -93,6 +93,10 @@ PV和PVC使得K8s集群具备了存储的逻辑抽象能力，使得在配置Pod
 
 
 ## HelloWorld
+
+### 快速搭建本地 k8s 环境
+* MAC或WINDOWS可使用https://github.com/AliyunContainerService/k8s-for-docker-desktop
+* Linux minkube
 
 ```shell
 //minkube
