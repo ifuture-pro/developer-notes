@@ -74,6 +74,12 @@ Table of Contents
        - [纠删码 Erasure Code](BigData/大数据.md#%E7%BA%A0%E5%88%A0%E7%A0%81-erasure-code)
        - [磁盘阵列](BigData/大数据.md#%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97)
    - [生态系统](BigData/大数据.md#%E7%94%9F%E6%80%81%E7%B3%BB%E7%BB%9F)
+     - [Hadoop](BigData/大数据.md#hadoop)
+       - [HDFS](BigData/大数据.md#hdfs)
+       - [YARN](BigData/大数据.md#yarn)
+       - [MapReduce](BigData/大数据.md#mapreduce)
+     - [Zookeeper](BigData/大数据.md#zookeeper)
+     - [HBase](BigData/大数据.md#hbase)
      - [Apache Atlas](BigData/大数据.md#apache-atlas)
        - [架构](BigData/大数据.md#%E6%9E%B6%E6%9E%84)
          - [Core](BigData/大数据.md#core)
@@ -283,6 +289,7 @@ Table of Contents
      - [Mobile](Linux/Openconnect.md#mobile)
    - [Server](Linux/Openconnect.md#server)
    - [Tor（The Onion Router）](Linux/Openconnect.md#torthe-onion-router)
+   - [Other](Linux/Openconnect.md#other)
 
 ## [mac](Linux/mac.md#mac)
 
@@ -496,6 +503,8 @@ Table of Contents
      - [默克尔树 Merkle tree](blockchain/区块链设计.md#%E9%BB%98%E5%85%8B%E5%B0%94%E6%A0%91-merkle-tree)
      - [MPT(Merkle Patricia Tree)](blockchain/区块链设计.md#mptmerkle-patricia-tree)
    - [加密算法](blockchain/区块链设计.md#%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95)
+   - [跨链](blockchain/区块链设计.md#%E8%B7%A8%E9%93%BE)
+     - [跨链应用场景](blockchain/区块链设计.md#%E8%B7%A8%E9%93%BE%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF)
 
 ## [智能合约-solidity](blockchain/智能合约-solidity.md#%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6-solidity)
 
@@ -982,6 +991,7 @@ Table of Contents
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
      - [Spring Redis Lua](面试/如何限流.md#spring-redis-lua)
 <!-- end listify -->
+
 
 
 
