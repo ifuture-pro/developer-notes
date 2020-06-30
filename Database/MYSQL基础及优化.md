@@ -173,8 +173,15 @@ SET optimizer_trace="enabled=off";
 * 可重复读（repeatable read）：一个事物执行过程中看到的数据，总是跟这个事务在启动时看到的数据是一致的。未提交变更对其他事务也是不可见的。
 * 串行化（serializable）：对于同一行记录，写会加“写锁”，读会加“读锁”，当出现锁冲突时，后访问的事务需要等前一个事务执行完成，才能继续执行。
 ```sql
-show variables like 'tx_isolation';--默认REPEATABLE-READ
-select * from information_schema.innodb_trx where TIME_TO_SEC(timediff(now(),trx_started))>60;--查找持续时间超过 60s 的事务
+--默认REPEATABLE-READ
+show variables like 'tx_isolation';
+--查看没有提交的事务
+select * from information_schema.innodb_trx;
+--查找持续时间超过 60s 的事务,一般都超时了，默认 50s
+--my.ini innodb_lock_wait_timeout = 50
+select * from information_schema.innodb_trx where TIME_TO_SEC(timediff(now(),trx_started))>60;
+--查看进程
+show full processlist;
 ```
 |事务A|\||事务B|
 |----|---|----|
