@@ -32,3 +32,11 @@ Boot from the start or not, use ' sudo insserv ocserv ' or ' sudo insserv -r ocs
 Tor（The Onion Router）
 ----------
 洋葱路由
+
+
+Other
+----------
+
+* V2ray
+* Shadowsocks
+* lantern
