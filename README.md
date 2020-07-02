@@ -325,6 +325,7 @@ Table of Contents
      - [CI/CD](Notepad/opensource-awesome.md#cicd)
      - [Zoom](Notepad/opensource-awesome.md#zoom)
      - [Jira](Notepad/opensource-awesome.md#jira)
+     - [BI business intelligence](Notepad/opensource-awesome.md#bi-business-intelligence)
    - [区块链](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE)
      - [区块链安全](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E5%AE%89%E5%85%A8)
    - [最佳实践](Notepad/opensource-awesome.md#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5)
@@ -370,6 +371,8 @@ Table of Contents
        - [sed](Notepad/日常杂项.md#sed)
      - [安全](Notepad/日常杂项.md#%E5%AE%89%E5%85%A8)
        - [nmap](Notepad/日常杂项.md#nmap)
+       - [目录扫描工具](Notepad/日常杂项.md#%E7%9B%AE%E5%BD%95%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7)
+       - [暴力破解](Notepad/日常杂项.md#%E6%9A%B4%E5%8A%9B%E7%A0%B4%E8%A7%A3)
    - [OpenSSL](Notepad/日常杂项.md#openssl)
      - [生成RSA秘钥对](Notepad/日常杂项.md#%E7%94%9F%E6%88%90rsa%E7%A7%98%E9%92%A5%E5%AF%B9)
      - [生成mac地址](Notepad/日常杂项.md#%E7%94%9F%E6%88%90mac%E5%9C%B0%E5%9D%80)
@@ -991,6 +994,7 @@ Table of Contents
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
      - [Spring Redis Lua](面试/如何限流.md#spring-redis-lua)
 <!-- end listify -->
+
 
 
 
