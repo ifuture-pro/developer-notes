@@ -179,6 +179,9 @@ Github Actions
 ![GitHub stars](https://img.shields.io/github/stars/oldboyxx/jira_clone)
 * [redmine](https://www.redmine.org/)
 
+### BI business intelligence 
+* [superset](https://github.com/apache/incubator-superset)
+
 
 ##  区块链
 [FISCO](https://github.com/FISCO-BCOS/FISCO-BCOS)
