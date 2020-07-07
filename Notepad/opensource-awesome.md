@@ -179,9 +179,13 @@ Github Actions
 ![GitHub stars](https://img.shields.io/github/stars/oldboyxx/jira_clone)
 * [redmine](https://www.redmine.org/)
 
-### BI business intelligence 
+### BI business intelligence
 * [superset](https://github.com/apache/incubator-superset)
 
+### 视频剪辑
+* [剪切合并](https://gitee.com/mirrors/ffmpeg)
+* [倍数沉默部分](https://github.com/carykh/jumpcutter)
+* [生成字母](https://github.com/wxbool/video-srt-windows)
 
 ##  区块链
 [FISCO](https://github.com/FISCO-BCOS/FISCO-BCOS)
