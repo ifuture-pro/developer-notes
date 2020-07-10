@@ -86,6 +86,8 @@ Table of Contents
          - [Integration](BigData/大数据.md#integration)
          - [Metadata source](BigData/大数据.md#metadata-source)
          - [Apps](BigData/大数据.md#apps)
+     - [数据湖 Data lake](BigData/大数据.md#%E6%95%B0%E6%8D%AE%E6%B9%96-data-lake)
+   - [工业数据空间（Industrial Data Space）](BigData/大数据.md#%E5%B7%A5%E4%B8%9A%E6%95%B0%E6%8D%AE%E7%A9%BA%E9%97%B4industrial-data-space)
 
 ## [联邦学习](BigData/联邦学习.md#%E8%81%94%E9%82%A6%E5%AD%A6%E4%B9%A0)
 
@@ -995,6 +997,7 @@ Table of Contents
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
      - [Spring Redis Lua](面试/如何限流.md#spring-redis-lua)
 <!-- end listify -->
+
 
 
 
