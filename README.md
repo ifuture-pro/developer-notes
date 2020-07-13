@@ -328,6 +328,7 @@ Table of Contents
      - [Zoom](Notepad/opensource-awesome.md#zoom)
      - [Jira](Notepad/opensource-awesome.md#jira)
      - [BI business intelligence](Notepad/opensource-awesome.md#bi-business-intelligence)
+     - [OCR](Notepad/opensource-awesome.md#ocr)
      - [视频剪辑](Notepad/opensource-awesome.md#%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91)
    - [区块链](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE)
      - [区块链安全](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E5%AE%89%E5%85%A8)
@@ -371,6 +372,7 @@ Table of Contents
        - [VIM](Notepad/日常杂项.md#vim)
          - [中文乱码](Notepad/日常杂项.md#%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81)
          - [实用操作](Notepad/日常杂项.md#%E5%AE%9E%E7%94%A8%E6%93%8D%E4%BD%9C)
+         - [批量](Notepad/日常杂项.md#%E6%89%B9%E9%87%8F)
        - [sed](Notepad/日常杂项.md#sed)
      - [安全](Notepad/日常杂项.md#%E5%AE%89%E5%85%A8)
        - [nmap](Notepad/日常杂项.md#nmap)
@@ -727,6 +729,21 @@ Table of Contents
      - [滥用 HTTP HEAD 请求](hacker/github-bug.md#%E6%BB%A5%E7%94%A8-http-head-%E8%AF%B7%E6%B1%82)
      - [参考](hacker/github-bug.md#%E5%8F%82%E8%80%83)
 
+# solution
+
+## [渲染字体库到图片识别输出文字](solution/渲染字体库到图片识别输出文字.md#%E6%B8%B2%E6%9F%93%E5%AD%97%E4%BD%93%E5%BA%93%E5%88%B0%E5%9B%BE%E7%89%87%E8%AF%86%E5%88%AB%E8%BE%93%E5%87%BA%E6%96%87%E5%AD%97)
+
+ - [渲染字体库到图片并识别图片输出具体文字](solution/渲染字体库到图片识别输出文字.md#%E6%B8%B2%E6%9F%93%E5%AD%97%E4%BD%93%E5%BA%93%E5%88%B0%E5%9B%BE%E7%89%87%E5%B9%B6%E8%AF%86%E5%88%AB%E5%9B%BE%E7%89%87%E8%BE%93%E5%87%BA%E5%85%B7%E4%BD%93%E6%96%87%E5%AD%97)
+   - [反爬虫混淆字体](solution/渲染字体库到图片识别输出文字.md#%E5%8F%8D%E7%88%AC%E8%99%AB%E6%B7%B7%E6%B7%86%E5%AD%97%E4%BD%93)
+     - [字体格式](solution/渲染字体库到图片识别输出文字.md#%E5%AD%97%E4%BD%93%E6%A0%BC%E5%BC%8F)
+     - [字体操作](solution/渲染字体库到图片识别输出文字.md#%E5%AD%97%E4%BD%93%E6%93%8D%E4%BD%9C)
+   - [破解](solution/渲染字体库到图片识别输出文字.md#%E7%A0%B4%E8%A7%A3)
+     - [HAR HTTP Archive format](solution/渲染字体库到图片识别输出文字.md#har-http-archive-format)
+     - [需要js处理后的网页爬虫方案](solution/渲染字体库到图片识别输出文字.md#%E9%9C%80%E8%A6%81js%E5%A4%84%E7%90%86%E5%90%8E%E7%9A%84%E7%BD%91%E9%A1%B5%E7%88%AC%E8%99%AB%E6%96%B9%E6%A1%88)
+     - [在网页中加载代码](solution/渲染字体库到图片识别输出文字.md#%E5%9C%A8%E7%BD%91%E9%A1%B5%E4%B8%AD%E5%8A%A0%E8%BD%BD%E4%BB%A3%E7%A0%81)
+     - [渲染字体到图片](solution/渲染字体库到图片识别输出文字.md#%E6%B8%B2%E6%9F%93%E5%AD%97%E4%BD%93%E5%88%B0%E5%9B%BE%E7%89%87)
+     - [文字识别](solution/渲染字体库到图片识别输出文字.md#%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB)
+
 # web
 
 ## [README](web/README.md#readme)
@@ -997,6 +1014,7 @@ Table of Contents
      - [**令牌桶**](面试/如何限流.md#%E4%BB%A4%E7%89%8C%E6%A1%B6)
      - [Spring Redis Lua](面试/如何限流.md#spring-redis-lua)
 <!-- end listify -->
+
 
 
 
