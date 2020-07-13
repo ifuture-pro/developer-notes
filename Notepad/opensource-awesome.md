@@ -182,6 +182,10 @@ Github Actions
 ### BI business intelligence
 * [superset](https://github.com/apache/incubator-superset)
 
+### OCR
+* [tesseract](https://github.com/tesseract-ocr/tesseract)
+* [go tesseract](https://github.com/otiai10/gosseract)
+
 ### 视频剪辑
 * [剪切合并](https://gitee.com/mirrors/ffmpeg)
 * [倍数沉默部分](https://github.com/carykh/jumpcutter)
