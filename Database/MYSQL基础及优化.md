@@ -294,5 +294,13 @@ select price from orders where id='123' and regin='beijing';
 * 使用 LIMIT 实现分页逻辑
 > 不仅提高了性能，同时减少了不必要的数据库和应用间的网络传输
 
+  如果条件允许，可以使用 `Cursor Pagination` 优化 `limit` 效率
+  ```sql
+  mysql> select * from tablename limit 20 offset 800001
+  10 rows in set (12.80 sec)
+  mysql> select * from tablename where id>800000 limit 20
+  10 rows in set (0.01 sec)
+  ```
+
 * 使用 EXPLAIN 关键字去查看执行计划
 > EXPLAIN 可以检查索引使用情况以及扫描的行。
