@@ -919,6 +919,11 @@ Table of Contents
    - [示例](design-patterns/模板.md#%E7%A4%BA%E4%BE%8B)
    - [JDK及各大框架源码中的应用](design-patterns/模板.md#jdk%E5%8F%8A%E5%90%84%E5%A4%A7%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8)
 
+## [状态模式](design-patterns/状态模式.md#%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8F)
+
+   - [状态 State](design-patterns/状态模式.md#%E7%8A%B6%E6%80%81-state)
+   - [一句话](design-patterns/状态模式.md#%E4%B8%80%E5%8F%A5%E8%AF%9D)
+
 ## [策略](design-patterns/策略.md#%E7%AD%96%E7%95%A5)
 
    - [策略 Strategy](design-patterns/策略.md#%E7%AD%96%E7%95%A5-strategy)
@@ -1018,6 +1023,7 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
 
 
 
