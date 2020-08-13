@@ -262,6 +262,31 @@ max_binlog_cache_size = 512m
 
 ## SQL基础优化
 
+### SELECT 执行顺序
+```sql
+FROM
+<表名> # 选取表，将多个表数据通过笛卡尔积变成一个表。
+ON
+<筛选条件> # 对笛卡尔积的虚表进行筛选
+JOIN <join, left join, right join...>
+<join表> # 指定join，用于添加数据到on之后的虚表中，例如left join会将左表的剩余数据添加到虚表中
+WHERE
+<where条件> # 对上述虚表进行筛选
+GROUP BY
+<分组条件> # 分组
+<SUM()等聚合函数> # 用于having子句进行判断，在书写上这类聚合函数是写在having判断里面的
+HAVING
+<分组筛选> # 对分组后的结果进行聚合筛选
+SELECT
+<返回数据列表> # 返回的单列必须在group by子句中，聚合函数除外
+DISTINCT
+# 数据除重
+ORDER BY
+<排序条件> # 排序
+LIMIT
+<行数限制>
+```
+
 * 比较运算符能用 “=”就不用“<>”
 > “=”增加了索引的使用几率
 
@@ -270,6 +295,15 @@ max_binlog_cache_size = 512m
 
 *  为列选择合适的数据类型
 > 能用TINYINT就不用SMALLINT，能用SMALLINT就不用INT，磁盘和内存消耗越小越好
+
+* 最好都加默认值
+
+  ```SQL
+  --尽量避免进行 null 值的判断，会导致数据库引擎放弃索引进行全表扫描
+  SELECT * FROM t WHERE score IS NULL
+  --有默认值就能解决这问题
+  SELECT * FROM t WHERE score = 0
+  ```
 
 * 将大的DELETE，UPDATE or INSERT 查询变成多个小查询
 > 能写一个几十行、几百行的SQL语句是不是显得逼格很高？然而，为了达到更好的性能以及更好的数据控制，你可以将他们变成多个小查询。
@@ -288,8 +322,27 @@ select price from orders where id='123' and regin='beijing';
 * 尽量避免使用 `SELECT *`
 > 如果不查询表中所有的列，尽量避免使用 `SELECT *`，因为它会进行全表扫描，不能有效利用索引，增大了数据库服务器的负担，以及它与应用程序客户端之间的网络IO开销。
 
+* 尽量避免在字段开头模糊查询
+
+  * ❌`WHERE username LIKE '%陈%'`
+  * ✅`WHERE username LIKE '陈%'`
+  * 考虑使用 FullText 全文索引，用 match against 检索
+  * 考虑使用函数 `INSTR`
+  * 考虑使用 ElasticSearch、Solr
+
+* 尽量避免 `in`
+
+  ```SQL
+  -- 不走索引
+  select * from A where A.id in (select id from B);
+  -- 走索引
+  select * from A where exists (select * from B where B.id = A.id);
+  ```
+
 * WHERE , JOIN , ORDER BY 子句里面的列尽量被索引
-> 只是“尽量”，并不是说所有的列。根据实际情况进行调整，因为有时索引太多也会降低性能。
+  > 只是“尽量”，并不是说所有的列。根据实际情况进行调整，因为有时索引太多也会降低性能。
+
+  > order by 条件要与 where 中条件一致，否则 order by 不会利用索引进行排序
 
 * 使用 LIMIT 实现分页逻辑
 > 不仅提高了性能，同时减少了不必要的数据库和应用间的网络传输
