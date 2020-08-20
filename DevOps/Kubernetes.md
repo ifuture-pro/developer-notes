@@ -143,6 +143,7 @@ kubectl rollout undo deployments/kubernetes-bootcamp    //回退image
 //通过kubectl exec 可以直接连接到对应的节点
 kubectl exec kubernetes-bootcamp-6c5cfd894b-gt6fc -it -- bash -il
 kubectl exec kubernetes-bootcamp-6c5cfd894b-gt6fc -it -n namespaces /bin/bash
+kubectl exec -it kubernetes-bootcamp-6c5cfd894b-gt6fc -n namespaces sh
 
 //查看Pod下对应容器的日志， 使用-f可以直接监听文件变化
 kubectl logs -f <POD_NAME> -c <CONTAINER_NAME>
