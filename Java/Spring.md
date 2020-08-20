@@ -96,6 +96,85 @@ public class MilestoneServiceImpl implements MilestoneService {
 * 观察者模式：定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都得到通知并被自动更新。spring中Observer模式常用的地方是listener的实现。如ApplicationListener。
 * 适配器模式：Spring AOP的增强或通知（Advice）使用到了适配器模式、Spring MVC中也是用到了适配器模式适配Controller。
 
+
+### Spring 三级缓存解决循环依赖
+循环依赖：类A 依赖  类B  ，类B 又依赖 类A
+
+关闭循环依赖：
+```java
+@Component
+public class MyBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
+    @Override
+    public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
+        ((AbstractAutowireCapableBeanFactory) beanFactory).setAllowCircularReferences(false);
+    }
+}
+```
+
+无法解决的循环依赖
+
+一般可以处理 `setter` 注入或 属性 `@Autowired`  
+无法处理`构造器注入` 和 `@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)`
+
+org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.java
+```java
+// 一级缓存：缓存已经初始化完成，可以暴露的 bean 对象，已经完成初始化，属性设置
+/** Cache of singleton objects: bean name to bean instance. */
+	private final Map<String, Object> singletonObjects = new ConcurrentHashMap<>(256);
+// 三级缓存：存储回调方法，可以调用回调方法 getObject 获取正在创建 bean 对象
+	/** Cache of singleton factories: bean name to ObjectFactory. */
+	private final Map<String, ObjectFactory<?>> singletonFactories = new HashMap<>(16);
+// 二级缓存：缓存的是已经完成初始化但还没设置属性的 bean 对象，正在创建中
+	/** Cache of early singleton objects: bean name to bean instance. */
+	private final Map<String, Object> earlySingletonObjects = new HashMap<>(16);
+```
+
+* 使用 context.getBean(A.class)，旨在获取容器内的单例A
+* 先从一级缓存 singletonObjects 中去获取。（如果获取到就直接return）
+* 如果获取不到或者对象正在创建中（isSingletonCurrentlyInCreation()），那就再从二级缓存 earlySingletonObjects 中获取。（如果获取到就直接return）
+* 如果还是获取不到，且允许 singletonFactories（allowEarlyReference=true）通过 getObject() 获取。就从三级缓存 singletonFactory.getObject() 获取。（如果获取到了就从 singletonFactories 中移除，并且放进 earlySingletonObjects 。其实也就是从三级缓存移动（是剪切、不是复制哦~）到了二级缓存）
+* 显然初次获取A是不存在的，因此走A的创建之路
+* 实例化A，放入三级缓存
+* 初始化A，设置属性，发现有 @Autowired B类
+* 依旧去三个缓存中查找，显然还是没有，走B的创建之路
+* 实例化B，放入三级缓存
+* 初始化B，设置属性，发现有 @Autowired A类
+* 缓存中查找，在三级缓存中发现，获取完在三级缓存中删除，保存到二级缓存中
+```java
+protected Object getSingleton(String beanName, boolean allowEarlyReference) {
+  Object singletonObject = this.singletonObjects.get(beanName);
+  if (singletonObject == null && isSingletonCurrentlyInCreation(beanName)) {
+    synchronized (this.singletonObjects) {
+      singletonObject = this.earlySingletonObjects.get(beanName);
+      if (singletonObject == null && allowEarlyReference) {
+        ObjectFactory<?> singletonFactory = this.singletonFactories.get(beanName);
+        if (singletonFactory != null) {
+          singletonObject = singletonFactory.getObject();
+          this.earlySingletonObjects.put(beanName, singletonObject);
+          this.singletonFactories.remove(beanName);
+        }
+      }
+    }
+  }
+  return singletonObject;
+}
+```
+* B初始化成功,删除二级三级缓存，保存到一级中
+```java
+protected void addSingleton(String beanName, Object singletonObject) {
+  synchronized (this.singletonObjects) {
+    this.singletonObjects.put(beanName, singletonObject);
+    this.singletonFactories.remove(beanName);
+    this.earlySingletonObjects.remove(beanName);
+    this.registeredSingletons.add(beanName);
+  }
+}
+```
+* B实例已经成功返回了，因此最终A也初始化成功
+* B持有的已经是初始化完成的A，A持有的也是初始化完成的B
+
+
+
 ## Spring Security
 [SSO OAuth关键概念](../DevOps/SSO.md)
 ### Spring-Security-OAuth
