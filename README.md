@@ -938,6 +938,7 @@ Table of Contents
 
    - [策略 Strategy](design-patterns/策略.md#%E7%AD%96%E7%95%A5-strategy)
    - [示例代码](design-patterns/策略.md#%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81)
+   - [枚举避免ifelse](design-patterns/策略.md#%E6%9E%9A%E4%B8%BE%E9%81%BF%E5%85%8Difelse)
 
 ## [装饰者](design-patterns/装饰者.md#%E8%A3%85%E9%A5%B0%E8%80%85)
 
@@ -1033,6 +1034,7 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
 
 
 
