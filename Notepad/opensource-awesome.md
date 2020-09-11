@@ -29,7 +29,10 @@ Opensource
 ![GitHub stars](https://img.shields.io/github/stars/facert/awesome-spider?style=flat-square)  
 [Awesome-wechat-weapp](https://github.com/justjavac/awesome-wechat-weapp)
 ![GitHub stars](https://img.shields.io/github/stars/justjavac/awesome-wechat-weapp?style=flat-square)  
-[Awesome-lesscode](https://github.com/dream2023/awesome-lesscode)  
+[Awesome-lesscode](https://github.com/dream2023/awesome-lesscode)
+![GitHub stars](https://img.shields.io/github/stars/dream2023/awesome-lesscode?style=flat-square)  
+[Awesome-lowcode](https://github.com/taowen/awesome-lowcode)
+![GitHub stars](https://img.shields.io/github/stars/taowen/awesome-lowcode?style=flat-square)  
 [Build your own](https://github.com/danistefanovic/build-your-own-x)
 ![GitHub stars](https://img.shields.io/github/stars/danistefanovic/build-your-own-x?style=flat-square)  
 [awesome-university-courses](https://github.com/prakhar1989/awesome-courses)
@@ -185,6 +188,12 @@ Github Actions
 ### OCR
 * [tesseract](https://github.com/tesseract-ocr/tesseract)
 * [go tesseract](https://github.com/otiai10/gosseract)
+
+### QRCode
+* [qrpicture](https://github.com/xyzzy/qrpicture)
+
+### WebsiteAnalytics
+* [umami](https://github.com/mikecao/umami)
 
 ### 视频剪辑
 * [剪切合并](https://gitee.com/mirrors/ffmpeg)
