@@ -605,6 +605,8 @@ Table of Contents
      - [Jira](Notepad/opensource-awesome.md#jira)
      - [BI business intelligence](Notepad/opensource-awesome.md#bi-business-intelligence)
      - [OCR](Notepad/opensource-awesome.md#ocr)
+     - [QRCode](Notepad/opensource-awesome.md#qrcode)
+     - [WebsiteAnalytics](Notepad/opensource-awesome.md#websiteanalytics)
      - [视频剪辑](Notepad/opensource-awesome.md#%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91)
    - [区块链](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE)
      - [区块链安全](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E5%AE%89%E5%85%A8)
@@ -1034,6 +1036,7 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
 
 
 
