@@ -896,6 +896,7 @@ Table of Contents
      - [国密算法](blockchain/联盟链.md#%E5%9B%BD%E5%AF%86%E7%AE%97%E6%B3%95)
      - [WeBASE](blockchain/联盟链.md#webase)
      - [WeIdentity](blockchain/联盟链.md#weidentity)
+     - [WeDPR](blockchain/联盟链.md#wedpr)
 
 # design-patterns
 
@@ -1042,6 +1043,7 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
 
 
 
