@@ -64,6 +64,9 @@ Github Actions
 [opendevops](https://github.com/opendevops-cn/opendevops)
 ![GitHub stars](https://img.shields.io/github/stars/opendevops-cn/opendevops?style=flat-square)
 运维平台  
+[spug](https://github.com/openspug/spug)
+![GitHub stars](https://img.shields.io/github/stars/openspug/spug?style=flat-square)
+运维平台  
 [Prometheus](https://github.com/prometheus/prometheus)
 ![GitHub stars](https://img.shields.io/github/stars/prometheus/prometheus?style=flat-square)
 监控平台
@@ -97,6 +100,11 @@ Github Actions
 ![GitHub stars](https://img.shields.io/github/stars/puppeteer/puppeteer?style=flat-square)命令行浏览器  
 [playwright](https://github.com/microsoft/playwright)
 ![GitHub stars](https://img.shields.io/github/stars/microsoft/playwright?style=flat-square)浏览器自动化  
+[headless-recorder](https://github.com/checkly/headless-recorder)
+![GitHub stars](https://img.shields.io/github/stars/checkly/headless-recorder?style=flat-square)Puppeteer Recorder  
+
+[uiautomator2](https://github.com/openatx/uiautomator2)
+![GitHub stars](https://img.shields.io/github/stars/openatx/uiautomator2?style=flat-square)安卓自动化
 
 [vnpy](https://github.com/vnpy/vnpy)
 ![GitHub stars](https://img.shields.io/github/stars/vnpy/vnpy?style=flat-square)量化交易平台开发框架  
