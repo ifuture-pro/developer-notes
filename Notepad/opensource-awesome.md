@@ -100,6 +100,8 @@ Github Actions
 ![GitHub stars](https://img.shields.io/github/stars/puppeteer/puppeteer?style=flat-square)命令行浏览器  
 [playwright](https://github.com/microsoft/playwright)
 ![GitHub stars](https://img.shields.io/github/stars/microsoft/playwright?style=flat-square)浏览器自动化  
+[playwright-python](https://github.com/microsoft/playwright-python)
+![GitHub stars](https://img.shields.io/github/stars/microsoft/playwright-python?style=flat-square)浏览器自动化  
 [headless-recorder](https://github.com/checkly/headless-recorder)
 ![GitHub stars](https://img.shields.io/github/stars/checkly/headless-recorder?style=flat-square)Puppeteer Recorder  
 
