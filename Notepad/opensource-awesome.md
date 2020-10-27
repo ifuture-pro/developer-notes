@@ -244,6 +244,12 @@ Tools
 [marktext](https://github.com/marktext/marktext)
 ![GitHub stars](https://img.shields.io/github/stars/goldbergyoni/nodebestpractices?style=flat-square)
 所见即所得MarkDown    
+[youtube-dl python](https://github.com/ytdl-org/youtube-dl)
+![GitHub stars](https://img.shields.io/github/stars/ytdl-org/youtube-dl?style=flat-square)
+各大视频网站下载器    
+[youtube-dl go](https://github.com/kkdai/youtube)
+![GitHub stars](https://img.shields.io/github/stars/kkdai/youtube?style=flat-square)
+youtube视频下载器    
 
 [Google Remote Desktop](https://remotedesktop.google.com/) 跨系统远程桌面  
 [MSDN I Tell You](https://msdn.itellyou.cn/) 纯净版 Windows 操作系统
