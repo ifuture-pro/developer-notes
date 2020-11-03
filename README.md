@@ -1020,6 +1020,12 @@ Table of Contents
      - [滥用 HTTP HEAD 请求](hacker/github-bug.md#%E6%BB%A5%E7%94%A8-http-head-%E8%AF%B7%E6%B1%82)
      - [参考](hacker/github-bug.md#%E5%8F%82%E8%80%83)
 
+## [mail-security-SPF](hacker/mail-security-SPF.md#mail-security-spf)
+
+ - [SPF (Sender Policy Framework)](hacker/mail-security-SPF.md#spf-sender-policy-framework)
+   - [检测](hacker/mail-security-SPF.md#%E6%A3%80%E6%B5%8B)
+   - [伪造工具](hacker/mail-security-SPF.md#%E4%BC%AA%E9%80%A0%E5%B7%A5%E5%85%B7)
+
 # solution
 
 ## [渲染字体库到图片识别输出文字](solution/渲染字体库到图片识别输出文字.md#%E6%B8%B2%E6%9F%93%E5%AD%97%E4%BD%93%E5%BA%93%E5%88%B0%E5%9B%BE%E7%89%87%E8%AF%86%E5%88%AB%E8%BE%93%E5%87%BA%E6%96%87%E5%AD%97)
@@ -1047,6 +1053,7 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
 
 
 
