@@ -198,6 +198,12 @@ Github Actions
 ### OCR
 * [tesseract](https://github.com/tesseract-ocr/tesseract)
 * [go tesseract](https://github.com/otiai10/gosseract)
+* [java tesseract](https://github.com/ushelp/EasyOCR)
+* [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
+* [EasyOCR](https://github.com/JaidedAI/EasyOCR)
+* [chineseocr](https://github.com/chineseocr/chineseocr)
+* [chineseocr_lite](https://github.com/ouyanghuiyu/chineseocr_lite)
+
 
 ### QRCode
 * [qrpicture](https://github.com/xyzzy/qrpicture)
