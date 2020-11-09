@@ -62,6 +62,7 @@ Table of Contents
    - [ELT](BigData/商业智能.md#elt)
    - [案例](BigData/商业智能.md#%E6%A1%88%E4%BE%8B)
      - [架构设计](BigData/商业智能.md#%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1)
+   - [BI商业软件](BigData/商业智能.md#bi%E5%95%86%E4%B8%9A%E8%BD%AF%E4%BB%B6)
 
 ## [大数据](BigData/大数据.md#%E5%A4%A7%E6%95%B0%E6%8D%AE)
 
@@ -1058,6 +1059,7 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
 
 
 
