@@ -109,6 +109,7 @@ Table of Contents
    - [基本常用操作](Database/MYSQL基础及优化.md#%E5%9F%BA%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C)
      - [创建数据库](Database/MYSQL基础及优化.md#%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93)
      - [创建用户并授权](Database/MYSQL基础及优化.md#%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E5%B9%B6%E6%8E%88%E6%9D%83)
+     - [忘记ROOT密码](Database/MYSQL基础及优化.md#%E5%BF%98%E8%AE%B0root%E5%AF%86%E7%A0%81)
      - [导入导出数据](Database/MYSQL基础及优化.md#%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA%E6%95%B0%E6%8D%AE)
    - [关键字](Database/MYSQL基础及优化.md#%E5%85%B3%E9%94%AE%E5%AD%97)
    - [索引基础](Database/MYSQL基础及优化.md#%E7%B4%A2%E5%BC%95%E5%9F%BA%E7%A1%80)
@@ -1059,6 +1060,7 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
 
 
 
