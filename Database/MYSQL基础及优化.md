@@ -13,7 +13,11 @@ ALTER TABLE table_name CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_
 ALTER TABLE table_name CHANGE column_name column_name VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 -- 删除数据库
 DROP DATABASE database_name;
+
+--查看当前登录用户
+select user();
 ```
+
 /etc/mysql/my.cnf
 ```
 [client]
@@ -79,6 +83,21 @@ show grants for test;
 --查看表状态
 show table status \G
 
+```
+
+### 忘记ROOT密码
+```bash
+vim /etc/my.cnf
+
+[mysqld] 下添加 skip-grant-tables
+
+重启 mysql 服务
+
+MySQL> UPDATE mysql.user SET Password=PASSWORD('新密码') where USER='root';
+
+[mysqld] 下删除 skip-grant-tables
+
+重启 mysql 服务
 ```
 
 ### 导入导出数据
