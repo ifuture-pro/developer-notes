@@ -124,6 +124,9 @@ Table of Contents
      - [配置](Database/MYSQL基础及优化.md#%E9%85%8D%E7%BD%AE)
      - [命令](Database/MYSQL基础及优化.md#%E5%91%BD%E4%BB%A4)
    - [SQL基础优化](Database/MYSQL基础及优化.md#sql%E5%9F%BA%E7%A1%80%E4%BC%98%E5%8C%96)
+     - [LIMIT 1000000,10](Database/MYSQL基础及优化.md#limit-100000010)
+     - [隐式转换](Database/MYSQL基础及优化.md#%E9%9A%90%E5%BC%8F%E8%BD%AC%E6%8D%A2)
+     - [EXISTS语句](Database/MYSQL基础及优化.md#exists%E8%AF%AD%E5%8F%A5)
      - [SELECT 执行顺序](Database/MYSQL基础及优化.md#select-%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F)
 
 ## [PostgreSQL](Database/PostgreSQL.md#postgresql)
@@ -685,6 +688,7 @@ Table of Contents
      - [其他](Notepad/日常杂项.md#%E5%85%B6%E4%BB%96)
    - [Docker](Notepad/日常杂项.md#docker)
      - [基础安装](Notepad/日常杂项.md#%E5%9F%BA%E7%A1%80%E5%AE%89%E8%A3%85)
+   - [常用目录位置](Notepad/日常杂项.md#%E5%B8%B8%E7%94%A8%E7%9B%AE%E5%BD%95%E4%BD%8D%E7%BD%AE)
 
 ## [软件架构师](Notepad/软件架构师.md#%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E5%B8%88)
 
@@ -1060,6 +1064,7 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
 
 
 
