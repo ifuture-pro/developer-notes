@@ -242,6 +242,10 @@ EVM 合约安全检查
 ![GitHub stars](https://img.shields.io/github/stars/SonarSource/sonarqube?style=flat-square)
 CI(Continuous Inspection) 持续检测,代码质量管理  
 
+[speedtest](https://github.com/ernisn/superspeed)   
+[gfwlist](https://github.com/gfwlist/gfwlist)
+[networking tool](https://github.com/slackhq/nebula/)
+
 [VScode 远程开发](https://code.visualstudio.com/docs/remote/ssh)  
 [GitHub 代码运行](https://www.gitpod.io/)  
 [GitHub 代码运行](https://repl.it/)
