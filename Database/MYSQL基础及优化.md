@@ -281,6 +281,87 @@ max_binlog_cache_size = 512m
 
 ## SQL基础优化
 
+### LIMIT 1000000,10
+```SQL
+SELECT *
+FROM   operation
+WHERE  type = 'SQLStats'
+       AND name = 'SlowLog'
+ORDER  BY create_time
+LIMIT  1000, 10;
+```
+一般情况在type, name, create_time字段上加组合索引，这样条件排序都能有效的利用到索引，性能迅速提升。  
+但当 LIMIT 子句变成 “LIMIT 1000000,10”，会发现我只取10条记录为什么还是慢，知道数据库也并不知道第1000000条记录从什么地方开始，即使有索引也需要从头计算一次。   
+解决：在前端数据浏览翻页，或者大数据分批导出等场景下，是可以将上一页的最大值当成参数作为查询条件的。SQL重新设计如下,查询时间基本固定，不会随着数据量的增长而发生变化。
+```SQL
+SELECT   *
+FROM     operation
+WHERE    type = 'SQLStats'
+AND      name = 'SlowLog'
+AND      create_time > '2017-03-16 14:00:00'
+ORDER BY create_time limit 10;
+```
+
+### 隐式转换
+```SQL
+mysql> explain extended SELECT *
+     > FROM   my_balance b
+     > WHERE  b.bpn = 14000000123
+     >       AND b.isverified IS NULL ;
+mysql> show warnings;
+| Warning | 1739 | Cannot use ref access on index 'bpn' due to type or collation conversion on field 'bpn'
+```
+字段bpn的定义为varchar(20)，MySQL的策略是将字符串转换为数字之后再比较。**函数作用于表字段，索引失效**。
+
+### EXISTS语句
+MySQL对待EXISTS子句时，仍然采用嵌套子查询的执行方式。如下面的SQL语句：
+```SQL
+SELECT *
+FROM   my_neighbor n
+       LEFT JOIN my_neighbor_apply sra
+              ON n.id = sra.neighbor_id
+                 AND sra.user_id = 'xxx'
+WHERE  n.topic_status < 4
+       AND EXISTS(SELECT 1
+                  FROM   message_info m
+                  WHERE  n.id = m.neighbor_id
+                         AND m.inuser = 'xxx')
+       AND n.topic_type <> 5
+```
+```
++----+--------------------+-------+------+-----+------------------------------------------+---------+-------+---------+ -----+
+| id | select_type        | table | type | possible_keys     | key   | key_len | ref   | rows    | Extra   |
++----+--------------------+-------+------+ -----+------------------------------------------+---------+-------+---------+ -----+
+|  1 | PRIMARY            | n     | ALL  |  | NULL     | NULL    | NULL  | 1086041 | Using where                   |
+|  1 | PRIMARY            | sra   | ref  |  | idx_user_id | 123     | const |       1 | Using where          |
+|  2 | DEPENDENT SUBQUERY | m     | ref  |  | idx_message_info   | 122     | const |       1 | Using index condition; Using where |
++----+--------------------+-------+------+ -----+------------------------------------------+---------+-------+---------+ -----+
+```
+去掉exists更改为join，能够避免嵌套子查询，将执行时间从1.93秒降低为1毫秒。
+```SQL
+SELECT *
+FROM   my_neighbor n
+       INNER JOIN message_info m
+               ON n.id = m.neighbor_id
+                  AND m.inuser = 'xxx'
+       LEFT JOIN my_neighbor_apply sra
+              ON n.id = sra.neighbor_id
+                 AND sra.user_id = 'xxx'
+WHERE  n.topic_status < 4
+       AND n.topic_type <> 5
+```
+```
++----+-------------+-------+--------+ -----+------------------------------------------+---------+ -----+------+ -----+
+| id | select_type | table | type   | possible_keys     | key       | key_len | ref   | rows | Extra                 |
++----+-------------+-------+--------+ -----+------------------------------------------+---------+ -----+------+ -----+
+|  1 | SIMPLE      | m     | ref    | | idx_message_info   | 122     | const    |    1 | Using index condition |
+|  1 | SIMPLE      | n     | eq_ref | | PRIMARY   | 122     | ighbor_id |    1 | Using where      |
+|  1 | SIMPLE      | sra   | ref    | | idx_user_id | 123     | const     |    1 | Using where           |
++----+-------------+-------+--------+ -----+------------------------------------------+---------+ -----+------+ -----+
+```
+
+出自：https://developer.aliyun.com/article/72501
+
 ### SELECT 执行顺序
 ```sql
 FROM
