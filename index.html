@@ -36,9 +36,37 @@
     auto2top: true,
     search: 'auto',
     routerMode: 'hash',
-    formatUpdated: '{MM}/{DD} {HH}:{mm}'
+    formatUpdated: '{MM}/{DD} {HH}:{mm}',
+    plugins: [
+      function (hook) {
+        hook.beforeEach(function (content) {
+          return content.replace(/\$\$([\s\S]*?)\$\$/g, function (m, code) {
+            MathJax.Hub.Queue(["Typeset",MathJax.Hub])
+            return code
+          })
+        })
+        hook.doneEach(function () {
+        if (typeof MathJax !== 'undefined') {
+          MathJax.Hub.Queue(["Typeset", MathJax.Hub])
+        }
+      })
+      }
+    ]
   }
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<script src="//cdn.bootcss.com/mathjax/2.6.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script src="//unpkg.com/docsify@4.11.4/lib/docsify.min.js"></script>
 <script src="//unpkg.com/docsify@4.11.4/lib/plugins/search.js"></script>
 <script src="//unpkg.com/docsify@4.11.4/lib/plugins/zoom-image.js"></script>
