@@ -28,6 +28,13 @@ Table of Contents
 -----------
   > *generated with [listify](https://github.com/ifuture-pro/listify)*
 
+# Artificial-Intelligence
+
+## [math](Artificial-Intelligence/math.md#math)
+
+ - [Math](Artificial-Intelligence/math.md#math)
+   - [数据标准化](Artificial-Intelligence/math.md#%E6%95%B0%E6%8D%AE%E6%A0%87%E5%87%86%E5%8C%96)
+
 # BigData
 
 ## [Elasticsearch](BigData/Elasticsearch.md#elasticsearch)
@@ -1064,6 +1071,7 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
 
 
 
