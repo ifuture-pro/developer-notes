@@ -33,7 +33,8 @@ Table of Contents
 ## [math](Artificial-Intelligence/math.md#math)
 
  - [Math](Artificial-Intelligence/math.md#math)
-   - [数据标准化](Artificial-Intelligence/math.md#%E6%95%B0%E6%8D%AE%E6%A0%87%E5%87%86%E5%8C%96)
+   - [基础](Artificial-Intelligence/math.md#%E5%9F%BA%E7%A1%80)
+   - [数据标准化 Normalization Method](Artificial-Intelligence/math.md#%E6%95%B0%E6%8D%AE%E6%A0%87%E5%87%86%E5%8C%96-normalization-method)
 
 # BigData
 
@@ -1071,6 +1072,7 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
 
 
 
