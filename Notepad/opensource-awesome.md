@@ -204,6 +204,9 @@ Github Actions
 * [chineseocr](https://github.com/chineseocr/chineseocr)
 * [chineseocr_lite](https://github.com/ouyanghuiyu/chineseocr_lite)
 
+### Code online
+* [code-server](https://github.com/cdr/code-server)
+
 
 ### QRCode
 * [qrpicture](https://github.com/xyzzy/qrpicture)
