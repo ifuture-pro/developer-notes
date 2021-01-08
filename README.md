@@ -281,6 +281,11 @@ Table of Contents
    - [关键字](DevOps/网络七层协议.md#%E5%85%B3%E9%94%AE%E5%AD%97)
    - [可靠UDP](DevOps/网络七层协议.md#%E5%8F%AF%E9%9D%A0udp)
 
+## [运维](DevOps/运维.md#%E8%BF%90%E7%BB%B4)
+
+   - [Linux](DevOps/运维.md#linux)
+   - [监控](DevOps/运维.md#%E7%9B%91%E6%8E%A7)
+
 # Java
 
 ## [JAVA响应式编程](Java/JAVA响应式编程.md#java%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BC%96%E7%A8%8B)
@@ -723,6 +728,13 @@ Table of Contents
    - [10. 市场](Notepad/软件架构师.md#10-%E5%B8%82%E5%9C%BA)
  - [路线图](Notepad/软件架构师.md#%E8%B7%AF%E7%BA%BF%E5%9B%BE)
 
+# Python
+
+## [JupyterNotebook](Python/JupyterNotebook.md#jupyternotebook)
+
+   - [Jupyter Notebook](Python/JupyterNotebook.md#jupyter-notebook)
+   - [安装](Python/JupyterNotebook.md#%E5%AE%89%E8%A3%85)
+
 ## [_coverpage](_coverpage.md#_coverpage)
 
  - [Developer notes](_coverpage.md#developer-notes)
@@ -1084,6 +1096,7 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
 
 
 
