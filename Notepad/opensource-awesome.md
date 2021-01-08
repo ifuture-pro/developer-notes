@@ -104,7 +104,8 @@ Github Actions
 ![GitHub stars](https://img.shields.io/github/stars/microsoft/playwright-python?style=flat-square)浏览器自动化  
 [headless-recorder](https://github.com/checkly/headless-recorder)
 ![GitHub stars](https://img.shields.io/github/stars/checkly/headless-recorder?style=flat-square)Puppeteer Recorder  
-
+[phantomjs](https://github.com/ariya/phantomjs)
+![GitHub stars](https://img.shields.io/github/stars/ariya/phantomjs?style=flat-square) phantomjs  
 [uiautomator2](https://github.com/openatx/uiautomator2)
 ![GitHub stars](https://img.shields.io/github/stars/openatx/uiautomator2?style=flat-square)安卓自动化
 

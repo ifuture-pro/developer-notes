@@ -1,0 +1,36 @@
+Jupyter Notebook
+----------
+
+* [jupyter notebook](https://jupyter.org/)
+  * [JupyterHub](https://github.com/jupyterhub/jupyterhub)
+  * [Beaker Extensions](https://github.com/twosigma/beakerx)
+* [zeppelin notebook](https://zeppelin.apache.org/)
+
+## 安装
+```shell
+pip install notebook
+
+jupyter notebook --port 8888
+
+jupyter notebook --help
+
+
+```
+
+使用虚拟环境
+```shell
+# 安装
+pip install virtualenv
+# 创建虚拟环境
+virtualenv --no-site-packages my_venv
+# 进入虚拟环境
+source my_venv/bin/activate
+
+# 将 Virtualenv 加入IPykernel中
+# ipython kernel install --user --name=my_venv
+python -m ipykernel install --user --name=my_venv
+
+# 启动jupyter
+jupyter notebook
+
+```
