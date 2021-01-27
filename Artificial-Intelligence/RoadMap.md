@@ -4,7 +4,7 @@ AI工程师成长
 ## 编程语言
 
 ### Python
-* 数据分析：pandas, sklearn
+* 数据分析：[pandas](https://github.com/pandas-dev/pandas), [sklearn](https://github.com/automl/auto-sklearn)
 
 > 《Effective Python》
 
@@ -32,7 +32,7 @@ AI工程师成长
 > 机器学习：周志华《机器学习》、《PRML》，《ESL》、《统计学习方法》  
 深度学习
 
-* 通用机器学习：scikit-learn，Spark ML，LightGBM
+* 通用机器学习：scikit-learn，Spark ML，LightGBM, XGBoost
 * 通用深度学习：Keras/TensorFlow，PyTorch
 * 特征工程：tsfresh, Featuretools，Feast
 * AutoML：hyperopt，SMAC3，nni，autogluon
@@ -83,7 +83,8 @@ Nvidia-cuDNN， LightGBM
 
 
 ## 数据库
-Delta Lake
+Delta Lake  
+[Feature Store](https://www.hopsworks.ai/)
 
 ## 云计算
 Docker、k8s
