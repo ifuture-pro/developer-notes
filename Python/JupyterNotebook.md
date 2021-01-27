@@ -26,6 +26,7 @@ virtualenv --no-site-packages my_venv
 # 进入虚拟环境
 source my_venv/bin/activate
 
+pip install ipykernel
 # 将 Virtualenv 加入IPykernel中
 # ipython kernel install --user --name=my_venv
 python -m ipykernel install --user --name=my_venv
