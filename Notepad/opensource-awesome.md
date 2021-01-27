@@ -218,7 +218,14 @@ Github Actions
 ### 视频剪辑
 * [剪切合并](https://gitee.com/mirrors/ffmpeg)
 * [倍数沉默部分](https://github.com/carykh/jumpcutter)
-* [生成字母](https://github.com/wxbool/video-srt-windows)
+* [生成字幕](https://github.com/wxbool/video-srt-windows)
+
+### WebRTC
+* [jitsi-meet](https://github.com/jitsi/jitsi-meet)
+* [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat)
+* [webtorrent](https://github.com/webtorrent/webtorrent)
+* [webrtc samples](https://github.com/webrtc/samples)
+
 
 ##  区块链
 [FISCO](https://github.com/FISCO-BCOS/FISCO-BCOS)
