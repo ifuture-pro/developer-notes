@@ -30,6 +30,10 @@ Table of Contents
 
 # Artificial-Intelligence
 
+## [AI](Artificial-Intelligence/AI.md#ai)
+
+
+
 ## [RoadMap](Artificial-Intelligence/RoadMap.md#roadmap)
 
    - [AI工程师成长](Artificial-Intelligence/RoadMap.md#ai%E5%B7%A5%E7%A8%8B%E5%B8%88%E6%88%90%E9%95%BF)
@@ -50,7 +54,9 @@ Table of Contents
 ## [math](Artificial-Intelligence/math.md#math)
 
  - [Math](Artificial-Intelligence/math.md#math)
-   - [基础](Artificial-Intelligence/math.md#%E5%9F%BA%E7%A1%80)
+   - [集合](Artificial-Intelligence/math.md#%E9%9B%86%E5%90%88)
+   - [方差](Artificial-Intelligence/math.md#%E6%96%B9%E5%B7%AE)
+   - [标准差](Artificial-Intelligence/math.md#%E6%A0%87%E5%87%86%E5%B7%AE)
    - [数据标准化 Normalization Method](Artificial-Intelligence/math.md#%E6%95%B0%E6%8D%AE%E6%A0%87%E5%87%86%E5%8C%96-normalization-method)
 
 # BigData
@@ -290,13 +296,10 @@ Table of Contents
 
    - [网络](DevOps/网络.md#%E7%BD%91%E7%BB%9C)
    - [七层模型](DevOps/网络.md#%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B)
+   - [基础](DevOps/网络.md#%E5%9F%BA%E7%A1%80)
    - [MTU](DevOps/网络.md#mtu)
-
-## [网络七层协议](DevOps/网络七层协议.md#%E7%BD%91%E7%BB%9C%E4%B8%83%E5%B1%82%E5%8D%8F%E8%AE%AE)
-
-   - [OSI (Open System Interconnection)](DevOps/网络七层协议.md#osi-open-system-interconnection)
-   - [关键字](DevOps/网络七层协议.md#%E5%85%B3%E9%94%AE%E5%AD%97)
-   - [可靠UDP](DevOps/网络七层协议.md#%E5%8F%AF%E9%9D%A0udp)
+   - [关键字](DevOps/网络.md#%E5%85%B3%E9%94%AE%E5%AD%97)
+   - [可靠UDP](DevOps/网络.md#%E5%8F%AF%E9%9D%A0udp)
 
 ## [运维](DevOps/运维.md#%E8%BF%90%E7%BB%B4)
 
@@ -661,6 +664,7 @@ Table of Contents
      - [QRCode](Notepad/opensource-awesome.md#qrcode)
      - [WebsiteAnalytics](Notepad/opensource-awesome.md#websiteanalytics)
      - [视频剪辑](Notepad/opensource-awesome.md#%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91)
+     - [WebRTC](Notepad/opensource-awesome.md#webrtc)
    - [区块链](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE)
      - [区块链安全](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E5%AE%89%E5%85%A8)
    - [最佳实践](Notepad/opensource-awesome.md#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5)
@@ -1113,6 +1117,7 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
 
 
 
