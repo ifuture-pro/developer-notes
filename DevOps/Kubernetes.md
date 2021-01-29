@@ -158,6 +158,35 @@ kubectl delete deployment -n zzz -l run=test-ubuntu
 
 kubectl run --generator=run-pod/v1 -n zzz -i --tty test-busybox --image=busybox
 ```
+
+```shell
+# 一个pod多个container
+cat multi-pods.yaml
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: multi-pods
+spec:
+  containers:
+  - name: blue-pod-container
+    image: busybox:1.31.1
+    command: ["sleep"]
+    args:    ["1000"]
+  - name: green-pod-container
+    image: busybox:1.30.1
+    command: ["sleep"]
+    args:    ["10000"]
+  - name: yellow-pod-container
+    image: busybox:1.30.1
+    command: ["sleep"]
+    args:    ["100000"]
+
+kubectl create -f multi-pods.yaml
+
+kubectl exec -it pod名称 -c 容器名称 sh或者bash
+```
+
 ## Rook Ceph
 
 
