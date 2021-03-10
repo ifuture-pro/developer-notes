@@ -35,6 +35,7 @@
   * 为服务提供外网入口
   * k8s 网关，服务暴露
   * ingress-nginx deploy    [官网](https://kubernetes.github.io/ingress-nginx/deploy/)  [博客](https://blog.csdn.net/java_zyq/article/details/82179107)
+  * traefik ingress
 
 ### Heapster
 提供资源监控
