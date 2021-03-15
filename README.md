@@ -54,7 +54,11 @@ Table of Contents
 ## [math](Artificial-Intelligence/math.md#math)
 
  - [Math](Artificial-Intelligence/math.md#math)
+   - [基础概念](Artificial-Intelligence/math.md#%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5)
+   - [方程](Artificial-Intelligence/math.md#%E6%96%B9%E7%A8%8B)
+     - [一元二次](Artificial-Intelligence/math.md#%E4%B8%80%E5%85%83%E4%BA%8C%E6%AC%A1)
    - [集合](Artificial-Intelligence/math.md#%E9%9B%86%E5%90%88)
+   - [函数](Artificial-Intelligence/math.md#%E5%87%BD%E6%95%B0)
    - [方差](Artificial-Intelligence/math.md#%E6%96%B9%E5%B7%AE)
    - [标准差](Artificial-Intelligence/math.md#%E6%A0%87%E5%87%86%E5%B7%AE)
    - [数据标准化 Normalization Method](Artificial-Intelligence/math.md#%E6%95%B0%E6%8D%AE%E6%A0%87%E5%87%86%E5%8C%96-normalization-method)
@@ -1118,6 +1122,7 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
 
 
 
