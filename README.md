@@ -54,6 +54,7 @@ Table of Contents
 ## [math](Artificial-Intelligence/math.md#math)
 
  - [Math](Artificial-Intelligence/math.md#math)
+   - [希腊字母](Artificial-Intelligence/math.md#%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D)
    - [基础概念](Artificial-Intelligence/math.md#%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5)
    - [方程](Artificial-Intelligence/math.md#%E6%96%B9%E7%A8%8B)
      - [一元二次](Artificial-Intelligence/math.md#%E4%B8%80%E5%85%83%E4%BA%8C%E6%AC%A1)
@@ -760,6 +761,7 @@ Table of Contents
 
    - [Jupyter Notebook](Python/JupyterNotebook.md#jupyter-notebook)
    - [安装](Python/JupyterNotebook.md#%E5%AE%89%E8%A3%85)
+   - [pip源](Python/JupyterNotebook.md#pip%E6%BA%90)
 
 ## [_coverpage](_coverpage.md#_coverpage)
 
@@ -1122,6 +1124,7 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
 
 
 
