@@ -35,3 +35,8 @@ python -m ipykernel install --user --name=my_venv
 jupyter notebook
 
 ```
+
+## pip源
+```shell
+pip install <包名> -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn
+```
