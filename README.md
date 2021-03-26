@@ -770,6 +770,26 @@ Table of Contents
    - [安装](Python/JupyterNotebook.md#%E5%AE%89%E8%A3%85)
    - [pip源](Python/JupyterNotebook.md#pip%E6%BA%90)
 
+## [pandas](Python/pandas.md#pandas)
+
+ - [Pandas](Python/pandas.md#pandas)
+   - [官方](Python/pandas.md#%E5%AE%98%E6%96%B9)
+   - [非官方](Python/pandas.md#%E9%9D%9E%E5%AE%98%E6%96%B9)
+   - [基础](Python/pandas.md#%E5%9F%BA%E7%A1%80)
+     - [导入导出数据](Python/pandas.md#%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA%E6%95%B0%E6%8D%AE)
+     - [测试数据](Python/pandas.md#%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE)
+     - [查看、检查、统计、属性](Python/pandas.md#%E6%9F%A5%E7%9C%8B%E6%A3%80%E6%9F%A5%E7%BB%9F%E8%AE%A1%E5%B1%9E%E6%80%A7)
+     - [数据清理](Python/pandas.md#%E6%95%B0%E6%8D%AE%E6%B8%85%E7%90%86)
+     - [数据处理、Filter、Sort](Python/pandas.md#%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86filtersort)
+     - [数据选取](Python/pandas.md#%E6%95%B0%E6%8D%AE%E9%80%89%E5%8F%96)
+     - [数据处理、分组、透视](Python/pandas.md#%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%88%86%E7%BB%84%E9%80%8F%E8%A7%86)
+     - [数据合并](Python/pandas.md#%E6%95%B0%E6%8D%AE%E5%90%88%E5%B9%B6)
+     - [时间处理](Python/pandas.md#%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86)
+     - [其他](Python/pandas.md#%E5%85%B6%E4%BB%96)
+     - [样式显示](Python/pandas.md#%E6%A0%B7%E5%BC%8F%E6%98%BE%E7%A4%BA)
+     - [表格中的直方图，sparkline 图形](Python/pandas.md#%E8%A1%A8%E6%A0%BC%E4%B8%AD%E7%9A%84%E7%9B%B4%E6%96%B9%E5%9B%BEsparkline-%E5%9B%BE%E5%BD%A2)
+     - [Slideshow 幻灯片](Python/pandas.md#slideshow-%E5%B9%BB%E7%81%AF%E7%89%87)
+
 ## [_coverpage](_coverpage.md#_coverpage)
 
  - [Developer notes](_coverpage.md#developer-notes)
@@ -1131,6 +1151,7 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
 
 
 
