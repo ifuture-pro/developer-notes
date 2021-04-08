@@ -822,6 +822,7 @@ Table of Contents
    - [计算机的随机数](blockchain/区块链与随机数.md#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E9%9A%8F%E6%9C%BA%E6%95%B0)
    - [区块链中的随机数](blockchain/区块链与随机数.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E4%B8%AD%E7%9A%84%E9%9A%8F%E6%9C%BA%E6%95%B0)
      - [可验证随机函数 VRF](blockchain/区块链与随机数.md#%E5%8F%AF%E9%AA%8C%E8%AF%81%E9%9A%8F%E6%9C%BA%E5%87%BD%E6%95%B0-vrf)
+       - [案例分析](blockchain/区块链与随机数.md#%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90)
      - [ETH2.0 方案 RANDAO + VDF](blockchain/区块链与随机数.md#eth20-%E6%96%B9%E6%A1%88-randao--vdf)
      - [其他随机数项目](blockchain/区块链与随机数.md#%E5%85%B6%E4%BB%96%E9%9A%8F%E6%9C%BA%E6%95%B0%E9%A1%B9%E7%9B%AE)
 
@@ -1151,3 +1152,4 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
