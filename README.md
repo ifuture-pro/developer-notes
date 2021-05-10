@@ -695,6 +695,13 @@ Table of Contents
    - [通用](Notepad/产品设计.md#%E9%80%9A%E7%94%A8)
    - [微软常用](Notepad/产品设计.md#%E5%BE%AE%E8%BD%AF%E5%B8%B8%E7%94%A8)
 
+## [公式](Notepad/公式.md#%E5%85%AC%E5%BC%8F)
+
+ - [公式](Notepad/公式.md#%E5%85%AC%E5%BC%8F)
+   - [发言汇报](Notepad/公式.md#%E5%8F%91%E8%A8%80%E6%B1%87%E6%8A%A5)
+   - [销售](Notepad/公式.md#%E9%94%80%E5%94%AE)
+   - [项目管理](Notepad/公式.md#%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86)
+
 ## [开源协议](Notepad/开源协议.md#%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE)
 
    - [Opensource License](Notepad/开源协议.md#opensource-license)
@@ -1152,4 +1159,5 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
 
