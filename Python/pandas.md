@@ -307,6 +307,11 @@ df.loc['col_sum'] = df.apply(lambda x: x.sum())
 df.reindex(order_list)
 # 按指定的多列排序
 df.reindex(['col_1', 'col_5'], axis="columns")
+# 补齐空值
+a = a.fillna(method='bfill')
+#method : {‘backfill', ‘bfill', ‘pad', ‘ffill', None}, default None
+#pad / ffill: 向下自动填充
+#backfill / bfill: 向上自动填充
 ```
 
 ### 数据选取
