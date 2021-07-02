@@ -91,3 +91,7 @@ Docker、k8s
 
 ----------
 [参考](https://zhuanlan.zhihu.com/p/192633890)
+
+## 文献
+* NLP TF-IDF(Term Frequency - Inverse Document Frequency) [TF-IDF与余弦相似性的应用（一）：自动提取关键词](https://www.ruanyifeng.com/blog/2013/03/tf-idf.html)
+* LDA [pyLDAvis](https://nbviewer.jupyter.org/github/bmabey/pyLDAvis/blob/master/notebooks/sklearn.ipynb)

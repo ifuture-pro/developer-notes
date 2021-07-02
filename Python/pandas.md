@@ -420,6 +420,18 @@ df.groupby('name').agg(['sum', 'median', 'count'])
 
 ### 数据合并
 ```python
+# 合并透视表和分组表
+table4 = table1.reset_index()
+table3 = pd.DataFrame(df.groupby(by=['一级分类','二级分类']).agg({"uuid":len})).reset_index()
+table2 = pd.DataFrame(df.groupby(by=['一级分类']).agg({"uuid":len})).reset_index()
+table1 = pd.pivot_table(df, index=['一级分类', '二级分类', '三级分类'], fill_value="无", values=['uuid'], aggfunc={len})
+_merge = pd.merge(table2, table4, on=['一级分类'])
+_merge.columns = ['一级分类', '一级分类_count', '二级分类', '三级分类', '三级分类_count']
+merge = pd.merge(_merge, table3, on=['一级分类',"二级分类"])
+merge = merge.rename(columns={'工单编号': '二级分类_count'})
+merge = merge[['一级分类', '一级分类_count', '二级分类', '二级分类_count','三级分类', '三级分类_count']]
+merge = merge.sort_values(by=['一级分类_count','二级分类_count','三级分类_count'], ascending=False)
+
 # 合并拼接行
 # 将df2中的行添加到df1的尾部
 df1.append(df2)
