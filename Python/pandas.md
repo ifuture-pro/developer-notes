@@ -136,6 +136,10 @@ pd.get_option()
 pd.options.display.max_rows = None
 pd.options.display.max_columns = None
 pd.options.display.max_colwidth = None
+# 恢复默认值
+pd.options.display.max_rows = 60
+pd.options.display.max_columns = 20
+pd.options.display.max_colwidth = 50
 df.col.argmin() # 最大值[最小值 .argmax()] 所在位置的自动索引
 df.col.idxmin() # 最大值[最小值 .idxmax()] 所在位置的定义索引
 # 累计统计
@@ -180,6 +184,8 @@ df['是否设置提现账号'] = df['状态'] # 复制一列
 df.loc[:, ::-1] # 列顺序反转
 df.loc[::-1] # 行顺序反转, 下方为重新定义索引
 df.loc[::-1].reset_index(drop=True)
+# 修改某个cell
+df.loc[df['colname'] == 'value','colname'] = 'newvalue'
 ```
 
 ### 数据处理、Filter、Sort
