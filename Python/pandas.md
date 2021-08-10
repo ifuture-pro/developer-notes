@@ -318,6 +318,13 @@ a = a.fillna(method='bfill')
 #method : {‘backfill', ‘bfill', ‘pad', ‘ffill', None}, default None
 #pad / ffill: 向下自动填充
 #backfill / bfill: 向上自动填充
+# 时间范围
+s_date = pd.to_datetime('2021-06-29')#datetime.datetime.strptime('20210629', '%Y%m%d').date()
+e_date = pd.to_datetime('2021-07-29')
+df['DATA_DATE_TIME'] = pd.to_datetime(df['DATA_DATE'], format='%Y%m%d')
+df = df[(df['DATA_DATE_TIME']>=s_date) & (df['DATA_DATE_TIME']<=e_date)]
+
+
 ```
 
 ### 数据选取
@@ -384,6 +391,9 @@ df.query('Q1 > `Q2`+@a')
 # df.eval() 用法与 df.query 类似
 df[df.eval("Q1 > 90 > Q3 > 10")]
 df[df.eval("Q1 > `Q2`+@a")]
+
+# 分组取前3
+df_ask_org.groupby('CLASS').apply(lambda x:x.nlargest(3,'述求量'))
 ```
 
 ### 数据处理、分组、透视
@@ -422,6 +432,23 @@ df1 = df.groupby(by='设计师ID').agg({'结算金额':sum})
 df.groupby(by=df.pf).ip.nunique() # groupby distinct, 分组+去重数
 df.groupby(by=df.pf).ip.value_counts() # groupby 分组+去重的值及数量
 df.groupby('name').agg(['sum', 'median', 'count'])
+
+se_level1['level_0'].apply(lambda x : '{:0>2d}'.format(x))
+data['huanbi_01'][i] = format((data['mony'][i] - data['mony'][i-1])/data['mony'][i-1],'.2%')
+# {:.2f} 保留小数点后两位
+# {:+.2f} 带符号保留小数点后两位
+# {:+.2f} 带符号保留小数点后两位
+# {:.0f} 不带小数
+# {:0>2d} 数字补零 (填充左边, 宽度为2)
+# {:x<4d} 数字补x (填充右边, 宽度为4)
+# {:x<4d} 数字补x (填充右边, 宽度为4)
+# {:,} 以逗号分隔的数字格式
+# {:.2%} 百分比格式
+# {:.2e} 指数记法
+# {:>10d} 右对齐 (默认, 宽度为10)
+# {:<10d} 左对齐 (宽度为10)
+# {:^10d} 中间对齐 (宽度为10)
+
 ```
 
 ### 数据合并
