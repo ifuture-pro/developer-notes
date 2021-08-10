@@ -63,10 +63,12 @@ drop user 'test'@'localhost' ;
 drop user 'test'@'%';
 
 
-修改用户密码
+--修改用户密码
 mysql> set password for test =password('1122');
 mysql> set password for root@localhost = password('123456');
-需要刷新
+--mysql8删除了password函数,需要刷新
+alter user 'root'@'localhost' identified by '123123'
+--需要刷新
 mysql> update  mysql.user set  password=password('1234')  where user='test'
 
 
@@ -114,9 +116,9 @@ source /home/ubuntu/dbname.sql
 ```
 
 ## 关键字
-* 数据库查询语言（DQL）：select
-* 数据库定义语言（DDL）：create database、drop database 、create table、drop table、alter
-* 数据库操作语言（DML）：update 、insert 、delete
+* 数据库查询语言（DQL Data Query Language）：select
+* 数据库定义语言（DDL Data Definition Language）：create database、drop database 、create table、drop table、alter
+* 数据库操作语言（DML Data Manipulation Language）：update 、insert 、delete
 
 
 ## 索引基础
