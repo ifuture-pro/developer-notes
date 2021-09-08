@@ -324,6 +324,11 @@ e_date = pd.to_datetime('2021-07-29')
 df['DATA_DATE_TIME'] = pd.to_datetime(df['DATA_DATE'], format='%Y%m%d')
 df = df[(df['DATA_DATE_TIME']>=s_date) & (df['DATA_DATE_TIME']<=e_date)]
 
+# 查询具体重复的数据
+unique1 = df.groupby(['ORDER_ID']).size()
+unique2 = unique1[unique1>1].reset_index()
+unique3 = pd.merge(unique2,df,on=['ORDER_ID'])
+unique3
 
 ```
 
