@@ -506,6 +506,14 @@ df_all = pd.merge(df_sku, df_spu,
                   how='left',
                   left_on=df_sku['product_id'],
                   right_on=df_spu['p.product_id'])
+
+# 返回多列
+def formatrow(row):
+    a = row["a"] + str(row["cnt"])
+    b = str(row["cnt"]) + row["a"]
+    return a, b
+df_tmp[["fomat1", "format2"]] = df_tmp.apply(formatrow, axis=1, result_type="expand")
+df_tmp["fomat1-1"], df_tmp["format2-2"] = zip(*df_tmp.apply(formatrow, axis=1))
 ```
 
 ### 时间处理
