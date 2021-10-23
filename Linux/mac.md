@@ -27,4 +27,11 @@ source ~/.bash_profile
 export HOMEBREW_NO_AUTO_UPDATE=true
 ```
 
+```
+brew search go
+brew info go
+brew install go@1.1
+brew services start mariadb@10.1
+```
+
 [aliyun mirror](https://developer.aliyun.com/mirror/homebrew?spm=a2c6h.13651102.0.0.3e221b11s6RwUT)
