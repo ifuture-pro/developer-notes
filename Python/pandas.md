@@ -514,6 +514,13 @@ def formatrow(row):
     return a, b
 df_tmp[["fomat1", "format2"]] = df_tmp.apply(formatrow, axis=1, result_type="expand")
 df_tmp["fomat1-1"], df_tmp["format2-2"] = zip(*df_tmp.apply(formatrow, axis=1))
+
+def age_map(x):
+  return x+1
+data['age'] = data['birth_year'].map(age_map)
+
+pd.isnull(x) 
+df.isna().sum()
 ```
 
 ### 时间处理
