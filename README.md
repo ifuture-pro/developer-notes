@@ -683,6 +683,7 @@ Table of Contents
      - [区块链安全](Notepad/opensource-awesome.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E5%AE%89%E5%85%A8)
    - [最佳实践](Notepad/opensource-awesome.md#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5)
      - [最佳实践-工具使用](Notepad/opensource-awesome.md#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8)
+   - [AI](Notepad/opensource-awesome.md#ai)
    - [Tools](Notepad/opensource-awesome.md#tools)
    - [国内开源镜像](Notepad/opensource-awesome.md#%E5%9B%BD%E5%86%85%E5%BC%80%E6%BA%90%E9%95%9C%E5%83%8F)
 
@@ -781,6 +782,7 @@ Table of Contents
    - [Jupyter Notebook](Python/JupyterNotebook.md#jupyter-notebook)
    - [安装](Python/JupyterNotebook.md#%E5%AE%89%E8%A3%85)
    - [pip源](Python/JupyterNotebook.md#pip%E6%BA%90)
+   - [插件](Python/JupyterNotebook.md#%E6%8F%92%E4%BB%B6)
 
 ## [pandas](Python/pandas.md#pandas)
 
@@ -1168,6 +1170,7 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
 
 
 
