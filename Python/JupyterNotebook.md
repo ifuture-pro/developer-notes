@@ -40,3 +40,20 @@ jupyter notebook
 ```shell
 pip install <包名> -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn
 ```
+
+## 插件
+```
+pip install jupyter_contrib_nbextensions
+jupyter contrib nbextension install --user
+pip install jupyter_nbextensions_configurator
+jupyter nbextensions_configurator enable --user
+重启 Jupyter Notebook， 便可以看到nbextension
+jupyter nbextension enable execute_time/Exec
+```
+
+```
+%magic #显示所有魔术命令的详细文档
+%prun statement #通过 cProfile 执行对 statement 的逐行性能分析
+%time statement #测试 statement 的执行时间
+%timeit statement #多次测试 statement 的执行时间并计算平均值
+```

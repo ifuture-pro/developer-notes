@@ -261,6 +261,11 @@ CI(Continuous Inspection) 持续检测,代码质量管理
 [GitHub 代码运行](https://www.gitpod.io/)  
 [GitHub 代码运行](https://repl.it/)
 
+## AI
+[Kalidokit](https://github.com/yeemachine/kalidokit)
+![GitHub stars](https://img.shields.io/github/stars/yeemachine/kalidokit?style=flat-square)
+[人体动作表情模仿捕捉关键点信息](https://cuijiahua.com/blog/2021/11/ai-24.html)   
+
 Tools
 ---------
 [marktext](https://github.com/marktext/marktext)
