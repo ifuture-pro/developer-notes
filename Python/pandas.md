@@ -170,6 +170,7 @@ pd.isnull() # 检查DataFrame对象中的空值，并返回一个 Boolean 数组
 pd.notnull() # 检查DataFrame对象中的非空值，并返回一个 Boolean 数组
 df.drop(['name'], axis=1) # 删除列
 df.drop([0, 10], axis=0) # 删除行
+df.drop(df[df['colname'].isin(['不详','110'])].index,axis=0)# 删除行
 del df['name'] # 删除列
 df.dropna() # 删除所有包含空值的行
 df.dropna(axis=1) # 删除所有包含空值的列
@@ -519,7 +520,7 @@ def age_map(x):
   return x+1
 data['age'] = data['birth_year'].map(age_map)
 
-pd.isnull(x) 
+pd.isnull(x)
 df.isna().sum()
 ```
 
