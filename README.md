@@ -582,6 +582,11 @@ Table of Contents
 
 # Linux
 
+## [CommandLine](Linux/CommandLine.md#commandline)
+
+ - [命令行](Linux/CommandLine.md#%E5%91%BD%E4%BB%A4%E8%A1%8C)
+   - [Windows](Linux/CommandLine.md#windows)
+
 ## [Computer](Linux/Computer.md#computer)
 
    - [计算机](Linux/Computer.md#%E8%AE%A1%E7%AE%97%E6%9C%BA)
@@ -788,6 +793,10 @@ Table of Contents
    - [安装](Python/JupyterNotebook.md#%E5%AE%89%E8%A3%85)
    - [pip源](Python/JupyterNotebook.md#pip%E6%BA%90)
    - [插件](Python/JupyterNotebook.md#%E6%8F%92%E4%BB%B6)
+
+## [WinHidden](Python/WinHidden.md#winhidden)
+
+ - [Windows Hidden](Python/WinHidden.md#windows-hidden)
 
 ## [pandas](Python/pandas.md#pandas)
 
@@ -1175,6 +1184,7 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
 
 
 
