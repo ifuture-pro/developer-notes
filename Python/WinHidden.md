@@ -200,7 +200,7 @@ class _Main:
         import win32con
 
         app = Tk()
-        app.geometry("300x600")
+        app.geometry("600x600")
         app.title("隐藏窗口")
         scrollbar = Scrollbar(app)
         scrollbar.pack(side=RIGHT, fill=Y)
@@ -212,25 +212,37 @@ class _Main:
         listb = Listbox(yscrollcommand=scrollbar.set, bg="#A2CD5A", font=("宋体", 15))
         listb.pack(fill=BOTH, expand=True)
         scrollbar.config(command=listb.yview)
-        Button(text="隐藏", font=15, width=10, height=2,
+        Button(text="隐藏", font=15, width=600, height=2,
                command=lambda: tray_it(str(listb.get(listb.curselection())).split("/")[0])).pack()
-        Button(text="显示", font=15, width=10, height=2,
+        Button(text="显示", font=15, width=600, height=2,
                command=lambda: show_it(str(listb.get(listb.curselection())).split("/")[0])).pack()
-        Button(text="关闭", font=15, width=10, height=2,
+        Button(text="关闭", font=15, width=600, height=2,
                command=lambda: kill(int(listb.get(listb.curselection()).split("/")[-1]))).pack()
-        Button(text="托盘自己", font=15, width=10, height=2,
+        Button(text="刷新(显式的)", font=15, width=600, height=2,
+               command=lambda: getwin(True)).pack()
+        Button(text="刷新(隐藏的)", font=15, width=600, height=2,
+               command=lambda: getwin(True)).pack()
+        Button(text="托盘自己", font=15, width=600, height=2,
                command= lambda:hide_self()).pack() #点击隐藏自身,即点击最小化按钮.
 
         hwnd_title = dict()
 
-        def get_hwnd(hwnd, arg):
-            if win32gui.IsWindow(hwnd) and win32gui.IsWindowEnabled(hwnd) and win32gui.IsWindowVisible(hwnd):
-                hwnd_title.update({hwnd: win32gui.GetWindowText(hwnd)})
+        def getwin(showHidden=False):
+            listb.delete(0,END)
+            win32gui.EnumWindows(get_hwnd, showHidden)
+            for h, t in hwnd_title.items():
+                if t is not "":
+                    listb.insert(END, t + "/" + str(h))
+        def get_hwnd(hwnd, showHidden):
+            if win32gui.IsWindow(hwnd) and win32gui.IsWindowEnabled(hwnd):
+                if showHidden:
+                    hwnd_title.update({hwnd: win32gui.GetWindowText(hwnd)})
+                elif win32gui.IsWindowVisible(hwnd):
+                    hwnd_title.update({hwnd: win32gui.GetWindowText(hwnd)})
+                else:
+                    pass
 
-        win32gui.EnumWindows(get_hwnd, 0)
-        for h, t in hwnd_title.items():
-            if t is not "":
-                listb.insert(END, t + "/" + str(h))
+        getwin()
 
         def hide_self():
             app.state('icon')
@@ -282,6 +294,8 @@ class _Main:
 if __name__ == '__main__':
     Main = _Main()
     Main.main()
+
+
 
 ```
 
