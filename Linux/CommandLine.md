@@ -74,6 +74,12 @@ iptables -P FORWARD DROP
 ## 保存上述规则
 service iptables save
 
+## -A：规则直接加在末尾
+## -I：后面跟具体的位置，将规则插入到指定的位置
+## -D: 删除规则
+## -p: 协议类型，如tcp类型，还有特定的-dport端口参数
+## -j: 处理方法，如ACCEPT接受， DROP丢弃， REJECT拒绝
+
 
 ## 如果要添加内网ip信任（接受其所有TCP请求）
 ## ***.***.***.***为ip地址
