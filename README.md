@@ -586,6 +586,7 @@ Table of Contents
 
  - [命令行](Linux/CommandLine.md#%E5%91%BD%E4%BB%A4%E8%A1%8C)
    - [Windows](Linux/CommandLine.md#windows)
+   - [Linux](Linux/CommandLine.md#linux)
 
 ## [Computer](Linux/Computer.md#computer)
 
@@ -1184,6 +1185,7 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
 
 
 
