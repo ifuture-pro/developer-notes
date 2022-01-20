@@ -24,6 +24,9 @@ start /b epoch.exe
 
 ## Linux
 
+* 随机数
+`cat /proc/sys/kernel/random/uuid`
+
 * iptables
 ```shell
 # CentOS7默认的防火墙firewalld
