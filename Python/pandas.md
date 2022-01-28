@@ -455,6 +455,9 @@ data['huanbi_01'][i] = format((data['mony'][i] - data['mony'][i-1])/data['mony']
 # {:<10d} 左对齐 (宽度为10)
 # {:^10d} 中间对齐 (宽度为10)
 
+# 占比
+r15['proportion'] = r15['count']/r15.groupby(['service_provider','trip_type'])['count'].transform('sum')
+
 ```
 
 ### 数据合并
