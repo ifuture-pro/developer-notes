@@ -48,6 +48,9 @@ Opensource
 [构建属于你自己的X](https://github.com/danistefanovic/build-your-own-x)
 ![GitHub stars](https://img.shields.io/github/stars/danistefanovic/build-your-own-x?style=flat-square)  
 
+[算法小抄](https://github.com/labuladong/fucking-algorithm)
+![GitHub stars](https://img.shields.io/github/stars/labuladong/fucking-algorithm?style=flat-square)  
+
 ## Github 增强
 
 [Awesome-Actions](https://github.com/sdras/awesome-actions)
