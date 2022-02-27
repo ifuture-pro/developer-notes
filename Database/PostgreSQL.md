@@ -8,7 +8,7 @@ sudo apt-get update
 sudo apt-get install postgresql postgresql-client
 
 sudo -i -u postgres
-~$ psql
+~$ psql -U postgres -h 127.0.0.1 -p 5432
 psql (9.5.17)
 Type "help" for help.
 
@@ -35,6 +35,9 @@ postgres=# \l
 postgres=# \c mastodon_production
 You are now connected to database "mastodon_production" as user "postgres".
 mastodon_production=#
+
+-- 列出所有的表
+\dt
 
 -- 查看数据表
 select * from pg_tables;
