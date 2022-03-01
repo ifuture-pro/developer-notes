@@ -31,7 +31,7 @@
 |Document| Row|
 |Field| Column|
 |Query DSL| SQL|
-|Restful API|insert select update delete| 
+|Restful API|insert select update delete|
 
 ### 安装
 * Docker
@@ -39,7 +39,40 @@
 docker run -d --name elasticsearch -p 9200:9200 -p 9300:9300 --restart=always elasticsearch:6.8.5
 ```
 
+### 常用API
+```shell
+-- 所有 index
+curl 'localhost:9200/_cat/indices?v'
+
+-- 导入导出 https://github.com/elasticsearch-dump/elasticsearch-dump
+elasticdump --input=http://localhost:9200/index-law --output=my_index.json --type=data
+
+```
+
+#### 备份
+```shell
+vim /etc/elasticsearch/elasticsearch.yml
+path.repo: "/data/elasticsearch/backup
+
+curl -XPOST -H 'Content-Type: application/json' http://127.0.0.1:9200/_snapshot/my_es_backup -d '
+{
+    "type": "fs",
+    "settings": {
+        "location": "/home/sdb1/my_es_backup",
+        "max_snapshot_bytes_per_sec" : "100mb",
+        "max_restore_bytes_per_sec" : "100mb",
+        "compress" : true
+    }
+}'
+
+-- 查看
+curl -XGET "localhost:9200/_snapshot/my_es_backup/_all?pretty"
+-- 恢复
+curl -XPOST http://127.0.0.1:9200/_snapshot/my_es_backup/snapshot_1/_restore?wait_for_completion=true
+```
+
 ## elasticsearch-head
+> A web front end for an elastic search cluster
 ### 安装
 
 * Docker

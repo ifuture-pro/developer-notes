@@ -114,3 +114,22 @@ systemctl status iptables
 iptables -I INPUT 1 -p udp --dport 1212 -j ACCEPT
 iptables -I INPUT 1 -p tcp --dport 1212 -j ACCEPT
 ```
+
+* tcpdump 抓包
+https://www.tcpdump.org/manpages/tcpdump.1.html
+```SHELL
+-- 所有网卡中捕获数据包 -X 以十六进制打印出数据报文内容，-A 打印数据报文的 ASCII 值
+tcpdump -i any -X
+-- 指定IP的数据包
+tcpdump host 114.114.114.114 -X
+tcpdump src 192.168.174.128 || dst 192.168.174.2
+-- 制定端口
+tcpdump port 80
+tcpdump portrange 22-125
+-- 写入文件
+tcpdump -i eth0 -w packets_file
+-- 读取文件
+tcpdump -r packets_file
+-- 整个网络段
+tcpdump net 192.168.174.0/24
+```
