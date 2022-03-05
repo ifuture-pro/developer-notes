@@ -41,6 +41,8 @@ docker run -d --name elasticsearch -p 9200:9200 -p 9300:9300 --restart=always el
 
 ### 常用API
 ```shell
+-- 所有节点
+curl http://127.0.0.1:9200/_cat/nodes?v
 -- 所有 index
 curl 'localhost:9200/_cat/indices?v'
 
