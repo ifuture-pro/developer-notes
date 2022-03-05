@@ -268,8 +268,24 @@ CI(Continuous Inspection) 持续检测,代码质量管理
 
 ## AI
 [Kalidokit](https://github.com/yeemachine/kalidokit)
-![GitHub stars](https://img.shields.io/github/stars/yeemachine/kalidokit?style=flat-square)
+![GitHub stars](https://img.shields.io/github/stars/yeemachine/kalidokit?style=flat-square)  
 [人体动作表情模仿捕捉关键点信息](https://cuijiahua.com/blog/2021/11/ai-24.html)   
+[GFPGAN老照片修复](https://github.com/TencentARC/GFPGAN)
+![GitHub stars](https://img.shields.io/github/stars/TencentARC/GFPGAN?style=flat-square)  
+[TecoGAN视频分辨率增强](https://github.com/thunil/TecoGAN)
+![GitHub stars](https://img.shields.io/github/stars/thunil/TecoGAN?style=flat-square)  
+[yolov5目标检查](https://github.com/ultralytics/yolov5)
+![GitHub stars](https://img.shields.io/github/stars/ultralytics/yolov5?style=flat-square)  
+[YOLOX目标检查](https://github.com/Megvii-BaseDetection/YOLOX)
+![GitHub stars](https://img.shields.io/github/stars/Megvii-BaseDetection/YOLOX?style=flat-square)  
+[pytorch-CycleGAN-and-pix2pix图片生成奇思妙想idea](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
+![GitHub stars](https://img.shields.io/github/stars/junyanz/pytorch-CycleGAN-and-pix2pix?style=flat-square)  
+[Depix英文去马赛克](https://github.com/beurtschipper/Depix)
+![GitHub stars](https://img.shields.io/github/stars/beurtschipper/Depix?style=flat-square)  
+[microsoft老照片修复](https://github.com/microsoft/Bringing-Old-Photos-Back-to-Life)
+![GitHub stars](https://img.shields.io/github/stars/microsoft/Bringing-Old-Photos-Back-to-Life?style=flat-square)  
+[EnlightenGAN照片暗光修复](https://github.com/VITA-Group/EnlightenGAN)
+![GitHub stars](https://img.shields.io/github/stars/VITA-Group/EnlightenGAN?style=flat-square)  
 
 Tools
 ---------
