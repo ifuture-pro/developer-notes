@@ -21,6 +21,8 @@ Opensource
 ![GitHub stars](https://img.shields.io/github/stars/chaozh/awesome-blockchain-cn?style=flat-square)  
 [Awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs)
 ![GitHub stars](https://img.shields.io/github/stars/sindresorhus/awesome-nodejs?style=flat-square)  
+[golang-open-source-projects](https://github.com/hackstoic/golang-open-source-projects)
+![GitHub stars](https://img.shields.io/github/stars/hackstoic/golang-open-source-projects?style=flat-square)  
 [Awesome-Design-Tools](https://github.com/LisaDziuba/Awesome-Design-Tools)
 ![GitHub stars](https://img.shields.io/github/stars/LisaDziuba/Awesome-Design-Tools?style=flat-square)  
 [Beginner-friendly Projects](https://github.com/MunGell/awesome-for-beginners)
