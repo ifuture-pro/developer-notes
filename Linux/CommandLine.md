@@ -106,8 +106,20 @@ route add 10.108.0.0 mask 255.255.0.0 10.108.58.1 -p
 
 ## Linux
 
+* 系统日志
+
+```shell
+vim /etc/rsyslog.d/50-default.conf
+service rsyslog restart
+```
+
+* 重启时间
+
+  `last reboot`
+
 * 随机数
-`cat /proc/sys/kernel/random/uuid`
+
+  `cat /proc/sys/kernel/random/uuid`
 
 * iptables
 ```shell
