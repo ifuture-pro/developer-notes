@@ -5,12 +5,13 @@ Jupyter Notebook
   * [JupyterHub](https://github.com/jupyterhub/jupyterhub)
   * [Beaker Extensions](https://github.com/twosigma/beakerx)
 * [zeppelin notebook](https://zeppelin.apache.org/)
+* [metaflow](https://github.com/Netflix/metaflow)
 
 ## 安装
 ```shell
 pip install notebook
 
-jupyter notebook --port 8888
+jupyter notebook --port 8888 --ip 192.168.0.100
 
 jupyter notebook --help
 
