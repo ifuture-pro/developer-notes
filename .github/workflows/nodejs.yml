@@ -19,7 +19,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Create local changes
       run: |
-        ...
+        pwd
     - name: listify-actions
       uses: ifuture-pro/listify-actions@master
       with:
