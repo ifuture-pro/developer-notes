@@ -22,6 +22,8 @@ jobs:
         pwd
     - name: listify-actions
       uses: ifuture-pro/listify-actions@master
+      run: |
+        cd /home/runner/work/developer-notes/developer-notes
       with:
         listify: ./ --exclude='^_\S*' --package --exclude_dir=draft --maxlevel=6
         github_token: ${{ secrets.GH_TOKEN }}
