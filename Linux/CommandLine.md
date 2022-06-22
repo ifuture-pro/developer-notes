@@ -103,6 +103,38 @@ route add 0.0.0.0 mask 0.0.0.0 192.168.0.1 –p
 route add 10.108.0.0 mask 255.255.0.0 10.108.58.1 -p
 ```
 
+* 路由转发
+```SHELL
+# 建立端口转发规则：192.168.1.100:33890 <=> 192.168.1.101:3389
+netsh interface portproxy add v4tov4 listenaddress=192.168.1.100 listenport=33890 connectaddress=192.168.1.101 connectport=3389
+# listenaddress 监听地址，如果本机有多个地址，且需要监听所有地址，此参数可以省略。
+# listenport    监听端口，用于监听网络请求的端口。
+# connectaddress连接地址，用于转发网络请求的地址。
+# connectport   连接端口，用于转发网络请求的端口。
+# 可以简写为：
+netsh interface portproxy add v4tov4 listenport=33890 connectaddress=192.168.1.101 connectport=3389
+
+# 显示所有转发规则
+netsh interface portproxy show all
+
+# 仅显示 IPv4ToIPv4 的转发规则
+netsh interface portproxy show v4tov4
+
+# 仅显示 IPv6ToIPv6 的转发规则
+netsh interface portproxy show v6tov6
+
+# 仅显示 IPv4ToIPv6 的转发规则
+netsh interface portproxy show v4tov6
+
+# 仅显示 IPv6ToIPv4 的转发规则
+netsh interface portproxy show v6tov4
+
+# 如果在创建端口转发规则的时候有 listenaddress ，在删除的时候需要加上 listenaddress
+netsh interface portproxy delete v4tov4 listenaddress=192.168.1.100 listenport=33890
+
+# 如果在创建端口转发规则的时候没有 listenaddress ，在删除的时候不用加 listenaddress
+netsh interface portproxy delete v4tov4 listenport=33890
+```
 
 ## Linux
 
