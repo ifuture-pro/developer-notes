@@ -213,11 +213,14 @@ Table of Contents
      - [User Account 、Service Account](DevOps/Kubernetes.md#user-account-service-account)
      - [Namespace](DevOps/Kubernetes.md#namespace)
      - [RBAC](DevOps/Kubernetes.md#rbac)
-   - [HelloWorld](DevOps/Kubernetes.md#helloworld)
-     - [快速搭建本地 k8s 环境](DevOps/Kubernetes.md#%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0-k8s-%E7%8E%AF%E5%A2%83)
    - [Rook Ceph](DevOps/Kubernetes.md#rook-ceph)
    - [Helm](DevOps/Kubernetes.md#helm)
      - [组件](DevOps/Kubernetes.md#%E7%BB%84%E4%BB%B6)
+   - [HelloWorld](DevOps/Kubernetes.md#helloworld)
+     - [快速搭建本地 k8s 环境](DevOps/Kubernetes.md#%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0-k8s-%E7%8E%AF%E5%A2%83)
+     - [microk8s](DevOps/Kubernetes.md#microk8s)
+       - [安装](DevOps/Kubernetes.md#%E5%AE%89%E8%A3%85)
+       - [组件](DevOps/Kubernetes.md#%E7%BB%84%E4%BB%B6)
 
 ## MQ
 
@@ -824,11 +827,6 @@ Table of Contents
 
  - [Spark in Python](Python/pySpark.md#spark-in-python)
 
-## [_coverpage](_coverpage.md#_coverpage)
-
- - [Developer notes](_coverpage.md#developer-notes)
-   - [开发者笔记](_coverpage.md#%E5%BC%80%E5%8F%91%E8%80%85%E7%AC%94%E8%AE%B0)
-
 # algorithm
 
 ## [BloomFilter](algorithm/BloomFilter.md#bloomfilter)
@@ -1121,6 +1119,15 @@ Table of Contents
    - [场景](design-patterns/适配器.md#%E5%9C%BA%E6%99%AF)
    - [JDK源码中的案例](design-patterns/适配器.md#jdk%E6%BA%90%E7%A0%81%E4%B8%AD%E7%9A%84%E6%A1%88%E4%BE%8B)
 
+# golang
+
+## [协程并发控制](golang/协程并发控制.md#%E5%8D%8F%E7%A8%8B%E5%B9%B6%E5%8F%91%E6%8E%A7%E5%88%B6)
+
+ - [协程并发控制方法](golang/协程并发控制.md#%E5%8D%8F%E7%A8%8B%E5%B9%B6%E5%8F%91%E6%8E%A7%E5%88%B6%E6%96%B9%E6%B3%95)
+   - [1、WaitGroup](golang/协程并发控制.md#1waitgroup)
+   - [2、chan + select](golang/协程并发控制.md#2chan--select)
+   - [3、Context](golang/协程并发控制.md#3context)
+
 # hacker
 
 ## [blackchain-bug-erc](hacker/blackchain-bug-erc.md#blackchain-bug-erc)
@@ -1186,6 +1193,8 @@ Table of Contents
    - [WebAssembly](web/README.md#webassembly)
    - [asm.js](web/README.md#asmjs)
 <!-- end listify -->
+
+
 
 
 

@@ -96,6 +96,31 @@ PV和PVC使得K8s集群具备了存储的逻辑抽象能力，使得在配置Pod
 访问授权，K8s在1.3版本中发布了alpha版的基于角色的访问控制（Role-based Access Control，RBAC）的授权模式。相对于基于属性的访问控制（Attribute-based Access Control，ABAC），RBAC主要是引入了角色（Role）和角色绑定（RoleBinding）的抽象概念。在ABAC中，K8s集群中的访问策略只能跟用户直接关联；而在RBAC中，访问策略可以跟某个角色关联，具体的用户在跟一个或多个角色相关联。显然，RBAC像其他新功能一样，每次引入新功能，都会引入新的API对象，从而引入新的概念抽象，而这一新的概念抽象一定会使集群服务管理和使用更容易扩展和重用。
 
 
+## Rook Ceph
+
+
+## Helm
+Helm 是 Deis 开发的一个用于 Kubernetes 应用的包管理工具，主要用来管理 Charts。有点类似于 Ubuntu 中的 APT 或 CentOS 中的 YUM。
+
+* [Official Docs](https://helm.sh/docs/intro/)
+* [Hello World](https://www.hi-linux.com/posts/21466.html)
+
+### 组件
+* Helm
+  > Helm 是一个命令行下的客户端工具。主要用于 Kubernetes 应用程序 Chart 的创建、打包、发布以及创建和管理本地和远程的 Chart 仓库。
+
+* Tiller
+  > Tiller 是 Helm 的服务端，部署在 Kubernetes 集群中。Tiller 用于接收 Helm 的请求，并根据 Chart 生成 Kubernetes 的部署文件（ Helm 称为 Release ），然后提交给 Kubernetes 创建应用。Tiller 还提供了 Release 的升级、删除、回滚等一系列功能。
+
+* Chart
+  > Helm 的软件包，采用 TAR 格式。类似于 APT 的 DEB 包或者 YUM 的 RPM 包，其包含了一组定义 Kubernetes 资源相关的 YAML 文件。
+
+* Repoistory
+  > Helm 的软件仓库，Repository 本质上是一个 Web 服务器，该服务器保存了一系列的 Chart 软件包以供用户下载，并且提供了一个该 Repository 的 Chart 包的清单文件以供查询。Helm 可以同时管理多个不同的 Repository。
+
+* Release
+  > 使用 helm install 命令在 Kubernetes 集群中部署的 Chart 称为 Release。
+
 ## HelloWorld
 
 ### 快速搭建本地 k8s 环境
@@ -188,27 +213,131 @@ kubectl create -f multi-pods.yaml
 kubectl exec -it pod名称 -c 容器名称 sh或者bash
 ```
 
-## Rook Ceph
+### microk8s
+#### 安装
+Ubuntu系统下安装microk8s非常方便，但大多情况可能会遇到安装完成后一直不能启动的问题，主要是下载k8s所需的 k8s.gcr.io 或 gcr.io 镜像出现被墙问题。
+解决办法：使用 pullk8s 工具
+```shell
+$ sudo curl -L "https://raw.githubusercontent.com/OpsDocker/pullk8s/main/pullk8s.sh" -o /usr/local/bin/pullk8s
+$ sudo chmod +x /usr/local/bin/pullk8s
+```
+pullk8s.sh
+```bash
+#!/bin/bash
+
+check(){
+  if [ "$1"x == "--microk8s"x ]
+  then
+    logs=`microk8s kubectl get pod --all-namespaces|tail -n +2|grep -v Running|while read line
+    do
+     declare -a arr=( $line )
+     microk8s kubectl describe pod ${arr[1]} --namespace=${arr[0]}
+    done|grep -i "image"|sed -nr 's/.*(failed to pull|Back-off pulling) image \"([^\"]+)\".*/\2/p'|uniq`
+    echo ${logs}
+  fi
+}
+
+pull(){
+  image=$1
+  imageName=${image/#k8s\.gcr\.io\//}
+  if [ "$image"x == "$imageName"x ]
+  then
+    imageName=${image/#gcr\.io\/google_containers\//}
+  fi
+  echo Pull $imageName ...
+  if [ "$image"x == "$imageName"x ]
+  then
+    echo Pull $imageName ...
+    docker pull $image
+    exit 0
+  fi
+  hubimage=${imageName//\//\-}
+
+  if [ -n ”$hubimage“ ]
+  then
+    echo Pull $imageName ...
+    docker pull opsdockerimage/$hubimage
+    # 修改镜像名，改为和microk8s要拉的镜像名一致
+    docker tag opsdockerimage/$hubimage $1
+    docker rmi opsdockerimage/$hubimage
+    if [ "$2"x == "--microk8s"x ]
+    then
+      saveImage=${1#:}
+      # 导出该镜像
+      docker save $saveImage > ~/.docker_image.tmp.tar
+      # 把该镜像导入microk8s中
+      microk8s ctr image import ~/.docker_image.tmp.tar
+      rm ~/.docker_image.tmp.tar
+    fi
+  fi
+}
 
 
-## Helm
-Helm 是 Deis 开发的一个用于 Kubernetes 应用的包管理工具，主要用来管理 Charts。有点类似于 Ubuntu 中的 APT 或 CentOS 中的 YUM。
 
-* [Official Docs](https://helm.sh/docs/intro/)
-* [Hello World](https://www.hi-linux.com/posts/21466.html)
+if [ "$1"x == "check"x ]
+then
+  check $2
+  exit 0
+fi
 
-### 组件
-* Helm
-  > Helm 是一个命令行下的客户端工具。主要用于 Kubernetes 应用程序 Chart 的创建、打包、发布以及创建和管理本地和远程的 Chart 仓库。
 
-* Tiller
-  > Tiller 是 Helm 的服务端，部署在 Kubernetes 集群中。Tiller 用于接收 Helm 的请求，并根据 Chart 生成 Kubernetes 的部署文件（ Helm 称为 Release ），然后提交给 Kubernetes 创建应用。Tiller 还提供了 Release 的升级、删除、回滚等一系列功能。
+if [ "$1"x == "pull"x -a $# -ge 2 ]
+then
+  pull $2 $3
+  exit 0
+fi
 
-* Chart
-  > Helm 的软件包，采用 TAR 格式。类似于 APT 的 DEB 包或者 YUM 的 RPM 包，其包含了一组定义 Kubernetes 资源相关的 YAML 文件。
 
-* Repoistory
-  > Helm 的软件仓库，Repository 本质上是一个 Web 服务器，该服务器保存了一系列的 Chart 软件包以供用户下载，并且提供了一个该 Repository 的 Chart 包的清单文件以供查询。Helm 可以同时管理多个不同的 Repository。
+echo
+echo "Usage:  pullk8s COMMAND [NAME[:TAG|@DIGEST]] [OPTIONS]"
+echo
+echo "Pull gcr.io's image for hub.docker.com"
+echo
+echo "Commands:"
+echo "  check    Check gcr.io's fail pull images."
+echo "  pull     Pull an image or a repository"
+echo
+echo "Options:"
+echo "  --microk8s  If use MicroK8s release."
+echo
+echo "Examples:"
+echo "  pullk8s pull k8s.gcr.io/pause:3.6 --microk8s"
+echo "  pullk8s pull gcr.io/google_containers/etcd:2.0.12"
+echo "  pullk8s check --microk8"
+exit 1
 
-* Release
-  > 使用 helm install 命令在 Kubernetes 集群中部署的 Chart 称为 Release。
+```
+检查被屏蔽的 gcr.io 或 k8s.gcr.io 容器名称
+```shell
+$ pullk8s check --microk8s
+k8s.gcr.io/pause:3.1
+-- 此时提示的 k8s.gcr.io/pause:3.1 就是pull 失败的容器名称
+-- 使用 pullk8s 拉取失败的镜像，并导入到 pod 空间中
+$ pullk8s pull k8s.gcr.io/pause:3.1 --microk8s
+```
+
+#### 组件
+```shell
+$ microk8s enable dashboard dns registry istio
+```
+映射端口到外部网卡
+```shell
+$ microk8s kubectl port-forward -n kube-system --address=0.0.0.0 service/kubernetes-dashboard 10443:443
+```
+获取dashboard token
+```shell
+microk8s dashboard-proxy
+```
+配置外部访问IP - EXTERNAL-IP
+https://blog.csdn.net/gchan/article/details/120865800
+```shell
+microk8s kubectl -n istio-system edit service/istio-ingressgateway
+
+spec:
+  externalIPs:
+  - 192.168.0.23
+
+microk8s kubectl -n kube-system edit svc   kubernetes-dashboard
+把spec.type修改为NodePort
+在spec.ports中添加nodePort: 30000
+```
