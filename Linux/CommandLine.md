@@ -113,25 +113,18 @@ netsh interface portproxy add v4tov4 listenaddress=192.168.1.100 listenport=3389
 # connectport   连接端口，用于转发网络请求的端口。
 # 可以简写为：
 netsh interface portproxy add v4tov4 listenport=33890 connectaddress=192.168.1.101 connectport=3389
-
 # 显示所有转发规则
 netsh interface portproxy show all
-
 # 仅显示 IPv4ToIPv4 的转发规则
 netsh interface portproxy show v4tov4
-
 # 仅显示 IPv6ToIPv6 的转发规则
 netsh interface portproxy show v6tov6
-
 # 仅显示 IPv4ToIPv6 的转发规则
 netsh interface portproxy show v4tov6
-
 # 仅显示 IPv6ToIPv4 的转发规则
 netsh interface portproxy show v6tov4
-
 # 如果在创建端口转发规则的时候有 listenaddress ，在删除的时候需要加上 listenaddress
 netsh interface portproxy delete v4tov4 listenaddress=192.168.1.100 listenport=33890
-
 # 如果在创建端口转发规则的时候没有 listenaddress ，在删除的时候不用加 listenaddress
 netsh interface portproxy delete v4tov4 listenport=33890
 ```
