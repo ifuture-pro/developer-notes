@@ -599,6 +599,8 @@ duration = end_time-start_time
 print(duration)
 ((duration).total_seconds() / 60 / 60) - ((len2-len1)*24)
 # 只计算工作日，考虑开始时间与结束时间可能是非工作日的情况
+holidays=['2022-04-03','2022-04-04','2022-04-05']
+businessdays = pd.tseries.offsets.CustomBusinessDay(holidays=holidays,weekmask='Mon Tue Wed Thu Fri Sat Sun')
 df_test = pd.DataFrame([['2022-03-28 01:30:12', '2022-04-11 12:55:35', "te1"],
                         ['2022-04-04 01:30:12', '2022-04-11 12:55:35', "te2"],
                         ['2022-04-04 23:30:12', '2022-04-06 12:20:35', "te3"],
