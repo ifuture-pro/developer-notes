@@ -609,8 +609,10 @@ df_test = pd.DataFrame([['2022-03-28 01:30:12', '2022-04-11 12:55:35', "te1"],
 def computeDur(start_time, end_time):
    start_time = pd.to_datetime(start_time)
    end_time = pd.to_datetime(end_time)
-   len1 = len(pd.date_range(start_time, end_time, freq=b))
-   len2 = len(pd.date_range(start_time, end_time))
+   len1 = len(pd.date_range(start_time.date(), end_time.date(), freq=b))
+   len2 = len(pd.date_range(start_time.date(), end_time.date()))
+   if len1 ==0 :
+       return 0
    sub_s = 0
    sub_e = 0
    if str(start_time.date()) in holidays:
