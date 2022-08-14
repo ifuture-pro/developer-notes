@@ -584,9 +584,42 @@ df['Time'] = df['Time'].dt.tz_localize('UTC').dt.tz_convert('Asia/Shanghai')
 from pytz import all_timezones
 print (all_timezones)
 # 时长，多久，两个时间间隔时间，时差
-df['duration'] = pd.to_datetime(df['end']) - pd.to_datetime(df['begin'])
+df['duration'] = (pd.to_datetime(df['end']) - pd.to_datetime(df['begin'])).dt.total_seconds()/60/60
 # 指定时间进行对比
 df.Time.astype('datetime64[ns]') < pd.to_datetime('2019-12-11 20:00:00', format='%Y-%m-%d %H:%M:%S')
+# 只计算工作日
+from pandas.tseries.offsets import CustomBusinessDay
+b = CustomBusinessDay(holidays=['2022-04-03','2022-04-04','2022-04-05'],weekmask='Mon Tue Wed Thu Fri Sat Sun')
+start_time = pd.to_datetime('2022-03-28 01:30:12')
+end_time = pd.to_datetime('2022-04-11 12:55:35')
+len1 = len(pd.date_range(start_time, end_time,freq=b))
+len2 = len(pd.date_range(start_time, end_time))
+print(len1,len2)
+duration = end_time-start_time
+print(duration)
+((duration).total_seconds() / 60 / 60) - ((len2-len1)*24)
+# 只计算工作日，考虑开始时间与结束时间可能是非工作日的情况
+df_test = pd.DataFrame([['2022-03-28 01:30:12', '2022-04-11 12:55:35', "te1"],
+                        ['2022-04-04 01:30:12', '2022-04-11 12:55:35', "te2"],
+                        ['2022-04-04 23:30:12', '2022-04-06 12:20:35', "te3"],
+                        ['2022-04-02 20:30:12', '2022-04-03 12:00:00', "te4"]],
+                       columns=['start_time', 'end_time', 'title'])
+def computeDur(start_time, end_time):
+   start_time = pd.to_datetime(start_time)
+   end_time = pd.to_datetime(end_time)
+   len1 = len(pd.date_range(start_time, end_time, freq=b))
+   len2 = len(pd.date_range(start_time, end_time))
+   sub_s = 0
+   sub_e = 0
+   if str(start_time.date()) in holidays:
+       sub_s = pd.to_datetime(str(start_time.date()) + ' 23:59:59') - start_time
+       sub_s = 24 - sub_s.total_seconds() / 60 / 60
+   if str(end_time.date()) in holidays:
+       sub_e = pd.to_datetime(str(end_time.date()) + ' 23:59:59') - end_time
+       sub_e = sub_e.total_seconds() / 60 / 60
+   return ((end_time - start_time).total_seconds() / 60 / 60) - ((len2 - len1) * 24) + sub_s + sub_e
+
+df_test['duration'] = df_test.apply(lambda x: computeDur(x['start_time'], x['end_time']), axis=1)
 ```
 
 ### 其他
