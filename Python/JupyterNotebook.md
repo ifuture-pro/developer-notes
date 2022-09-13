@@ -37,6 +37,14 @@ jupyter notebook
 
 ```
 
+```SHELL
+conda create -n name python=3.6
+conda info --envs
+conda activate name
+conda deactivate
+conda remove -n name --all
+```
+
 ## pip源
 ```shell
 pip install <包名> -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn
