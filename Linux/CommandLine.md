@@ -124,6 +124,10 @@ netsh interface portproxy delete v4tov4 listenport=33890
 
 ## Linux
 
+```SHELL
+du -h --max-depth=1
+```
+
 * 系统日志
 
 ```shell

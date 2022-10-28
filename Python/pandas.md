@@ -458,6 +458,11 @@ data['huanbi_01'][i] = format((data['mony'][i] - data['mony'][i-1])/data['mony']
 # 占比
 r15['proportion'] = r15['count']/r15.groupby(['service_provider','trip_type'])['count'].transform('sum')
 
+# 合并结果为一列
+r1_3 = df.query("APPLICANT_SEX_CN != '未知'").groupby(
+    ["CASE_TYPE_CN"])["APPLICANT_SEX_CN"].apply(
+        lambda x: gensexrate(x.value_counts().values.tolist())).to_frame().reset_index()
+#.apply(lambda x: ":".join(str(a) for a in x.value_counts().values.tolist()))
 ```
 
 ### 数据合并
