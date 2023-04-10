@@ -249,3 +249,18 @@ tcpdump -r packets_file
 -- 整个网络段
 tcpdump net 192.168.174.0/24
 ```
+
+* 挂载硬盘
+```SHELL
+lsblk
+df -lh
+
+sudo fdisk /dev/sdb  # 已挂载，未分区sdb
+# 根据提示，依次输入：n、p、1、回车、回车、w。
+
+sudo mkfs.ext4 /dev/sdb
+
+sudo mkdir /mnt/DEV_ST8000_01
+sudo mount /dev/sdb /mnt/DEV_ST8000_01
+
+```
