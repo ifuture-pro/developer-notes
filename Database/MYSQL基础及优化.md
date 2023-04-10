@@ -115,6 +115,35 @@ login mysql then:
 source /home/ubuntu/dbname.sql
 ```
 
+### 表概述
+```SHELL
+mysql> use information_schema;
+# 查看数据库使用大小
+mysql> select concat(round(sum(data_length/1024/1024),2),'MB') as data from tables where table_schema='DB_Name';
+
+# 查看表使用大小
+SELECT
+	concat(ROUND(SUM(data_length / 1024 / 1024), 2), 'MB') AS data
+FROM
+	tables
+WHERE
+	table_schema = 'DB_Name'
+	AND table_name = 'Table_Name';
+  
+# 查看指定数据库各表容量大小
+  SELECT table_schema AS '数据库', table_name AS '表名', table_rows AS '记录数',
+  TRUNCATE(data_length / 1024 / 1024, 2) AS '数据容量(MB)',
+  TRUNCATE
+  	(index_length / 1024 / 1024, 2) AS '索引容量(MB)'
+  FROM
+  	information_schema.tables
+  WHERE
+  	table_schema = 'DB_Name'
+  ORDER BY
+  	data_length DESC,
+  	index_length DESC;
+```
+
 ## 关键字
 * 数据库查询语言（DQL Data Query Language）：select
 * 数据库定义语言（DDL Data Definition Language）：create database、drop database 、create table、drop table、alter
