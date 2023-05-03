@@ -577,6 +577,16 @@ df.groupby(['name', pd.Grouper(key='date', freq='A-DEC')])['ext price'].sum()
 # 按月的平均重新采样
 df['Close'].resample('M').mean()
 # https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#offset-aliases
+# 最小值抽样，删除已抽样数据
+#sampled_df = df.groupby('SOURCE').apply(lambda x: x.sample(n=min(len(x), 1000), replace=False, random_state=1))
+df_sample['original_index'] = df_sample.index
+sampled_df = df_sample.groupby('SOURCE').apply(lambda x: x.sample(n=7, replace=False, random_state=1024)).reset_index(drop=True)
+sampled_indices = sampled_df['original_index'].tolist()
+df_sample = df_sample.drop(index=sampled_indices)
+df_sample = df_sample.drop(columns=['original_index'])
+sampled_df = sampled_df.drop(columns=['original_index'])
+print(sampled_df.shape,df_sample.shape)
+
 # 取时间范围，并取工作日
 rng = pd.date_range(start="6/1/2016",end="6/30/2016",freq='B')
 # 重新定时数据频度，按一定补充方法
