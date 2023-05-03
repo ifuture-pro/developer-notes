@@ -322,6 +322,8 @@ youtube视频下载器
 ---------
 [illa-builder](https://github.com/illacloud/illa-builder)
 [lowcode-engine](https://github.com/alibaba/lowcode-engine)
+[百度爱速搭](https://github.com/baidu/amis)
+[百度爱速搭editor](https://github.com/aisuda/amis-editor-demo)
 
 
 国内开源镜像

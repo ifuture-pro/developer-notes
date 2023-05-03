@@ -28,10 +28,12 @@
   * [awesome](https://github.com/awesome-stable-diffusion/awesome-stable-diffusion)
   * [civitai](https://civitai.com/)
   * [stable-diffusion-art](https://stable-diffusion-art.com/)
+  * [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+  * [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
+  * [multi-frame-rendering](https://xanthius.itch.io/multi-frame-rendering-for-stablediffusion)
 * [visual-chatgpt](https://github.com/microsoft/visual-chatgpt)
 * [DALL·E](https://platform.openai.com/docs/guides/images)
 * [midjourney](https://www.midjourney.com/)
-* [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 * [image][https://github.com/openai/CLIP]
 * [segment-anything](https://github.com/facebookresearch/segment-anything)
 
@@ -63,6 +65,10 @@
 ### Model Quantization And Fine-tune
 * [llama](https://github.com/facebookresearch/llama)
 * [bloomz](https://huggingface.co/bigscience/bloomz)
+* [pythia](https://github.com/EleutherAI/pythia)
+* [dolly](https://github.com/databrickslabs/dolly)
+* [Open-Assistant](https://github.com/LAION-AI/Open-Assistant)
+* [MOSS](https://github.com/OpenLMLab/MOSS)
 * [BELLE](https://github.com/LianjiaTech/BELLE)
 * [GPTQ-for-LLaMa](https://github.com/qwopqwop200/GPTQ-for-LLaMa)
 * [alpaca-lora](https://github.com/tloen/alpaca-lora)
@@ -70,12 +76,19 @@
 * [Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca)
 * [Vicuna](https://github.com/lm-sys/FastChat)
 * [ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B)
+* [LMFlow](https://github.com/OptimalScale/LMFlow)
 
 ### Tools Apps
+* [popular ai list](https://www.futurepedia.io/)
 * [code idea](https://www.cursor.so/)
 * [ChatIE](https://github.com/cocacola-lab/ChatIE)
 * [Auto-GPT](https://github.com/Torantulino/Auto-GPT)
-* [popular ai list](https://www.futurepedia.io/)
+* [Auto-GPT](https://github.com/Significant-Gravitas/Auto-GPT)
+* [AgentGPT](https://github.com/reworkd/AgentGPT)
+* [JARVIS HuggingGPT](https://github.com/microsoft/JARVIS)
+* [code search](https://github.com/BloopAI/bloop)
+
+
 
 
 
@@ -84,6 +97,9 @@
   > https://commoncrawl.org/2015/04/announcing-the-common-crawl-index/
 
 * [wikipedia](https://huggingface.co/datasets/wikipedia)
+* [ChineseNlpCorpus](https://github.com/SophonPlus/ChineseNlpCorpus)
+* [CLUEDatasetSearch](https://github.com/CLUEbenchmark/CLUEDatasetSearch)
+* [Chinese Open Instruction Generalist](https://huggingface.co/datasets/BAAI/COIG)
 
 ## 模型
 * [facebook llama](https://github.com/facebookresearch/llama)
