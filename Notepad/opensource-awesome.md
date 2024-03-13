@@ -23,6 +23,8 @@ Opensource
 ![GitHub stars](https://img.shields.io/github/stars/sindresorhus/awesome-nodejs?style=flat-square)  
 [golang-open-source-projects](https://github.com/hackstoic/golang-open-source-projects)
 ![GitHub stars](https://img.shields.io/github/stars/hackstoic/golang-open-source-projects?style=flat-square)  
+[awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)
+![GitHub stars](https://img.shields.io/github/stars/awesome-selfhosted/awesome-selfhosted?style=flat-square)  
 [Awesome-Design-Tools](https://github.com/LisaDziuba/Awesome-Design-Tools)
 ![GitHub stars](https://img.shields.io/github/stars/LisaDziuba/Awesome-Design-Tools?style=flat-square)  
 [Beginner-friendly Projects](https://github.com/MunGell/awesome-for-beginners)
@@ -154,7 +156,8 @@ Github Actions
 * [Riot-web](https://github.com/vector-im/riot-web)
 ![GitHub stars](https://img.shields.io/github/stars/vector-im/riot-web)
 * [Wire](https://github.com/wireapp/wire)
-![GitHub stars](https://img.shields.io/github/stars/wireapp/wire)
+![GitHub stars](https://img.shields.io/github/stars/wireapp/wire)  
+* [matrix](https://matrix.org/)
 
 ### Google Drive
 * [Nextcloud](https://github.com/nextcloud/server)
@@ -170,6 +173,8 @@ Github Actions
 ![GitHub stars](https://img.shields.io/github/stars/silverwind/droppy)  
 * [Chevereto](https://github.com/Chevereto/Chevereto-Free)
 ![GitHub stars](https://img.shields.io/github/stars/Chevereto/Chevereto-Free)图床    
+* [minio](https://github.com/minio/minio)
+![GitHub stars](https://img.shields.io/github/stars/minio/minio)
 
 ### [zendesk](https://zen.com/)
 * [Zammad](https://github.com/zammad/zammad)

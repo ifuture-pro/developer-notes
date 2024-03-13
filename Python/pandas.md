@@ -400,6 +400,9 @@ df[df.eval("Q1 > `Q2`+@a")]
 
 # 分组取前3
 df_ask_org.groupby('CLASS').apply(lambda x:x.nlargest(3,'述求量'))
+
+df.groupby('street')['community'].apply(lambda x: x.value_counts().nlargest(10))
+
 ```
 
 ### 数据处理、分组、透视

@@ -212,7 +212,20 @@ kubectl create -f multi-pods.yaml
 
 kubectl exec -it pod名称 -c 容器名称 sh或者bash
 ```
+### minikube
+```SHELL
+sudo apt-get install docker.io
+sudo apt  install docker.io  #安装docker
+sudo groupadd docker     #添加用户组 docker
+sudo gpasswd -a $USER docker     #将登陆用户加入到docker用户组中
+newgrp docker     #更新用户组
 
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+minikube start
+
+```
 ### microk8s
 #### 安装
 Ubuntu系统下安装microk8s非常方便，但大多情况可能会遇到安装完成后一直不能启动的问题，主要是下载k8s所需的 k8s.gcr.io 或 gcr.io 镜像出现被墙问题。
