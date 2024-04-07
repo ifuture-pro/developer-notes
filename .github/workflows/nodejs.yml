@@ -25,3 +25,4 @@ jobs:
       with:
         listify: ./ --exclude='^_\S*' --package --exclude_dir=draft --maxlevel=6
         github_token: ${{ secrets.GH_TOKEN }}
+        directory: /home/runner/work/developer-notes/developer-notes
