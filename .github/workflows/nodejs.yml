@@ -15,9 +15,6 @@ jobs:
     # if: "! contains(github.event.head_commit.message, 'listify Actions automatic')"
     name: listify auto
     steps:
-    - name: show pwd
-      run: |
-        pwd
     - name: listify-actions
       uses: ifuture-pro/listify-actions@master
       with:
