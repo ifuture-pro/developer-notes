@@ -23,6 +23,5 @@ jobs:
     - name: listify-actions
       uses: ifuture-pro/listify-actions@master
       with:
-        directory: /home/runner/work/developer-notes/developer-notes
-        listify: ./ --exclude='^_\S*' --package --exclude_dir=draft --maxlevel=6 --out=/home/runner/work/developer-notes/developer-notes
+        listify: ./ --exclude='^_\S*' --package --exclude_dir=draft --maxlevel=6
         github_token: ${{ secrets.GH_TOKEN }}
