@@ -1,3 +1,4 @@
+## Framework
 * TensorFlow
   * [kubeflow](https://github.com/kubeflow/kubeflow)
     * [arena](https://github.com/kubeflow/arena)
@@ -43,6 +44,7 @@
 * [ChatGPT-Next-Web](https://github.com/Yidadaa/ChatGPT-Next-Web)
 * [lobe-chat](https://github.com/lobehub/lobe-chat)
 * [gpts](https://github.com/huggingface/chat-ui)
+* [open-webui](https://github.com/open-webui/open-webui)
 
 
 ### Model Quantization And Fine-tune
@@ -80,9 +82,11 @@
 * [Firefly-LLaMA2-Chinese](https://github.com/yangjianxin1/Firefly-LLaMA2-Chinese)
 * [01](https://github.com/01-ai/Yi)
 * [DeepSeek](https://github.com/deepseek-ai)
+* [Orion](https://huggingface.co/OrionStarAI/Orion-14B-Chat-RAG)
+* [LongLoRA](https://github.com/dvlab-research/LongLoRA)
+* [facebook llama](https://github.com/facebookresearch/llama)
+* [Plug and play modules to optimize the performances of your AI systems](https://github.com/nebuly-ai/nebullvm)
 
-### vertical
-* [DISC-LawLLM](https://github.com/FudanDISC/DISC-LawLLM)
 
 
 ### Multimodal
@@ -109,6 +113,7 @@
 * [image][https://github.com/openai/CLIP]
 * [segment-anything](https://github.com/facebookresearch/segment-anything)
 * [TripoSR](https://github.com/VAST-AI-Research/TripoSR) image-to-3d
+* [Yi-VL-34B](https://huggingface.co/01-ai/Yi-VL-34B)
 
 #### Video Voice
 * [video][https://studio.d-id.com/]
@@ -141,6 +146,8 @@
 * [code refact](https://github.com/smallcloudai/refact)
 * [GPTS](https://supertools.therundown.ai/gpts)
 * [RecurrentGPT](https://github.com/aiwaves-cn/RecurrentGPT)
+* [screenshot-to-code](https://github.com/abi/screenshot-to-code)
+* [clarity](https://github.com/mckaywrigley/clarity-ai.git) 仿perplexity.ai
 
 #### ChatGPT-PDF
 * [gpt4-pdf](https://github.com/mayooear/gpt4-pdf-chatbot-langchain)
@@ -154,6 +161,12 @@
 ### LLMOps
 * [predibase](https://predibase.com/)
 * [opengpts](https://github.com/langchain-ai/opengpts)
+* [GPTFast](http://github.com/MDK8888/GPTFast)
+* [dify](https://github.com/langgenius/dify)
+* [infinity](https://github.com/infiniflow/infinity) RAG database
+* [ragflow](https://github.com/infiniflow/ragflow) RAG
+
+###
 
 ## eval
 * [c-eval](https://github.com/SJTU-LIT/ceval)
@@ -163,7 +176,7 @@
 
 
 
-## 数据源
+## Data
 * [commoncrawl](https://commoncrawl.org/the-data/get-started/)
   > https://commoncrawl.org/2015/04/announcing-the-common-crawl-index/
 
@@ -171,10 +184,6 @@
 * [ChineseNlpCorpus](https://github.com/SophonPlus/ChineseNlpCorpus)
 * [CLUEDatasetSearch](https://github.com/CLUEbenchmark/CLUEDatasetSearch)
 * [Chinese Open Instruction Generalist](https://huggingface.co/datasets/BAAI/COIG)
-
-## 模型
-* [facebook llama](https://github.com/facebookresearch/llama)
-* [Plug and play modules to optimize the performances of your AI systems](https://github.com/nebuly-ai/nebullvm)
 
 ### embedding
 * [text2vec](https://github.com/shibing624/text2vec)
@@ -191,8 +200,10 @@
 
 ### Prompts
 * [GPTs](https://github.com/linexjlin/GPTs)
+* [Uncertainty of Thoughts](https://github.com/zhiyuanhubj/UoT)
 
 ## 实践
 * [罪名法务,数据+模型](https://github.com/liuhuanyong/CrimeKgAssitant)
 * [ChatGPT-WEB-APP-Clone](https://github.com/SashenJayathilaka/ChatGPT-Clone)
 * [chatGPT-web](https://github.com/mic1on/chatGPT-web)
+* [DISC-LawLLM](https://github.com/FudanDISC/DISC-LawLLM)
