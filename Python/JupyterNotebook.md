@@ -11,7 +11,7 @@ Jupyter Notebook
 ```shell
 pip install notebook
 
-jupyter notebook --port 8888 --ip 192.168.0.100
+jupyter notebook --port 8888 --ip 0.0.0.0
 
 jupyter notebook --help
 

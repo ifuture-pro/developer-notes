@@ -6,8 +6,9 @@
 * Caffe2
 
 ## 平台
-* [huggingface。AI领域的github，包含模型库、数据库等](https://huggingface.co/)
-* [中文huggingface](https://modelscope.cn/)
+* [huggingface](https://huggingface.co/)
+* [阿里huggingface](https://modelscope.cn/)
+* [hf镜像](https://hf-mirror.com)
 
 
 ## AIGC
@@ -22,8 +23,9 @@
 * [ChatGPT资料汇总](https://github.com/dalinvip/Awesome-ChatGPT)
 * [LLMSurvey](https://github.com/RUCAIBox/LLMSurvey)
 * [awesome-RLHF](https://github.com/opendilab/awesome-RLHF)
-* [langflow](https://github.com/logspace-ai/langflow)
 * [openai-cookbook](https://github.com/openai/openai-cookbook)
+* [llm-course](https://github.com/mlabonne/llm-course)
+* [awesome](https://github.com/WangRongsheng/awesome-LLM-resourses)
 
 ### ChatGPT-web
 * [lmsys](chat.lmsys.org)
@@ -44,6 +46,9 @@
 * [lobe-chat](https://github.com/lobehub/lobe-chat)
 * [gpts](https://github.com/huggingface/chat-ui)
 * [open-webui](https://github.com/open-webui/open-webui)
+* [anything-llm](https://github.com/Mintplex-Labs/anything-llm)
+* [QAnything](https://github.com/netease-youdao/QAnything)
+* [ChatALL](https://github.com/sunner/ChatALL)
 
 
 ### Model Quantization And Fine-tune
@@ -85,7 +90,13 @@
 * [LongLoRA](https://github.com/dvlab-research/LongLoRA)
 * [facebook llama](https://github.com/facebookresearch/llama)
 * [Plug and play modules to optimize the performances of your AI systems](https://github.com/nebuly-ai/nebullvm)
-
+* [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
+* [llama3](https://github.com/meta-llama/llama3)
+* [XTuner](https://github.com/InternLM/XTuner)
+* [XTuner Tutorial](https://github.com/InternLM/Tutorial/blob/camp2/xtuner/llava/xtuner_llava.md)
+* [Phi-Tutorial](https://github.com/SmartFlowAI/Phi-Tutorial/)
+* [open-instruct](https://github.com/allenai/open-instruct)
+* [OLMo](https://github.com/allenai/OLMo)
 
 
 ### Multimodal
@@ -97,6 +108,8 @@
 * [SUPIR](https://github.com/Fanghua-Yu/SUPIR)
 * [CodeFormer](https://github.com/sczhou/CodeFormer)
 * [EMO](https://github.com/HumanAIGC/EMO)
+* [Monkey](https://github.com/Yuliang-Liu/Monkey)
+* [metahuman](https://github.com/lipku/metahuman-stream) 数字人
 
 #### IMAGE
 * [stable-diffusion](https://github.com/CompVis/stable-diffusion)
@@ -112,6 +125,7 @@
 * [image][https://github.com/openai/CLIP]
 * [segment-anything](https://github.com/facebookresearch/segment-anything)
 * [TripoSR](https://github.com/VAST-AI-Research/TripoSR) image-to-3d
+* [InstantMesh](https://github.com/TencentARC/InstantMesh) image-to-3d
 * [Yi-VL-34B](https://huggingface.co/01-ai/Yi-VL-34B)
 
 #### Video Voice
@@ -120,7 +134,14 @@
 * [audiolm](https://github.com/lucidrains/audiolm-pytorch)
 * [bark](https://github.com/suno-ai/bark)
 * [TTS](https://github.com/netease-youdao/EmotiVoice)
-
+* [whisper](https://github.com/openai/whisper)
+* [DynamiCrafter](https://github.com/Doubiiu/DynamiCrafter)
+* [CosyVoice](https://github.com/FunAudioLLM/CosyVoice)
+* [SenseVoice](https://github.com/FunAudioLLM/SenseVoice)
+* [FunASR](https://github.com/modelscope/FunASR)
+* [Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam)
+* [clapper](https://github.com/jbilcke-hf/clapper)
+* [MiniCPM-V](https://github.com/OpenBMB/MiniCPM-V)
 
 ### Tools Apps
 * [popular ai list](https://www.futurepedia.io/)
@@ -146,32 +167,55 @@
 * [GPTS](https://supertools.therundown.ai/gpts)
 * [RecurrentGPT](https://github.com/aiwaves-cn/RecurrentGPT)
 * [screenshot-to-code](https://github.com/abi/screenshot-to-code)
-* [clarity](https://github.com/mckaywrigley/clarity-ai.git) 仿perplexity.ai
+* [clarity](https://github.com/mckaywrigley/clarity-ai.git) open perplexity.ai
+* [gpt-researcher](https://github.com/assafelovic/gpt-researcher)报告生成
+* [morphic](https://github.com/miurla/morphic) open perplexity.ai
+* [SWE-agent](https://github.com/princeton-nlp/SWE-agent) 开源版AI程序员Devin
+* [storm](https://github.com/stanford-oval/storm) 文章论文
+* [wiseflow](https://github.com/TeamWiseFlow/wiseflow) 情报官
+* [MindSearch](https://github.com/InternLM/MindSearch) ai搜索
+* [springboot-openai-chatgpt](https://github.com/274056675/springboot-openai-chatgpt)
+* [firecrawl](https://github.com/mendableai/firecrawl) 爬虫
 
 #### ChatGPT-PDF
 * [gpt4-pdf](https://github.com/mayooear/gpt4-pdf-chatbot-langchain)
 * [chatpdf-minimal-demo](https://github.com/postor/chatpdf-minimal-demo)
 * [ChatPaper](https://github.com/kaixindelele/ChatPaper)
-* [quivr](https://github.com/stangirard/quivr)
+* [quivr](https://github.com/QuivrHQ/quivr)
 * [danswer](https://github.com/danswer-ai/danswer)
 * [FastGPT](https://github.com/labring/FastGPT)
 * [Langchain-Chatchat](https://github.com/chatchat-space/Langchain-Chatchat)
+* [ChatPDF](https://github.com/shibing624/ChatPDF)
+* [HuixiangDou](https://github.com/InternLM/HuixiangDou)
 
 ### LLMOps
 * [predibase](https://predibase.com/)
 * [opengpts](https://github.com/langchain-ai/opengpts)
 * [GPTFast](http://github.com/MDK8888/GPTFast)
 * [dify](https://github.com/langgenius/dify)
+* [FastGPT](https://github.com/labring/FastGPT)
 * [infinity](https://github.com/infiniflow/infinity) RAG database
 * [ragflow](https://github.com/infiniflow/ragflow) RAG
+* [langflow](https://github.com/langflow-ai/langflow)
+* [Adaptive-RAG](https://github.com/starsuzi/Adaptive-RAG)
+* [self-rag](https://github.com/AkariAsai/self-rag)
+* [agentscope](https://github.com/modelscope/agentscope)
+* [jina](https://github.com/jina-ai/jina) k8s cloud
+* [Qwen-Agent](https://github.com/QwenLM/Qwen-Agent)
+* [vision-agent](https://github.com/landing-ai/vision-agent) 视频识别
+* [R2R](https://github.com/SciPhi-AI/R2R) RAG
 
-###
+### API-gateway
+* [one-api](https://github.com/songquanpeng/one-api)
+* [chat2api](https://github.com/lanqian528/chat2api)
 
-## eval
+## Eval
 * [c-eval](https://github.com/SJTU-LIT/ceval)
+* [c-eval](https://github.com/hkust-nlp/ceval)
 * [flageval](https://flageval.baai.ac.cn/#/trending)
 * [embedding](https://huggingface.co/spaces/mteb/leaderboard)
 * [ragas](https://github.com/explodinggradients/ragas)
+* [opencompass](https://github.com/open-compass/opencompass)
 
 
 
@@ -183,14 +227,24 @@
 * [ChineseNlpCorpus](https://github.com/SophonPlus/ChineseNlpCorpus)
 * [CLUEDatasetSearch](https://github.com/CLUEbenchmark/CLUEDatasetSearch)
 * [Chinese Open Instruction Generalist](https://huggingface.co/datasets/BAAI/COIG)
+* [WanJuan](https://github.com/opendatalab/WanJuan2.0-WanJuan-CC)
+* [OpenBMB](https://github.com/OpenBMB/Eurus)
+* [WuDaoCorpus](https://data.baai.ac.cn/details/WuDaoCorporaText)
+* [TigerBot](https://github.com/TigerResearch/TigerBot)
+* [SkyPile-150B](https://huggingface.co/datasets/Skywork/SkyPile-150B)
+* [WanJuan](https://github.com/opendatalab/WanJuan1.0/blob/main/WanJuan1.0-CN.md)
+* [CCI](https://data.baai.ac.cn/details/BAAI-CCI)
 
 ### embedding
 * [text2vec](https://github.com/shibing624/text2vec)
 * [uniem](https://github.com/wangyuxinwhy/uniem)
-* [FlagEmbedding](https://github.com/FlagOpen/FlagEmbedding)
+* [智源FlagEmbedding](https://github.com/FlagOpen/FlagEmbedding)
 * [Chinese-BERT-wwm](https://github.com/ymcui/Chinese-BERT-wwm)
-* [网易有道BCEmbedding](https://huggingface.co/maidalun1020/bce-embedding-base_v1)
+* [网易有道BCEmbedding](https://github.com/netease-youdao/BCEmbedding)
 * [jina](https://huggingface.co/jinaai/jina-embeddings-v2-base-zh)
+* [table-transformer](https://github.com/microsoft/table-transformer) 表格提取
+* [sbert](https://sbert.net/)
+* [setfit](https://github.com/huggingface/setfit) Efficient Few-shot Learning with Sentence Transformers
 
 ### Text2sql
 * [sqlcoder](http://github.com/defog-ai/sqlcoder)
@@ -206,3 +260,33 @@
 * [ChatGPT-WEB-APP-Clone](https://github.com/SashenJayathilaka/ChatGPT-Clone)
 * [chatGPT-web](https://github.com/mic1on/chatGPT-web)
 * [DISC-LawLLM](https://github.com/FudanDISC/DISC-LawLLM)
+* [RadFM](https://github.com/chaoyi-wu/RadFM) 医疗
+* [surya](https://github.com/VikParuchuri/surya) OCR
+
+## safe
+* [mlcommons](https://mlcommons.org/)
+* [Llama-Guard2](https://github.com/meta-llama/PurpleLlama/blob/main/Llama-Guard2/MODEL_CARD.md)
+
+## Base
+* [GaLore](https://github.com/jiaweizzhao/GaLore)
+
+## Train Efficient
+* [triton](https://github.com/openai/triton)
+* [unsloth](https://github.com/unslothai/unsloth)
+
+## quant
+* [llmc](https://github.com/ModelTC/llmc)
+
+## Doc Parse
+* [MegaParse](https://github.com/QuivrHQ/MegaParse/)
+* [reader](https://github.com/jina-ai/reader)
+* [pdfmarker](github:https://github.com/VikParuchuri/marker)
+* [PyMuPDF](https://github.com/pymupdf/PyMuPDF)
+* [omniparse](https://github.com/adithya-s-k/omniparse)
+* [MinerU](https://github.com/opendatalab/MinerU)
+* [PDF-Extract-Kit](https://github.com/opendatalab/PDF-Extract-Kit)
+* [llm-graph-builder](https://github.com/neo4j-labs/llm-graph-builder) 知识抽取
+
+## OTHER
+* [timesfm](https://github.com/google-research/timesfm) 时间序列
+* [GOT-OCR](https://github.com/Ucas-HaoranWei/GOT-OCR2.0) OCR
