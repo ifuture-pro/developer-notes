@@ -76,6 +76,7 @@ mysql> update  mysql.user set  password=password('1234')  where user='test'
 grant all privileges on testdb.* to 'test'@'%' identified by '1234';  
 grant create,alter,drop,select,insert,update,delete on testdb.* to test@'%';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123456' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'cssp'@'localhost' WITH GRANT OPTION;
 
 --刷新权限
 flush privileges;
@@ -129,7 +130,7 @@ FROM
 WHERE
 	table_schema = 'DB_Name'
 	AND table_name = 'Table_Name';
-  
+
 # 查看指定数据库各表容量大小
   SELECT table_schema AS '数据库', table_name AS '表名', table_rows AS '记录数',
   TRUNCATE(data_length / 1024 / 1024, 2) AS '数据容量(MB)',

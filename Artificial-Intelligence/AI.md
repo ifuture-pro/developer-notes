@@ -17,6 +17,7 @@
 * [wechaty](https://github.com/wechaty/wechaty)
 * [chatgpt-dingtalk](https://github.com/eryajf/chatgpt-dingtalk)
 * [feishu-chatgpt](https://github.com/Leizhenpeng/feishu-chatgpt)
+* [mcp-chrome](https://github.com/hangwin/mcp-chrome/) 浏览器
 
 ### LLM
 * [Awesome-Chinese-LLM](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM)
@@ -26,6 +27,7 @@
 * [openai-cookbook](https://github.com/openai/openai-cookbook)
 * [llm-course](https://github.com/mlabonne/llm-course)
 * [awesome](https://github.com/WangRongsheng/awesome-LLM-resourses)
+* [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps)
 
 ### ChatGPT-web
 * [lmsys](chat.lmsys.org)
@@ -49,6 +51,9 @@
 * [anything-llm](https://github.com/Mintplex-Labs/anything-llm)
 * [QAnything](https://github.com/netease-youdao/QAnything)
 * [ChatALL](https://github.com/sunner/ChatALL)
+* [cherry-studio](https://github.com/CherryHQ/cherry-studio) 第二大脑
+* [deepchat](https://github.com/ThinkInAIXYZ/deepchat/)
+* [Second-Me](https://github.com/mindverse/Second-Me) 第二大脑
 
 
 ### Model Quantization And Fine-tune
@@ -97,6 +102,7 @@
 * [Phi-Tutorial](https://github.com/SmartFlowAI/Phi-Tutorial/)
 * [open-instruct](https://github.com/allenai/open-instruct)
 * [OLMo](https://github.com/allenai/OLMo)
+* [ms-swift](https://github.com/modelscope/ms-swift)
 
 
 ### Multimodal
@@ -110,6 +116,8 @@
 * [EMO](https://github.com/HumanAIGC/EMO)
 * [Monkey](https://github.com/Yuliang-Liu/Monkey)
 * [metahuman](https://github.com/lipku/metahuman-stream) 数字人
+* [SkyReels](https://github.com/SkyworkAI/SkyReels-V2) 视频
+* [RoboBrain](https://github.com/FlagOpen/RoboBrain)
 
 #### IMAGE
 * [stable-diffusion](https://github.com/CompVis/stable-diffusion)
@@ -142,6 +150,8 @@
 * [Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam)
 * [clapper](https://github.com/jbilcke-hf/clapper)
 * [MiniCPM-V](https://github.com/OpenBMB/MiniCPM-V)
+* [moshi](https://github.com/kyutai-labs/moshi)
+* [ChatTTS](https://github.com/2noise/ChatTTS)
 
 ### Tools Apps
 * [popular ai list](https://www.futurepedia.io/)
@@ -167,15 +177,31 @@
 * [GPTS](https://supertools.therundown.ai/gpts)
 * [RecurrentGPT](https://github.com/aiwaves-cn/RecurrentGPT)
 * [screenshot-to-code](https://github.com/abi/screenshot-to-code)
-* [clarity](https://github.com/mckaywrigley/clarity-ai.git) open perplexity.ai
 * [gpt-researcher](https://github.com/assafelovic/gpt-researcher)报告生成
-* [morphic](https://github.com/miurla/morphic) open perplexity.ai
-* [SWE-agent](https://github.com/princeton-nlp/SWE-agent) 开源版AI程序员Devin
+* [clarity](https://github.com/mckaywrigley/clarity-ai.git) AI搜索 open perplexity.ai
+* [morphic](https://github.com/miurla/morphic) AI搜索
+* [FreeAskInternet](https://github.com/nashsu/FreeAskInternet) AI搜索
+* [SWE-agent](https://github.com/princeton-nlp/SWE-agent) AI编程
+* [aider](https://github.com/Aider-AI/aider) AI编程
 * [storm](https://github.com/stanford-oval/storm) 文章论文
 * [wiseflow](https://github.com/TeamWiseFlow/wiseflow) 情报官
 * [MindSearch](https://github.com/InternLM/MindSearch) ai搜索
-* [springboot-openai-chatgpt](https://github.com/274056675/springboot-openai-chatgpt)
+* [springboot-openai-chatgpt](https://github.com/274056675/springboot-openai-chatgpt) java
 * [firecrawl](https://github.com/mendableai/firecrawl) 爬虫
+* [supermemory](https://github.com/supermemoryai/supermemory) 第二大脑
+* [AppAgent](https://github.com/mnotgod96/AppAgent) APP控制
+* [MobileAgent](https://github.com/X-PLUG/MobileAgent) APP控制
+* [UI-TARS-desktop](https://github.com/bytedance/UI-TARS-desktop) Agent OpenManus
+* [mem0](https://github.com/mem0ai/mem0) 记忆 图谱
+* [graphiti](https://github.com/getzep/graphiti) 记忆 图谱
+* [GraphMemory](https://github.com/bradAGI/GraphMemory) 记忆 图谱
+* [ii-agent](https://github.com/Intelligent-Internet/ii-agent) Manus
+* [DeepResearchAgent](https://github.com/SkyworkAI/DeepResearchAgent) Manus
+* [DeepResearch](https://github.com/zilliztech/deep-searcher) DeepResearch Manus
+* [OpenHands](https://github.com/All-Hands-AI/OpenHands) AI程序员
+* [MemOS](https://github.com/MemTensor/MemOS) 记忆
+* [deer-flow](https://github.com/bytedance/deer-flow) DeepResearch
+
 
 #### ChatGPT-PDF
 * [gpt4-pdf](https://github.com/mayooear/gpt4-pdf-chatbot-langchain)
@@ -204,10 +230,23 @@
 * [Qwen-Agent](https://github.com/QwenLM/Qwen-Agent)
 * [vision-agent](https://github.com/landing-ai/vision-agent) 视频识别
 * [R2R](https://github.com/SciPhi-AI/R2R) RAG
+* [phidata](https://github.com/phidatahq/phidata) Agent
+* [superduper](https://github.com/superduper-io/superduper) RAG DB
+* [HippoRAG](https://github.com/OSU-NLP-Group/HippoRAG) 图RAG
+* [dsRAG](https://github.com/D-Star-AI/dsRAG) RAG
+* [UltraRAG](https://github.com/OpenBMB/UltraRAG) RAG
+* [rowboat](https://github.com/rowboatlabs/rowboat) multi-agent workflows
+* [bisheng](https://github.com/dataelement/bisheng) 类dify
+* [ColiVara](https://github.com/tjmlabs/ColiVara) PDF RAG ColiVarE
+* [RAG-Challenge](https://github.com/IlyaRice/RAG-Challenge-2) RAG 挑战赛
+* [TaskingAI](https://github.com/TaskingAI/TaskingAI) dify
 
 ### API-gateway
 * [one-api](https://github.com/songquanpeng/one-api)
 * [chat2api](https://github.com/lanqian528/chat2api)
+* [litellm](https://github.com/BerriAI/litellm)
+* [higress](https://github.com/alibaba/higress)
+* [one-hub](https://github.com/MartialBE/one-hub) 有支付功能
 
 ## Eval
 * [c-eval](https://github.com/SJTU-LIT/ceval)
@@ -216,6 +255,7 @@
 * [embedding](https://huggingface.co/spaces/mteb/leaderboard)
 * [ragas](https://github.com/explodinggradients/ragas)
 * [opencompass](https://github.com/open-compass/opencompass)
+* [evalscope](https://github.com/modelscope/evalscope)
 
 
 
@@ -245,15 +285,21 @@
 * [table-transformer](https://github.com/microsoft/table-transformer) 表格提取
 * [sbert](https://sbert.net/)
 * [setfit](https://github.com/huggingface/setfit) Efficient Few-shot Learning with Sentence Transformers
+* [SimCSE](https://github.com/princeton-nlp/SimCSE)
+* [textin](https://huggingface.co/aspire/acge_text_embedding)
 
 ### Text2sql
 * [sqlcoder](http://github.com/defog-ai/sqlcoder)
 * [DB-GPT](https://github.com/eosphoros-ai/DB-GPT)
 * [Awesome-Text2SQL](https://github.com/eosphoros-ai/Awesome-Text2SQL)
+* [TaskWeaver](https://github.com/microsoft/TaskWeaver)
+* [SQLBot](https://github.com/dataease/SQLBot)
 
 ### Prompts
 * [GPTs](https://github.com/linexjlin/GPTs)
 * [Uncertainty of Thoughts](https://github.com/zhiyuanhubj/UoT)
+* [PromptWizard](https://github.com/microsoft/PromptWizard)
+* [reppl](https://github.com/appl-team/reppl/)
 
 ## 实践
 * [罪名法务,数据+模型](https://github.com/liuhuanyong/CrimeKgAssitant)
@@ -262,6 +308,7 @@
 * [DISC-LawLLM](https://github.com/FudanDISC/DISC-LawLLM)
 * [RadFM](https://github.com/chaoyi-wu/RadFM) 医疗
 * [surya](https://github.com/VikParuchuri/surya) OCR
+* [embedding-atlas](https://github.com/apple/embedding-atlas) 可视化
 
 ## safe
 * [mlcommons](https://mlcommons.org/)
@@ -277,6 +324,9 @@
 ## quant
 * [llmc](https://github.com/ModelTC/llmc)
 
+## Train
+* [happy-llm](https://github.com/datawhalechina/happy-llm)
+
 ## Doc Parse
 * [MegaParse](https://github.com/QuivrHQ/MegaParse/)
 * [reader](https://github.com/jina-ai/reader)
@@ -286,7 +336,49 @@
 * [MinerU](https://github.com/opendatalab/MinerU)
 * [PDF-Extract-Kit](https://github.com/opendatalab/PDF-Extract-Kit)
 * [llm-graph-builder](https://github.com/neo4j-labs/llm-graph-builder) 知识抽取
+* [marker-api](https://github.com/adithya-s-k/marker-api)
+* [unstructured](https://github.com/Unstructured-IO/unstructured)
+* [markitdown](https://github.com/microsoft/markitdown)
+* [docling](https://github.com/docling-project/docling)
+* [MonkeyOCR](https://github.com/Yuliang-Liu/MonkeyOCR)
+
+## Knowledge Graph
+* [DeepKE](https://github.com/zjunlp/DeepKE)
+* [openspg](https://github.com/OpenSPG/openspg)
+* [knowledge_graph](https://github.com/rahulnyk/knowledge_graph)
+* [LightRAG](https://github.com/HKUDS/LightRAG)
+* [GraphAgent](https://github.com/Ji-Cather/GraphAgent)
+* [kg-gen](https://github.com/stair-lab/kg-gen)
+
+## Lifelike
+* [echomimic](https://github.com/antgroup/echomimic)
+* [echomimic_v2](https://github.com/antgroup/echomimic_v2)
+* [MimicMotion](https://github.com/Tencent/MimicMotion)
+* [Linly-Talker](https://github.com/Kedreamix/Linly-Talker)
+* [DH_live](https://github.com/kleinlee/DH_live)
+* [SadTalker](https://github.com/OpenTalker/SadTalker)
+* [HeyGem](https://github.com/GuijiAI/HeyGem.ai)
 
 ## OTHER
 * [timesfm](https://github.com/google-research/timesfm) 时间序列
 * [GOT-OCR](https://github.com/Ucas-HaoranWei/GOT-OCR2.0) OCR
+* [composio](https://github.com/composiohq/composio) 智能体tools function call
+* [mermaid](https://github.com/mermaid-js/mermaid) markdown 流程图
+* [ViTLP](https://github.com/Veason-silverbullet/ViTLP) OCR
+* [ProposalLLM](https://github.com/William-GuoWei/ProposalLLM) 标书
+
+## product
+* [Swapface](https://www.videofaceswap.ai/) 视频换脸
+* [production](https://github.com/NirDiamant/agents-towards-production) 教程
+
+## performance/load test
+* [locust](https://github.com/locustio/locust)
+* [evalscope](https://github.com/modelscope/evalscope)
+
+## time series
+* [Time-Series-Library](https://github.com/thuml/Time-Series-Library)
+* [sktime](https://github.com/sktime/sktime)
+* [Informer2020](https://github.com/zhouhaoyi/Informer2020)
+
+## Crawler
+* [MediaCrawler](https://github.com/NanmiCoder/MediaCrawler) 社交媒体

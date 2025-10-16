@@ -1,4 +1,4 @@
-![logo](https://blog.ifuture.pro/assets/img/qrcode_for_mpwechat.jpg)
+
 # Developer notes
 ## 开发者笔记
 

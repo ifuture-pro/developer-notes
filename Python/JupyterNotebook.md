@@ -6,6 +6,7 @@ Jupyter Notebook
   * [Beaker Extensions](https://github.com/twosigma/beakerx)
 * [zeppelin notebook](https://zeppelin.apache.org/)
 * [metaflow](https://github.com/Netflix/metaflow)
+* [pygwalker](https://github.com/Kanaries/pygwalker) 自动图表
 
 ## 安装
 ```shell
