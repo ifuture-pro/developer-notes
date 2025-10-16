@@ -54,6 +54,7 @@
 * [cherry-studio](https://github.com/CherryHQ/cherry-studio) 第二大脑
 * [deepchat](https://github.com/ThinkInAIXYZ/deepchat/)
 * [Second-Me](https://github.com/mindverse/Second-Me) 第二大脑
+* [khoj](https://github.com/khoj-ai/khoj) 第二大脑
 
 
 ### Model Quantization And Fine-tune
